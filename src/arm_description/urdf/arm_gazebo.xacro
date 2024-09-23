@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="agbot_arm">
+   
+    <!-- Gazebo ros2_control plugin -->   
+    <gazebo>
+      <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+        <robot_param>robot_description</robot_param>
+        <robot_param_node>robot_state_publisher</robot_param_node>
+        <parameters>$(find arm_controller)/config/arm_controllers.yaml</parameters>
+        <controller_manager_prefix_node_name>controller_manager</controller_manager_prefix_node_name>
+      </plugin>
+    </gazebo>    
+
+      <gazebo reference="arm_rgb_camera">
+        <sensor name="camera_sensor" type="camera">
+          <pose>0 0 0 0 0 0</pose>
+          <visualize>true</visualize>
+            <update_rate>60.0</update_rate>
+            <camera>
+              <horizontal_fov>1.089</horizontal_fov>
+              <image>
+                  <format>R8G8B8</format>
+                  <width>1024</width>
+                  <height>768</height>
+              </image>
+              <clip>
+                  <near>0.01</near>
+                  <far>6.0</far>
+              </clip>
+          </camera>
+          <plugin filename="libgazebo_ros_camera.so" name="camera_controller_arm">
+            <frame_name>rgb_camera_optical_a</frame_name>
+          </plugin>
+        </sensor>
+      </gazebo>          
+
+    <gazebo reference = "roboball_cylinder">
+      <material>Gazebo/GreyTransparent</material>
+      <mu1>30.0</mu1>
+      <mu2>30.0</mu2>
+    </gazebo>
+
+    <gazebo reference="arm_base_rail_link">
+        <material>Gazebo/White</material>
+    </gazebo>  
+
+    <gazebo reference="arm_mid_rail_link">
+        <material>Gazebo/Black</material>
+
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <mu1>30.0</mu1>
+        <mu2>30.0</mu2>
+        <maxVel>0.5</maxVel>
+        <minDepth>0.001</minDepth>
+    </gazebo>
+
+    <gazebo reference="arm_base_car_link">
+        <material>Gazebo/White</material>
+
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <mu1>30.0</mu1>
+        <mu2>30.0</mu2>
+        <maxVel>0.5</maxVel>
+        <minDepth>0.001</minDepth>        
+    </gazebo>     
+
+     <gazebo reference="arm_base_link">
+        <material>Gazebo/Blue</material>     
+      </gazebo>
+        
+      <gazebo reference="base_plate">
+        <material>Gazebo/Red</material>         
+      </gazebo>
+        
+      <gazebo reference="forward_drive_arm">
+        <material>Gazebo/Yellow</material>
+      </gazebo> 
+    
+      <gazebo reference="elbow">
+        <material>Gazebo/White</material>
+      </gazebo>   
+        
+      <gazebo reference="horizontal_arm">
+        <material>Gazebo/Green</material>
+      </gazebo> 
+        
+      <gazebo reference="claw_support">
+        <material>Gazebo/Yellow</material>
+      </gazebo> 
+    
+      <gazebo reference="gripper_right">
+        <material>Gazebo/Purple</material>
+      </gazebo> 
+    
+      <gazebo reference="gripper_left">
+        <material>Gazebo/Purple</material>
+      </gazebo> 
+      
+      <gazebo reference="arm_rgb_camera">
+        <material>Gazebo/Blue</material>
+      </gazebo>    
+
+</robot>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot name="agbot_arm">
+    <group name="rail_system">
+        <link name="arm_base_rail_link"/>
+        <link name="arm_mid_rail_link"/>
+        <link name="arm_base_car_link"/>
+        <joint name="base_rail_to_ mid_rail_joint"/>
+        <joint name="mid_rail_to_arm_car_joint"/>
+        <joint name="arm_car_to_arm_base_joint"/>
+        <chain base_link="arm_base_rail_link" tip_link="arm_base_car_link"/>
+    </group>
+    <group name="arm">
+        <joint name="arm_base_joint"/>
+        <joint name="shoulder_joint"/>
+        <joint name="shoulder_elbow_joint"/>
+        <joint name="elbow_joint"/>
+        <joint name="elbow_forearm_joint"/>
+        <joint name="wrist_joint"/>
+        <chain base_link="wrist" tip_link="horizontal_arm"/>
+    </group>
+    <group name="gripper">
+        <link name="claw_support"/>
+        <link name="gripper_left"/>
+        <link name="gripper_right"/>
+    </group>
+    
+    <group_state name="rail_home" group="rail_system">
+        <joint name="base_rail_to_ mid_rail_joint" value="0"/>
+        <joint name="mid_rail_to_arm_car_joint" value="0"/>
+    </group_state>
+    <group_state name="rail_ready" group="rail_system">
+        <joint name="base_rail_to_ mid_rail_joint" value="0.5715"/>
+        <joint name="mid_rail_to_arm_car_joint" value="1.143"/>
+    </group_state>
+    <group_state name="arm_ready" group="arm">
+        <joint name="arm_base_joint" value="0"/>
+        <joint name="elbow_joint" value="-1.8918"/>
+        <joint name="shoulder_joint" value="1.547"/>
+        <joint name="wrist_joint" value="0.3905"/>
+    </group_state>
+    <group_state name="arm_ready_high_left" group="arm">
+        <joint name="arm_base_joint" value="1.3364"/>
+        <joint name="elbow_joint" value="-2.1348"/>
+        <joint name="shoulder_joint" value="1.8564"/>
+        <joint name="wrist_joint" value="0.2169"/>
+    </group_state>
+    <group_state name="arm_ready_high_right" group="arm">
+        <joint name="arm_base_joint" value="-1.7183"/>
+        <joint name="elbow_joint" value="-2.1348"/>
+        <joint name="shoulder_joint" value="1.8564"/>
+        <joint name="wrist_joint" value="0.2169"/>
+    </group_state>
+    <group_state name="arm_ready_low_right" group="arm">
+        <joint name="arm_base_joint" value="-1.7183"/>
+        <joint name="elbow_joint" value="-2.1869"/>
+        <joint name="shoulder_joint" value="2.8287"/>
+        <joint name="wrist_joint" value="-0.6856"/>
+    </group_state>
+    <group_state name="arm_ready_low_left" group="arm">
+        <joint name="arm_base_joint" value="1.3364"/>
+        <joint name="elbow_joint" value="-2.1869"/>
+        <joint name="shoulder_joint" value="2.8287"/>
+        <joint name="wrist_joint" value="-0.6856"/>
+    </group_state>
+    <group_state name="arm_ready_low_center" group="arm">
+        <joint name="arm_base_joint" value="-0.0868"/>
+        <joint name="elbow_joint" value="-2.1869"/>
+        <joint name="shoulder_joint" value="2.8287"/>
+        <joint name="wrist_joint" value="-0.6856"/>
+    </group_state>
+    <group_state name="gripper_ready" group="gripper">
+        <joint name="gripper_right_joint" value="-0.3645"/>
+        <!-- <joint name="wrist_joint" value="-0.6856"/> -->
+    </group_state>
+    <group_state name="gripper_grab" group="gripper">
+        <joint name="gripper_right_joint" value="-0.0607"/>
+        <!-- <joint name="wrist_joint" value="-0.6856"/> -->
+    </group_state>
+    <group_state name="arm_home" group="arm">
+        <joint name="arm_base_joint" value="0"/>
+        <joint name="elbow_joint" value="0"/>
+        <joint name="shoulder_joint" value="0"/>
+        <joint name="wrist_joint" value="0"/>
+    </group_state>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="gripper" parent_link="wrist" group="gripper" parent_group="arm"/>
+    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
+    <virtual_joint name="base_footprint" type="fixed" parent_frame="base_footprint" child_link="arm_base_rail_link"/>
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="arm_base_car_link" link2="arm_base_link" reason="Adjacent"/>
+    <disable_collisions link1="arm_base_car_link" link2="arm_base_rail_link" reason="Never"/>
+    <disable_collisions link1="arm_base_car_link" link2="arm_mid_rail_link" reason="Adjacent"/>
+    <disable_collisions link1="arm_base_car_link" link2="base_plate" reason="Never"/>
+    <disable_collisions link1="arm_base_car_link" link2="box_four_link" reason="Adjacent"/>
+    <disable_collisions link1="arm_base_car_link" link2="box_one_link" reason="Adjacent"/>
+    <disable_collisions link1="arm_base_car_link" link2="box_three_link" reason="Adjacent"/>
+    <disable_collisions link1="arm_base_car_link" link2="box_two_link" reason="Adjacent"/>
+    <disable_collisions link1="arm_base_car_link" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="arm_base_link" link2="arm_base_rail_link" reason="Never"/>
+    <disable_collisions link1="arm_base_link" link2="arm_mid_rail_link" reason="Never"/>
+    <disable_collisions link1="arm_base_link" link2="base_plate" reason="Adjacent"/>
+    <disable_collisions link1="arm_base_link" link2="box_four_link" reason="Never"/>
+    <disable_collisions link1="arm_base_link" link2="box_one_link" reason="Never"/>
+    <disable_collisions link1="arm_base_link" link2="box_three_link" reason="Never"/>
+    <disable_collisions link1="arm_base_link" link2="box_two_link" reason="Never"/>
+    <disable_collisions link1="arm_base_link" link2="elbow" reason="Never"/>
+    <disable_collisions link1="arm_base_link" link2="forward_drive_arm" reason="Never"/>
+    <disable_collisions link1="arm_base_link" link2="gripper_left" reason="Never"/>
+    <disable_collisions link1="arm_base_link" link2="horizontal_arm" reason="Never"/>
+    <disable_collisions link1="arm_base_link" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="arm_base_link" link2="wrist" reason="Never"/>
+    <disable_collisions link1="arm_base_rail_link" link2="arm_mid_rail_link" reason="Adjacent"/>
+    <disable_collisions link1="arm_base_rail_link" link2="base_plate" reason="Never"/>
+    <disable_collisions link1="arm_base_rail_link" link2="box_four_link" reason="Never"/>
+    <disable_collisions link1="arm_base_rail_link" link2="box_one_link" reason="Never"/>
+    <disable_collisions link1="arm_base_rail_link" link2="box_three_link" reason="Never"/>
+    <disable_collisions link1="arm_base_rail_link" link2="box_two_link" reason="Never"/>
+    <disable_collisions link1="arm_base_rail_link" link2="roboball_cylinder" reason="Adjacent"/>
+    <disable_collisions link1="arm_mid_rail_link" link2="base_plate" reason="Never"/>
+    <disable_collisions link1="arm_mid_rail_link" link2="box_four_link" reason="Never"/>
+    <disable_collisions link1="arm_mid_rail_link" link2="box_one_link" reason="Never"/>
+    <disable_collisions link1="arm_mid_rail_link" link2="box_three_link" reason="Never"/>
+    <disable_collisions link1="arm_mid_rail_link" link2="box_two_link" reason="Never"/>
+    <disable_collisions link1="arm_mid_rail_link" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="arm_rgb_camera" link2="base_plate" reason="Never"/>
+    <disable_collisions link1="arm_rgb_camera" link2="claw_support" reason="Adjacent"/>
+    <disable_collisions link1="arm_rgb_camera" link2="elbow" reason="Never"/>
+    <disable_collisions link1="arm_rgb_camera" link2="forward_drive_arm" reason="Never"/>
+    <disable_collisions link1="arm_rgb_camera" link2="gripper_left" reason="Never"/>
+    <disable_collisions link1="arm_rgb_camera" link2="gripper_right" reason="Never"/>
+    <disable_collisions link1="arm_rgb_camera" link2="horizontal_arm" reason="Never"/>
+    <disable_collisions link1="arm_rgb_camera" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="arm_rgb_camera" link2="wrist" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="box_four_link" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="box_one_link" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="box_three_link" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="box_two_link" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="claw_support" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="elbow" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="forward_drive_arm" reason="Adjacent"/>
+    <disable_collisions link1="base_plate" link2="gripper_left" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="horizontal_arm" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="base_plate" link2="wrist" reason="Never"/>
+    <disable_collisions link1="box_four_link" link2="box_one_link" reason="Never"/>
+    <disable_collisions link1="box_four_link" link2="box_three_link" reason="Never"/>
+    <disable_collisions link1="box_four_link" link2="box_two_link" reason="Never"/>
+    <disable_collisions link1="box_four_link" link2="elbow" reason="Never"/>
+    <disable_collisions link1="box_four_link" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="box_one_link" link2="box_three_link" reason="Never"/>
+    <disable_collisions link1="box_one_link" link2="box_two_link" reason="Never"/>
+    <disable_collisions link1="box_one_link" link2="elbow" reason="Never"/>
+    <disable_collisions link1="box_one_link" link2="forward_drive_arm" reason="Never"/>
+    <disable_collisions link1="box_one_link" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="box_three_link" link2="box_two_link" reason="Never"/>
+    <disable_collisions link1="box_three_link" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="box_two_link" link2="elbow" reason="Never"/>
+    <disable_collisions link1="box_two_link" link2="forward_drive_arm" reason="Never"/>
+    <disable_collisions link1="box_two_link" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="claw_support" link2="elbow" reason="Never"/>
+    <disable_collisions link1="claw_support" link2="forward_drive_arm" reason="Never"/>
+    <disable_collisions link1="claw_support" link2="gripper_left" reason="Adjacent"/>
+    <disable_collisions link1="claw_support" link2="gripper_right" reason="Adjacent"/>
+    <disable_collisions link1="claw_support" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="claw_support" link2="wrist" reason="Adjacent"/>
+    <disable_collisions link1="elbow" link2="forward_drive_arm" reason="Adjacent"/>
+    <disable_collisions link1="elbow" link2="gripper_left" reason="Never"/>
+    <disable_collisions link1="elbow" link2="gripper_right" reason="Never"/>
+    <disable_collisions link1="elbow" link2="horizontal_arm" reason="Adjacent"/>
+    <disable_collisions link1="elbow" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="elbow" link2="wrist" reason="Never"/>
+    <disable_collisions link1="forward_drive_arm" link2="gripper_left" reason="Never"/>
+    <disable_collisions link1="forward_drive_arm" link2="horizontal_arm" reason="Never"/>
+    <disable_collisions link1="forward_drive_arm" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="forward_drive_arm" link2="wrist" reason="Default"/>
+    <disable_collisions link1="gripper_left" link2="gripper_right" reason="Never"/>
+    <disable_collisions link1="gripper_left" link2="horizontal_arm" reason="Never"/>
+    <disable_collisions link1="gripper_left" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="gripper_left" link2="wrist" reason="Never"/>
+    <disable_collisions link1="gripper_right" link2="horizontal_arm" reason="Never"/>
+    <disable_collisions link1="gripper_right" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="gripper_right" link2="wrist" reason="Never"/>
+    <disable_collisions link1="horizontal_arm" link2="roboball_cylinder" reason="Default"/>
+    <disable_collisions link1="horizontal_arm" link2="wrist" reason="Adjacent"/>
+    <disable_collisions link1="roboball_cylinder" link2="wrist" reason="Default"/>
+</robot>

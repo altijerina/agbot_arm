@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="agbot_arm">
+
+    <!-- Include Gazebo Parameters -->
+    <xacro:include filename="$(find arm_description)/urdf/arm_gazebo.xacro" /> 
+
+    <!-- Include ros2_control Plugins -->
+    <xacro:include filename="$(find arm_description)/urdf/arm_ros2_control.xacro" />
+
+    <!-- Include ros2_control Plugins -->
+    <xacro:include filename="$(find arm_description)/urdf/arm_common_properties.xacro" />    
+
+    <!-- Useful XACRO Variables (Properties) -->
+    <xacro:property name="Pi" value="3.141592653589793238464" />
+    <xacro:property name="effort" value="30.0" />
+    <xacro:property name="velocity" value="10.0" />
+    <xacro:property name="scale" value="0.0025 0.0025 0.0025"/> 
+    <xacro:property name="arm_scale" value="0.0015 0.0015 0.002"/>
+    <xacro:property name="claw_scale" value="0.004 0.004 0.004"/>  
+    <xacro:property name="claw_camera_scale" value="0.002 0.002 0.002"/>  
+    <xacro:property name="base_height" value="0.0" />    
+
+    <xacro:property name = "forward_drive_arm_length" value = "0.75" />
+    <xacro:property name = "forward_drive_arm_width" value = "0.05" />
+    <xacro:property name = "forward_drive_arm_height" value = "0.005" />
+    <xacro:property name = "horizontal_arm_length" value = "0.555" />
+    <xacro:property name = "horizontal_arm_width" value = "0.05" />
+    <xacro:property name = "horizontal_arm_height" value = "0.005" /> 
+    <xacro:property name = "cylinder_radius" value = "0.015" />
+    <xacro:property name = "cylinder_length" value = "0.18" />  
+    <xacro:property name = "robo_cylinder_radius" value = "0.2032" />
+    <xacro:property name = "robo_cylinder_length" value = "1.8288" />          
+
+    <xacro:property name = "arm_base_rail_length" value = "1.524" />
+    <xacro:property name = "arm_base_rail_width" value = "0.1524" />
+    <xacro:property name = "arm_base_rail_height" value = "0.0127" />
+    <xacro:property name = "arm_base_car_length" value = "1.524" />
+    <xacro:property name = "arm_base_car_width" value = "0.1524" />
+    <xacro:property name = "arm_base_car_height" value = "0.0127" /> 
+
+    <xacro:property name = "box_length" value = "0.28" />
+    <xacro:property name = "box_width" value = "0.1524" />
+    <xacro:property name = "box_height" value = "0.0762" />    
+
+    <!-- Useful Macros -->
+    <xacro:macro name="default_inertia" params="mass">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="${mass}" />
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+                     iyy="1.0" iyz="0.0"
+                     izz="1.0" />
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="default_transmission" params="name">
+        <transmission name="transmission_${name}">
+            <!-- <plugin>transmission_interface/DifferentialTransmission</plugin> -->
+            <plugin>transmission_interface/SimpleTransmission</plugin>
+            <actuator name="motor_${name}" role="actuator1"/>
+            <joint name="${name}" role="joint1">
+                <mechanical_reduction>1.0</mechanical_reduction>
+            </joint>
+        </transmission>
+    </xacro:macro>    
+
+    <xacro:macro name="prismatic_transmission" params="name">
+        <transmission name="${name}_prismatic_transmission">
+            <!-- <type>transmission_interface/SimpleTransmission</type> -->
+            <type>"velocity_controllers/JointPositionController"</type>
+            <!-- <plugin>hardware_interface/VelocityJointInterface</plugin> -->
+            <joint name="${name}">
+                <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+                <!-- <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> -->
+            </joint>  
+            <actuator name="${name}_motor">
+                <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+                <!-- <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> -->
+                <mechanicalReduction>1.0</mechanicalReduction>
+            </actuator>            
+        </transmission>  
+    </xacro:macro>      
+
+    <!-- Robot Body -->
+    <link name = "world">
+    </link>
+
+    <link name = "roboball_cylinder">
+        <visual>
+            <geometry>
+                <cylinder length = "${robo_cylinder_length}" radius = "${robo_cylinder_radius}" />
+            </geometry>
+            <origin xyz = "0 0 0" rpy = "0 0 0" />
+            <material name = "ClearGrey" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length = "${robo_cylinder_length}" radius = "${robo_cylinder_radius}" />
+            </geometry>  
+            <origin xyz = "0 0 0" rpy = "0 0 0" />          
+        </collision>
+        <xacro:cylinder_inertia m = "3.0" r = "${robo_cylinder_radius}" h = "${robo_cylinder_length}"
+                                xyz = "0 0 0" rpy = "0 0 0"/>
+    </link>
+
+    <link name="arm_base_rail_link">
+        <visual>
+            <geometry>
+                <box size="${arm_base_rail_length} ${arm_base_rail_width} ${arm_base_rail_height}"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${arm_base_rail_length} ${arm_base_rail_width} ${arm_base_rail_height}"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>           
+        </collision>
+        <xacro:box_inertia m="0.5" l="${arm_base_rail_length}" w="${arm_base_rail_width}" h="${arm_base_rail_height}"
+                        xyz = "0 0 ${arm_base_rail_height/2}" rpy="0 0 0" />     
+    </link>     
+
+    <link name="arm_mid_rail_link">
+        <visual>
+            <geometry>
+                <box size="${arm_base_rail_length} ${arm_base_rail_width} ${arm_base_rail_height}"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="black"/>
+        </visual>
+        <collision>
+            <geometry>
+                 <box size="${arm_base_rail_length} ${arm_base_rail_width} ${arm_base_rail_height}"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>           
+        </collision>
+        <xacro:box_inertia m="0.5" l="${arm_base_rail_length}" w="${arm_base_rail_width}" h="${arm_base_rail_height}"
+                           xyz = "0 0 ${arm_base_rail_height/2}" rpy="0 0 0" />     
+    </link>   
+
+    <link name="arm_base_car_link">
+        <visual>
+            <geometry>
+                <box size="${arm_base_car_length} ${arm_base_car_width} ${arm_base_car_height}"/>
+            </geometry>
+            <origin xyz="0 0 ${arm_base_car_height/2}" rpy="0 0 0"/>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${arm_base_car_length} ${arm_base_car_width} ${arm_base_car_height}"/>
+            </geometry>
+            <origin xyz="0 0 ${arm_base_car_height/2}" rpy="0 0 0"/>           
+        </collision>
+        <xacro:box_inertia m="0.5" l="${arm_base_car_length}" w="${arm_base_car_width}" h="${arm_base_car_height}"
+                           xyz = "0 0 ${arm_base_car_height/2}" rpy="0 0 0" />     
+    </link>   
+
+    <xacro:macro name="box_link" params="prefix" >
+        <link name="box_${prefix}_link">
+            <visual>
+                <geometry>
+                    <box size="${box_length} ${box_width} ${box_height}"/>
+                </geometry>
+                <origin xyz="0 0 ${box_height/2}" rpy="0 0 0"/>
+                <material name="brown"/>
+            </visual>
+            <collision>
+                <geometry>
+                     <box size="${box_length*1.1} ${box_width*1.1} ${box_height*1.1}"/>
+                </geometry>
+                <origin xyz="0 0 ${box_height/2}" rpy="0 0 0"/>           
+            </collision>
+            <xacro:box_inertia m="0.2" l="${box_length}" w="${box_width}" h="${box_height}"
+                               xyz = "0 0 ${box_height/2}" rpy="0 0 0" />
+        </link>  
+    </xacro:macro>
+
+    <xacro:box_link prefix="one" />
+    <xacro:box_link prefix="two" />
+    <xacro:box_link prefix="three" />
+    <xacro:box_link prefix="four" />    
+
+    <link name="arm_base_link">
+        <xacro:default_inertia mass="1.0"/>
+        <visual>
+            <origin xyz="-0.077 -0.075 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find agbot_description)/meshes/basement.STL" scale="${arm_scale}"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="-0.075 -.075 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find agbot_description)/meshes/basement.STL" scale="${arm_scale}"/>
+            </geometry> 
+        </collision>      
+    </link>
+
+    <link name="base_plate">
+        <xacro:default_inertia mass="0.1"/>
+         <visual>
+            <origin xyz="-0.059 -0.060 -0.121" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find agbot_description)/meshes/base_plate.STL" scale="${arm_scale}"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <origin xyz="-0.076 -0.0798 -0.121" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find agbot_description)/meshes/base_plate.STL" scale="${arm_scale}"/>
+            </geometry> 
+        </collision>
+    </link>   
+
+    <link name="forward_drive_arm">
+        <xacro:default_inertia mass="0.1"/>
+        <visual>
+            <origin xyz="-0.005 -0.006 0.38" rpy="0 ${PI / 2} ${PI / 2}"/>
+            <geometry>
+                <box size="${forward_drive_arm_length} ${forward_drive_arm_width} ${forward_drive_arm_height}" />
+            </geometry>
+            <material name="yellow"/>
+        </visual>
+        <collision>
+            <origin xyz="0.01 -0.006 0.38" rpy="0 ${PI / 2} ${PI / 2}"/>
+            <geometry>
+                <box size="${forward_drive_arm_length} ${forward_drive_arm_width} ${forward_drive_arm_height}" />
+            </geometry> 
+        </collision>
+    </link>
+
+    <link name = "elbow">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 ${PI / 2} 0"/>
+            <geometry>
+                <cylinder length = "${cylinder_length}" radius = "${cylinder_radius}" />
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 ${PI / 2} 0"/>
+            <geometry>
+                <cylinder length = "${cylinder_length}" radius = "${cylinder_radius}"  />
+            </geometry> 
+        </collision>
+        <xacro:cylinder_inertia m = "0.05" r = "${cylinder_radius}" h = "${cylinder_length}" 
+                                xyz = "0 0 0" rpy = "0 0 0"/>        
+    </link>
+
+    <link name="horizontal_arm">
+        <xacro:default_inertia mass="0.1"/>
+        <visual>
+            <origin xyz="0 0 0.275" rpy="0 ${PI / 2} ${PI / 2}"/>
+            <geometry>
+                <box size="${horizontal_arm_length} ${horizontal_arm_width} ${horizontal_arm_height}" />
+            </geometry>
+            <material name="green"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0.275" rpy="0 ${PI / 2} ${PI / 2}"/>
+            <geometry>
+                <box size="${horizontal_arm_length} ${horizontal_arm_width} ${horizontal_arm_height}" />
+            </geometry> 
+        </collision>
+    </link>    
+
+    <link name = "wrist">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 ${PI / 2} 0"/>
+            <geometry>
+                <cylinder length = "${cylinder_length / 2}" radius = "${cylinder_radius}" />
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 ${PI / 2} 0"/>
+            <geometry>
+                <cylinder length = "${cylinder_length}" radius = "${cylinder_radius}"  />
+            </geometry> 
+        </collision>
+        <xacro:cylinder_inertia m = "0.05" r = "${cylinder_radius}" h = "${cylinder_length}" 
+                                xyz = "0 0 0" rpy = "0 0 0"/>        
+    </link>    
+
+    <link name="claw_support">
+        <xacro:default_inertia mass="0.05"/>
+        <visual>
+            <origin xyz="-${cylinder_length/3.7} 0 0" rpy="0 -${PI/2} -${PI / 2}"/>
+            <geometry>
+                <mesh filename="file://$(find agbot_full_description)/meshes/claw_support.STL" scale="${claw_scale}"/>
+            </geometry>
+            <material name="pink"/>
+        </visual>
+        <collision>
+            <origin xyz="-${cylinder_length/3.7} 0 0" rpy="0 -${PI/2} -${PI / 2}"/>
+            <geometry>
+                <mesh filename="file://$(find agbot_full_description)/meshes/claw_support.STL" scale="${claw_scale}"/>
+            </geometry> 
+        </collision>
+    </link>    
+
+    <link name="gripper_right">
+        <xacro:default_inertia mass="0.01"/>
+        <visual>
+            <origin xyz="0.041 0 0.19" rpy="0 ${PI / 2} ${PI / 2}"/>
+            <geometry>
+                <mesh filename="file://$(find agbot_full_description)/meshes/right_finger.STL" scale="${claw_scale}"/>
+            </geometry>
+            <material name="purple"/>
+        </visual>
+        <collision>
+            <origin xyz="0.041 0 0.19" rpy="0 ${PI / 2} ${PI / 2}"/>
+            <geometry>
+                <mesh filename="file://$(find agbot_full_description)/meshes/right_finger.STL" scale="${claw_scale}"/>
+            </geometry> 
+        </collision>
+    </link>
+
+    <link name="gripper_left">
+        <xacro:default_inertia mass="0.01"/>
+        <visual>
+            <origin xyz="0.0147 0 0.19" rpy="0 ${PI / 2} ${PI / 2}"/>
+            <geometry>
+                <mesh filename="file://$(find agbot_full_description)/meshes/left_finger.STL" scale="${claw_scale}"/>
+            </geometry>
+            <material name="purple"/>
+        </visual>
+        <collision>
+            <origin xyz="0.0147 0 0.19" rpy="0 ${PI / 2} ${PI / 2}"/>
+            <geometry>
+                <mesh filename="file://$(find agbot_full_description)/meshes/left_finger.STL" scale="${claw_scale}"/>
+            </geometry> 
+        </collision>
+    </link>     
+
+    <link name="arm_rgb_camera_optical" >
+    </link> 
+
+    <link name="arm_rgb_camera">
+        <xacro:default_inertia mass="0.001"/>
+        <visual>
+            <origin xyz="-0.03 -0.028 0.025" rpy="0 ${PI/2} 0"/>
+            <geometry>
+                <mesh filename="file://$(find agbot_full_description)/meshes/pi_camera.STL" scale="${claw_camera_scale}"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="-0.03 -0.028 0.025" rpy="0 ${PI/2} 0"/>
+            <geometry>
+                <mesh filename="file://$(find agbot_full_description)/meshes/pi_camera.STL" scale="${claw_camera_scale}"/>
+            </geometry> 
+        </collision>
+    </link> 
+
+    <!-- Joint Descriptions -->
+    <joint name = "robo_cylinder_joint" type = "fixed">
+        <parent link="world" />
+        <child link="roboball_cylinder" />
+        <origin xyz = "0 0 ${base_height + robo_cylinder_radius}" rpy = "${PI/2} 0 0" />
+     </joint>   
+    
+     <joint name = "body_arm_joint" type = "fixed">
+        <parent link="world" />
+        <child link="arm_base_rail_link" />
+        <origin xyz = "0 0 ${3*arm_base_rail_height}" rpy = "0 0 ${PI/2}" />      
+     </joint>    
+     
+     <joint name = "base_rail_to_ mid_rail_joint" type = "prismatic">
+        <parent link = "arm_base_rail_link"/>
+        <child link="arm_mid_rail_link" />
+        <origin xyz = "0 0 ${arm_base_rail_height}" rpy = "0 0 0" />
+        <limit lower="0" upper="${((arm_base_rail_length / 2) + (arm_base_rail_length / 4))/2}" effort="100.0" velocity="0.5"/>
+     </joint>       
+     
+     <joint name = "box_one_joint" type = "fixed">
+        <parent link = "arm_base_car_link"/>
+        <child link = "box_one_link" />
+        <origin xyz = "-${(arm_base_rail_length / 2) - (box_length / 2)} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+     </joint>
+
+     <joint name = "box_two_joint" type = "fixed">
+        <parent link = "arm_base_car_link"/>
+        <child link = "box_two_link" />
+        <origin xyz = "-${(arm_base_rail_length / 2) - (box_length * 1.5) - 0.05} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+     </joint>
+     
+     <joint name = "box_three_joint" type = "fixed">
+        <parent link = "arm_base_car_link"/>
+        <child link = "box_three_link" />
+        <origin xyz = "${(box_length / 2) - 0.05} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+     </joint>     
+
+     <joint name = "box_four_joint" type = "fixed">
+        <parent link = "arm_base_car_link"/>
+        <child link = "box_four_link" />
+        <origin xyz = "${box_length *1.5} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+     </joint>       
+   
+    <!-- Robot Arm -->
+    <joint name = "mid_rail_to_arm_car_joint" type = "prismatic">
+        <parent link = "arm_mid_rail_link"/>
+        <child link = "arm_base_car_link"/>
+        <origin xyz = "0 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+        <limit lower="0" upper="${(arm_base_rail_length / 2) + (arm_base_rail_length / 4)}" effort="100.0" velocity="0.5"/>
+    </joint>    
+
+    <joint name = "arm_car_to_arm_base_joint" type = "fixed">
+        <parent link = "arm_base_car_link"/>
+        <child link = "arm_base_link"/>
+        <origin xyz = "${(arm_base_rail_length / 2) - (arm_base_rail_length / 20)} 0 ${arm_base_car_height}" rpy = "0 0 ${PI/2}"/>
+    </joint>       
+
+    <joint name ="arm_base_joint" type="revolute">
+        <parent link="arm_base_link"/>
+        <child link = "base_plate"/>
+        <origin xyz="0 0 0.07"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-${PI}" upper="${PI}" 
+               effort="${effort}" velocity="${velocity}"/>
+    </joint> 
+
+    <joint name="shoulder_joint" type="revolute">
+        <parent link="base_plate"/>
+        <child link="forward_drive_arm"/>
+        <origin xyz="0 0 0.075" rpy="-${PI/2} 0 0"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="0" upper="4.0" effort="${effort}" velocity="${velocity}"/>
+    </joint>   
+    
+    <joint name = "shoulder_elbow_joint" type = "fixed">
+        <parent link = "forward_drive_arm"/>
+        <child link = "elbow"/>
+        <origin xyz = "${(forward_drive_arm_width / 1.5) + 0.02} 0 ${forward_drive_arm_length}" rpy = "0 0 0"/>
+    </joint>
+    
+    <joint name="elbow_joint" type="revolute">
+        <parent link="elbow"/>
+        <child link="horizontal_arm"/>
+        <origin xyz="${cylinder_length/4} 0 0" rpy="-${PI} 0 0"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="-${PI}" upper="0" effort="${effort}" velocity="${velocity}"/>
+    </joint>   
+    
+    <joint name = "elbow_forearm_joint" type = "fixed">
+        <parent link = "horizontal_arm"/>
+        <child link = "wrist"/>
+        <origin xyz = "0 0 ${horizontal_arm_length}" rpy = "0 0 0"/>
+    </joint>    
+
+    <joint name="wrist_joint" type="revolute">
+        <parent link="wrist"/>
+        <child link="claw_support"/>
+        <origin xyz="0 0 0" /> 
+        <axis xyz="1 0 0"/>
+        <limit lower="-${PI / 2}" upper="${PI / 2}" effort="${effort}" velocity="${velocity}"/>
+    </joint>     
+
+    <joint name="gripper_right_joint" type="revolute">
+        <parent link="claw_support"/>
+        <child link="gripper_right"/>
+        <origin xyz="-0.037 -0.015 0.083"/> 
+        <axis xyz="0 1 0"/>
+        <limit lower="-${PI / 2}" upper="0.0" effort="${effort}" velocity="${velocity}"/>
+    </joint> 
+
+    <joint name="gripper_left_joint" type="revolute">
+        <mimic joint="gripper_right_joint" multiplier="-1"/> 
+        <parent link="claw_support"/>
+        <child link="gripper_left"/>
+        <origin xyz="0.042 -0.015 0.083"/> 
+        <axis xyz="0 1 0"/>
+        <limit lower="0.0" upper="${PI / 2}" effort="${effort}" velocity="${velocity}"/>
+    </joint>   
+
+    <joint name="arm_camera_optical_joint" type="fixed">
+        <parent link="claw_support"/>
+        <child link="arm_rgb_camera_optical"/>
+        <origin xyz = "0 .10 0.085" rpy = "0 0 0" />
+    </joint> 
+
+    <joint name = "arm_rgb_camera_joint" type = "fixed" >        
+        <parent link = "arm_rgb_camera_optical" />
+        <child link = "arm_rgb_camera" />
+        <origin xyz="0 0 0.03" rpy="0 -${PI/2} 0"/>
+    </joint> 
+
+    <xacro:prismatic_transmission name = "mid_rail_joint" />
+    <xacro:prismatic_transmission name="arm_base_to_arm_car_joint" />
+    <xacro:default_transmission name="arm_base_joint" />
+    <xacro:default_transmission name="shoulder_joint" />
+    <xacro:default_transmission name="elbow_joint" />
+    <xacro:default_transmission name="wrist_joint" />
+    <xacro:default_transmission name="gripper_right_joint" />
+
+</robot>

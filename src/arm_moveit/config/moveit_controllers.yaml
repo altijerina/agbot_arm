@@ -1,0 +1,43 @@
+# MoveIt uses this configuration for controller management
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - prismatic_controller
+    - arm_controller
+    - gripper_controller
+
+  prismatic_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    joints:
+      - base_rail_to_ mid_rail_joint
+      - mid_rail_to_arm_car_joint
+    action_ns: follow_joint_trajectory
+    default: true
+
+  arm_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    joints:
+      - arm_base_joint
+      - shoulder_joint
+      - elbow_joint
+      - wrist_joint
+    action_ns: follow_joint_trajectory
+    default: true
+
+  gripper_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    # type: GripperCommand
+    joints:
+      # - wrist_joint
+      - gripper_right_joint
+    action_ns: follow_joint_trajectory
+    # action_ns: gripper_cmd
+    default: true

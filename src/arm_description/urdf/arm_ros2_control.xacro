@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="agbot_arm">
+
+    <xacro:property name="PI" value="3.14159265359" />
+    <xacro:property name = "arm_base_rail_length" value = "1.524" />
+    <xacro:property name = "arm_base_car_length" value = "0.1524" />  
+
+    <ros2_control name="RobotSystem" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        
+        <joint name="base_rail_to_ mid_rail_joint">
+            <command_interface name="position">
+                <param name="min">-0.1</param>
+                <param name="max">${((arm_base_rail_length / 2) + (arm_base_rail_length / 4))/2}</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <!-- <state_interface name="velocity"/>
+            <state_interface name="effort"/> -->
+        </joint> 
+
+        <joint name="mid_rail_to_arm_car_joint">
+            <command_interface name="position">
+                <param name="min">-0.1</param>
+                <param name="max">$${(arm_base_rail_length / 2) + (arm_base_rail_length / 4)}</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <!-- <state_interface name="velocity"/>
+            <state_interface name="effort"/> -->
+        </joint>          
+
+        <joint name="arm_base_joint">
+            <command_interface name="position">
+                <param name="min">-${PI}</param>
+                <param name="max">${PI}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>      
+        
+        <joint name="shoulder_joint">
+            <command_interface name="position">
+                <param name="min">0</param>
+                <param name="max">4</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>      
+        
+        <joint name="elbow_joint">
+            <command_interface name="position">
+                <param name="min">-${PI}</param>
+                <param name="max">0</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>          
+        
+        <joint name="wrist_joint">
+            <command_interface name="position">
+                <param name="min">-${PI/2}</param>
+                <param name="max">${PI/2}</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>    
+        
+        <joint name="gripper_right_joint">
+            <command_interface name="position">
+                <param name="min">-${(PI/2)+.01}</param>
+                <param name="max">0.01</param>
+            </command_interface>
+            <state_interface name="position"/>
+        </joint>   
+        
+        <joint name="gripper_left_joint">
+            <param name="mimic">gripper_right_joint</param>  
+            <param name="multiplier">-1</param>
+            <command_interface name="position">
+                <param name="min">-0.01</param>
+                <param name="max">${PI/2}</param>
+            </command_interface>
+        </joint>    
+
+    </ros2_control>
+
+</robot>
