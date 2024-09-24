@@ -1,0 +1,17 @@
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/config/arm_controllers.yaml
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/launch/controller.launch.py
+/home/albert/ag_arm_ws/install/arm_controller/share/ament_index/resource_index/package_run_dependencies/arm_controller
+/home/albert/ag_arm_ws/install/arm_controller/share/ament_index/resource_index/parent_prefix_path/arm_controller
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/environment/ament_prefix_path.sh
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/environment/ament_prefix_path.dsv
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/environment/path.sh
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/environment/path.dsv
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/local_setup.bash
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/local_setup.sh
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/local_setup.zsh
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/local_setup.dsv
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/package.dsv
+/home/albert/ag_arm_ws/install/arm_controller/share/ament_index/resource_index/packages/arm_controller
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig.cmake
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig-version.cmake
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/package.xml
