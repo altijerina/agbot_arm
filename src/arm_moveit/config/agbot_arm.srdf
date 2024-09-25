@@ -22,6 +22,7 @@
         <link name="claw_support"/>
         <link name="gripper_left"/>
         <link name="gripper_right"/>
+        <joint name="gripper_right_joint"/>
         <chain base_link="claw_support" tip_link="gripper_right"/>
     </group> 
     

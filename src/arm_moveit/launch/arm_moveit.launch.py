@@ -19,7 +19,7 @@ def generate_launch_description():
     moveit_config = (
         MoveItConfigsBuilder("agbot_arm", package_name="arm_moveit")
         .robot_description(file_path=os.path.join(
-            get_package_share_directory("description"),
+            get_package_share_directory("arm_description"),
             "urdf",
             "arm.xacro"
             )

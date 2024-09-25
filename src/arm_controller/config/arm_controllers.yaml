@@ -30,7 +30,6 @@ prismatic_controller:
        - position
     state_interfaces:
        - position
-      # - velocity
 
 arm_controller:
   ros__parameters:
@@ -43,20 +42,15 @@ arm_controller:
       - position
     state_interfaces:
       - position
-      # - velocity
 
 gripper_controller:
   ros__parameters:
     joints:
-      # - wrist_joint
       - gripper_right_joint
     command_interfaces:
       - position
-      # - effort
     state_interfaces:
       - position
-      # - effort
-      # - velocity
 
     open_loop_control: false
     allow_integration_in_goal_trajectories: true
