@@ -64,14 +64,6 @@ def generate_launch_description():
                    "/controller_manager"],
     )   
 
-    gripper_action_controller_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["gripper_action_controller",
-                   "--controller-manager",
-                   "/controller_manager"],
-    )
-
     return LaunchDescription(
         [   
             robot_state_publisher_node, 
@@ -79,6 +71,5 @@ def generate_launch_description():
             prismatic_controller_spawner,
             arm_controller_spawner,
             gripper_controller_spawner,
-            gripper_action_controller_spawner,
         ]
     )
