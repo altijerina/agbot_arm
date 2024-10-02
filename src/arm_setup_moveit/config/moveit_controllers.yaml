@@ -4,26 +4,29 @@ moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControll
 
 moveit_simple_controller_manager:
   controller_names:
+    - rail_system_controller
+    - arm_controller
     - gripper_controller
-    - rail_arm_controller
 
-  gripper_controller:
-    type: GripperCommand
-    joints:
-      - wrist_joint
-      - gripper_right_joint
-    action_ns: gripper_cmd
-    default: true
-  rail_arm_controller:
+  rail_system_controller:
     type: FollowJointTrajectory
     action_ns: follow_joint_trajectory
     default: true
     joints:
       - base_rail_to_ mid_rail_joint
       - mid_rail_to_arm_car_joint
+  arm_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    joints:
       - arm_base_joint
       - shoulder_joint
       - elbow_joint
       - wrist_joint
+  gripper_controller:
+    type: FollowJointTrajectory
     action_ns: follow_joint_trajectory
     default: true
+    joints:
+      - gripper_right_joint

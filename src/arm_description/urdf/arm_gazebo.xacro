@@ -11,7 +11,7 @@
       </plugin>
     </gazebo>    
 
-      <gazebo reference="arm_rgb_camera">
+      <gazebo reference="arm_rgb_camera_link">
         <sensor name="camera_sensor" type="camera">
           <pose>0 0 0 0 0 0</pose>
           <visualize>true</visualize>
@@ -34,7 +34,7 @@
         </sensor>
       </gazebo>          
 
-    <gazebo reference = "roboball_cylinder">
+    <gazebo reference = "roboball_cylinder_link">
       <material>Gazebo/GreyTransparent</material>
       <mu1>30.0</mu1>
       <mu2>30.0</mu2>
@@ -70,35 +70,35 @@
         <material>Gazebo/Blue</material>     
       </gazebo>
         
-      <gazebo reference="base_plate">
+      <gazebo reference="base_plate_link">
         <material>Gazebo/Red</material>         
       </gazebo>
         
-      <gazebo reference="forward_drive_arm">
+      <gazebo reference="forward_drive_arm_link">
         <material>Gazebo/Yellow</material>
       </gazebo> 
     
-      <gazebo reference="elbow">
+      <gazebo reference="elbow_link">
         <material>Gazebo/White</material>
       </gazebo>   
         
-      <gazebo reference="horizontal_arm">
+      <gazebo reference="horizontal_arm_link">
         <material>Gazebo/Green</material>
       </gazebo> 
         
-      <gazebo reference="claw_support">
+      <gazebo reference="claw_support_link">
         <material>Gazebo/Yellow</material>
       </gazebo> 
     
-      <gazebo reference="gripper_right">
+      <gazebo reference="gripper_right_link">
         <material>Gazebo/Purple</material>
       </gazebo> 
     
-      <gazebo reference="gripper_left">
+      <gazebo reference="gripper_left_link">
         <material>Gazebo/Purple</material>
       </gazebo> 
       
-      <gazebo reference="arm_rgb_camera">
+      <gazebo reference="arm_rgb_camera_link">
         <material>Gazebo/Blue</material>
       </gazebo>    
 

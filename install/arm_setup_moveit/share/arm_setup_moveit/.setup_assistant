@@ -7,4 +7,19 @@ moveit_setup_assistant_config:
   package_settings:
     author_name: Albert Tijerina
     author_email: FizzyxWizzyrd@suddenlink.net
-    generated_timestamp: 1726798585
+    generated_timestamp: 1727362639
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

@@ -1,11 +1,11 @@
 moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
 
+
 moveit_simple_controller_manager:
   controller_names:
     - prismatic_controller
     - arm_controller
     - gripper_controller
-    - gripper_action_controller
 
   prismatic_controller:
     type: FollowJointTrajectory

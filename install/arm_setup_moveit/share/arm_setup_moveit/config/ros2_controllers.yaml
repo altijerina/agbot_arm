@@ -3,30 +3,49 @@ controller_manager:
   ros__parameters:
     update_rate: 100  # Hz
 
+    rail_system_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
     gripper_controller:
-      type: position_controllers/GripperActionController
-
-
-    rail_arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
-gripper_controller:
-  ros__parameters:
-    joint: wrist_joint
-rail_arm_controller:
+rail_system_controller:
   ros__parameters:
     joints:
       - base_rail_to_ mid_rail_joint
       - mid_rail_to_arm_car_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+arm_controller:
+  ros__parameters:
+    joints:
       - arm_base_joint
       - shoulder_joint
       - elbow_joint
       - wrist_joint
     command_interfaces:
-      []
+      - position
     state_interfaces:
-      []
+      - position
+      - velocity
+gripper_controller:
+  ros__parameters:
+    joints:
+      - gripper_right_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
