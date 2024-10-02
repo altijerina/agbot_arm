@@ -1,0 +1,2 @@
+This package was created as a check.  I manually created the arm_moveit package and the files inside, but I also created this package using Moveit Setup Assistant.
+I then used the files created by the Moveit Setup Assistant to double-check the manually created files.
