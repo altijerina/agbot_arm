@@ -1,0 +1,2 @@
+Invoking command in '/home/albert/ag_arm_ws/build/arm_cpp': /home/albert/.local/bin/cmake /home/albert/ag_arm_ws/src/arm_cpp -DCMAKE_INSTALL_PREFIX=/home/albert/ag_arm_ws/install/arm_cpp
+Invoked command in '/home/albert/ag_arm_ws/build/arm_cpp' returned '1': /home/albert/.local/bin/cmake /home/albert/ag_arm_ws/src/arm_cpp -DCMAKE_INSTALL_PREFIX=/home/albert/ag_arm_ws/install/arm_cpp

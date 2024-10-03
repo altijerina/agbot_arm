@@ -1,0 +1,14 @@
+[01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kmoveit/move_group_interface/move_group_interface.h: No such file or directory
+    2 | #include [01;31m[K<moveit/move_group_interface/move_group_interface.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kmoveit/planning_scene_interface/planning_scene_interface.h: No such file or directory
+    2 | #include [01;31m[K<moveit/planning_scene_interface/planning_scene_interface.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/arm_moveit_interface.dir/build.make:76: CMakeFiles/arm_moveit_interface.dir/src/arm_moveit_interface.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/arm_moveit_interface.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/move_group_to_cartesian.dir/build.make:76: CMakeFiles/move_group_to_cartesian.dir/src/move_group_to_cartesian.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/move_group_to_cartesian.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

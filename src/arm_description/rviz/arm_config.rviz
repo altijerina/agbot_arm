@@ -82,7 +82,7 @@ Visualization Manager:
           Value: true
         arm_mid_rail_link:
           Value: true
-        base_plate:
+        base_plate_link:
           Value: true
         box_one_link:
           Value: true
@@ -92,21 +92,21 @@ Visualization Manager:
           Value: true
         box_two_link: 
           Value: true         
-        claw_support:
+        claw_support_link:
           Value: true
-        forward_drive_arm:
+        forward_drive_arm_link:
           Value: true
-        gripper_left:
+        gripper_left_link:
           Value: true
-        gripper_right:
+        gripper_right_link:
           Value: true
-        horizontal_arm:
+        horizontal_arm_link:
           Value: true
-        rgb_camera:
+        rgb_camera_link:
           Value: true
-        rgb_camera_optical:
+        rgb_camera_optical_link:
           Value: true
-        roboball_cylinder:
+        roboball_cylinder_link:
           Value: true
         world:
           Value: true    
@@ -118,26 +118,26 @@ Visualization Manager:
       Show Names: false
       Tree:
         world:
-          roboball_cylinder:
-          arm_base_rail_link:
-            arm_mid_rail_link:
-              arm_base_car_link:
-                box_one_link:
-                box_two_link:
-                box_three_link:
-                box_four_link:
-                arm_base_link:
-                  base_plate:
-                    forward_drive_arm:
-                      horizontal_arm:
-                        claw_support:
-                          gripper_left:
-                            {}
-                          gripper_right:
-                            {}
-                          rgb_camera_optical:
-                            rgb_camera:
+          roboball_cylinder_link:
+            arm_base_rail_link:
+              arm_mid_rail_link:
+                arm_base_car_link:
+                  box_one_link:
+                  box_two_link:
+                  box_three_link:
+                  box_four_link:
+                  arm_base_link:
+                    base_plate_link:
+                      forward_drive_arm_link:
+                        horizontal_arm_link:
+                          claw_support_link:
+                            gripper_left_link:
                               {}
+                            gripper_right_link:
+                              {}
+                            rgb_camera_optical_link:
+                              rgb_camera_link:
+                                {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -177,7 +177,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true                   
-        base_plate:
+        base_plate_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -202,41 +202,41 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true                                   
-        claw_support:
+        claw_support_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        forward_drive_arm:
+        forward_drive_arm_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        gripper_left:
+        gripper_left_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        gripper_right:
+        gripper_right_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        horizontal_arm:
+        horizontal_arm_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rgb_camera:
+        rgb_camera_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rgb_camera_optical:
+        rgb_camera_optical_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        roboball_cylinder:
+        roboball_cylinder_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false 

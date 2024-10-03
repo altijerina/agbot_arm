@@ -8,18 +8,32 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(agbot_full_msgs REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(rclcpp_components REQUIRED)
+find_package(rclcpp_lifecycle REQUIRED)
 find_package(moveit_ros_planning_interface REQUIRED)
-find_package(sdformat REQUIRED)
+find_package(moveit_ros_move_group REQUIRED)
 
-include_directories(include)
+find_package(geometry_msgs)
+
+
+add_executable(simple_lifecycle_node src/simple_lifecycle_node.cpp)
+ament_target_dependencies(simple_lifecycle_node rclcpp rclcpp_lifecycle std_msgs)
 
 add_executable(move_group_to_cartesian src/move_group_to_cartesian.cpp)
-ament_target_dependencies(move_group_to_cartesian rclcpp moveit_ros_planning_interface sdformat)
+ament_target_dependencies(move_group_to_cartesian rclcpp)
 
-install(
-  TARGETS move_group_to_cartesian 
-  DESTINATION lib/${PROJECT_NAME})
+add_executable(arm_moveit_interface src/arm_moveit_interface.cpp)
+ament_target_dependencies(arm_moveit_interface geometry_msgs rclcpp moveit_ros_planning_interface moveit_ros_move_group)
 
+install(TARGETS
+  arm_moveit_interface
+  simple_lifecycle_node
+  move_group_to_cartesian
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

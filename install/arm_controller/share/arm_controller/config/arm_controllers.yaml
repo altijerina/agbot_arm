@@ -25,9 +25,9 @@ prismatic_controller:
       - base_rail_to_ mid_rail_joint
       - mid_rail_to_arm_car_joint
     command_interfaces:
-       - position
+      - position
     state_interfaces:
-       - position
+      - position
 
 arm_controller:
   ros__parameters:

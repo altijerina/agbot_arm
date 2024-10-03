@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:16 (find_package):
+  By not providing "Findplanning_scene_interface.cmake" in CMAKE_MODULE_PATH
+  this project has asked CMake to find a package configuration file provided
+  by "planning_scene_interface", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "planning_scene_interface" with any of the following names:
+
+    planning_scene_interfaceConfig.cmake
+    planning_scene_interface-config.cmake
+
+  Add the installation prefix of "planning_scene_interface" to
+  CMAKE_PREFIX_PATH or set "planning_scene_interface_DIR" to a directory
+  containing one of the above files.  If "planning_scene_interface" provides
+  a separate development package or SDK, be sure it has been installed.
+
+[0m

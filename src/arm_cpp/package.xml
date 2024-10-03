@@ -9,8 +9,16 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <exec_depend>moveit_ros_planning_interface</exec_depend>
-  <exec_depend>rclcpp</exec_depend>  
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>agbot_msgs</depend>
+  <depend>rclcpp_action</depend>
+  <depend>rclcpp_components</depend>
+  <depend>moveit_ros_planning_interface</depend>
+  <depend>move_group_interface</depend>
+  <depend>planning_scene_interface</depend>
+  <depend>rclcpp_lifecycle</depend>  
+  <build_depend>sdformat</build_depend>
   <exec_depend>sdformat</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>

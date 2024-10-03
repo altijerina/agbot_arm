@@ -1,0 +1,10 @@
+[31mCMake Error at /home/albert/.local/share/cmake-3.29/Modules/FindPkgConfig.cmake:619 (message):
+  The following required packages were not found:
+
+   - sdformat
+
+Call Stack (most recent call first):
+  /home/albert/.local/share/cmake-3.29/Modules/FindPkgConfig.cmake:847 (_pkg_check_modules_internal)
+  CMakeLists.txt:22 (pkg_check_modules)
+
+[0m

@@ -1,0 +1,34 @@
+[0.043s] Invoking command in '/home/albert/ag_arm_ws/build/arm_cpp': /home/albert/.local/bin/cmake /home/albert/ag_arm_ws/src/arm_cpp -DCMAKE_INSTALL_PREFIX=/home/albert/ag_arm_ws/install/arm_cpp
+[0.052s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.384s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.426s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.430s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.437s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.457s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.482s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.541s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.550s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.581s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.655s] -- Found agbot_full_msgs: 0.0.0 (/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/cmake)
+[0.656s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.702s] -- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.729s] -- Found moveit_ros_planning_interface: 2.5.5 (/home/albert/ws_moveit2/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[0.741s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread
+[0.959s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread
+[1.012s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.020s] -- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.048s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem
+[1.106s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.148s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.271s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono
+[1.317s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options
+[1.355s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread
+[1.423s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[1.424s]   ament_target_dependencies() the passed package name
+[1.424s]   'planning_scene_interface' was not found before
+[1.424s] Call Stack (most recent call first):
+[1.424s]   CMakeLists.txt:29 (ament_target_dependencies)
+[1.424s] 
+[1.424s] [0m
+[1.424s] -- Configuring incomplete, errors occurred!
+[1.434s] Invoked command in '/home/albert/ag_arm_ws/build/arm_cpp' returned '1': /home/albert/.local/bin/cmake /home/albert/ag_arm_ws/src/arm_cpp -DCMAKE_INSTALL_PREFIX=/home/albert/ag_arm_ws/install/arm_cpp

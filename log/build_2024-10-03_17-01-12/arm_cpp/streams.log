@@ -1,0 +1,54 @@
+[0.044s] Invoking command in '/home/albert/ag_arm_ws/build/arm_cpp': /home/albert/.local/bin/cmake /home/albert/ag_arm_ws/src/arm_cpp -DCMAKE_INSTALL_PREFIX=/home/albert/ag_arm_ws/install/arm_cpp
+[0.055s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.414s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.461s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.466s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.474s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.494s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.519s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.571s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.580s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.611s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.682s] -- Found agbot_full_msgs: 0.0.0 (/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/cmake)
+[0.682s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.725s] -- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.751s] -- Found moveit_ros_planning_interface: 2.5.5 (/home/albert/ws_moveit2/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[0.763s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread
+[0.972s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread
+[1.021s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.028s] -- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.055s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem
+[1.110s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.150s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.276s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono
+[1.323s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options
+[1.361s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread
+[1.440s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.505s] Error parsing '/home/albert/ag_arm_ws/src/arm_cpp/package.xml':
+[1.550s] Traceback (most recent call last):
+[1.551s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[1.551s]     main()
+[1.551s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[1.551s]     raise e
+[1.551s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[1.551s]     package = parse_package_string(
+[1.551s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[1.551s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[1.551s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/albert/ag_arm_ws/src/arm_cpp/package.xml':
+[1.551s] Error(s):
+[1.552s] - The manifest of package "arm_cpp" (with format version 3) must not contain the following tags: run_depend
+[1.552s] - Please replace <run_depend> tags with <exec_depend> tags.
+[1.563s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[1.563s]   execute_process(/usr/bin/python3
+[1.564s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.564s]   /home/albert/ag_arm_ws/src/arm_cpp/package.xml
+[1.564s]   /home/albert/ag_arm_ws/build/arm_cpp/ament_cmake_core/package.cmake)
+[1.564s]   returned error code 1
+[1.564s] Call Stack (most recent call first):
+[1.564s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.564s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[1.564s]   CMakeLists.txt:41 (ament_lint_auto_find_test_dependencies)
+[1.564s] 
+[1.564s] [0m
+[1.564s] -- Configuring incomplete, errors occurred!
+[1.574s] Invoked command in '/home/albert/ag_arm_ws/build/arm_cpp' returned '1': /home/albert/.local/bin/cmake /home/albert/ag_arm_ws/src/arm_cpp -DCMAKE_INSTALL_PREFIX=/home/albert/ag_arm_ws/install/arm_cpp

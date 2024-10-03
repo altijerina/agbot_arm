@@ -1,0 +1,58 @@
+[0.044s] Invoking command in '/home/albert/ag_arm_ws/build/arm_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake /home/albert/ag_arm_ws/src/arm_cpp -DCMAKE_INSTALL_PREFIX=/home/albert/ag_arm_ws/install/arm_cpp
+[0.053s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.417s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.455s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.458s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.465s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.485s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.510s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.565s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.574s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.604s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.676s] -- Found agbot_full_msgs: 0.0.0 (/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/cmake)
+[0.676s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.719s] -- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.745s] -- Found moveit_ros_planning_interface: 2.5.5 (/home/albert/ws_moveit2/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[0.758s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread
+[0.971s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread
+[1.025s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.032s] -- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.059s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem
+[1.117s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.156s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.286s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono
+[1.334s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options
+[1.371s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread
+[1.450s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.620s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.620s] -- Configured cppcheck include dirs: 
+[1.620s] -- Configured cppcheck exclude dirs and/or files: 
+[1.623s] -- Added test 'lint_cmake' to check CMake code style
+[1.627s] -- Added test 'uncrustify' to check C / C++ code style
+[1.627s] -- Configured uncrustify additional arguments: 
+[1.630s] -- Added test 'xmllint' to check XML markup files
+[1.636s] -- Configuring done (1.6s)
+[1.655s] -- Generating done (0.0s)
+[1.659s] -- Build files have been written to: /home/albert/ag_arm_ws/build/arm_cpp
+[1.668s] Invoked command in '/home/albert/ag_arm_ws/build/arm_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake /home/albert/ag_arm_ws/src/arm_cpp -DCMAKE_INSTALL_PREFIX=/home/albert/ag_arm_ws/install/arm_cpp
+[1.670s] Invoking command in '/home/albert/ag_arm_ws/build/arm_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/build/arm_cpp -- -j8 -l8
+[1.711s] [ 16%] [32mBuilding CXX object CMakeFiles/simple_lifecycle_node.dir/src/simple_lifecycle_node.cpp.o[0m
+[1.712s] [ 33%] [32mBuilding CXX object CMakeFiles/arm_moveit_interface.dir/src/arm_moveit_interface.cpp.o[0m
+[1.712s] [ 50%] [32mBuilding CXX object CMakeFiles/move_group_to_cartesian.dir/src/move_group_to_cartesian.cpp.o[0m
+[1.953s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kmoveit/move_group_interface/move_group_interface.h: No such file or directory
+[1.954s]     2 | #include [01;31m[K<moveit/move_group_interface/move_group_interface.h>[m[K
+[1.954s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.954s] compilation terminated.
+[1.954s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kmoveit/planning_scene_interface/planning_scene_interface.h: No such file or directory
+[1.954s]     2 | #include [01;31m[K<moveit/planning_scene_interface/planning_scene_interface.h>[m[K
+[1.954s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.954s] compilation terminated.
+[1.956s] gmake[2]: *** [CMakeFiles/arm_moveit_interface.dir/build.make:76: CMakeFiles/arm_moveit_interface.dir/src/arm_moveit_interface.cpp.o] Error 1
+[1.956s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/arm_moveit_interface.dir/all] Error 2
+[1.957s] gmake[1]: *** Waiting for unfinished jobs....
+[1.957s] gmake[2]: *** [CMakeFiles/move_group_to_cartesian.dir/build.make:76: CMakeFiles/move_group_to_cartesian.dir/src/move_group_to_cartesian.cpp.o] Error 1
+[1.958s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/move_group_to_cartesian.dir/all] Error 2
+[8.843s] [ 66%] [32m[1mLinking CXX executable simple_lifecycle_node[0m
+[9.209s] [ 66%] Built target simple_lifecycle_node
+[9.210s] gmake: *** [Makefile:146: all] Error 2
+[9.212s] Invoked command in '/home/albert/ag_arm_ws/build/arm_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/build/arm_cpp -- -j8 -l8

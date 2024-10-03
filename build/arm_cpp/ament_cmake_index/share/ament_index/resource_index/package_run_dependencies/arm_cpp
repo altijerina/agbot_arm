@@ -1,1 +1,1 @@
-ament_lint_auto;ament_lint_common
+rclcpp;std_msgs;agbot_msgs;rclcpp_action;rclcpp_components;moveit_ros_planning_interface;move_group_interface;planning_scene_interface;rclcpp_lifecycle;sdformat;ament_lint_auto;ament_lint_common

@@ -1,0 +1,20 @@
+-- Install configuration: ""
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/config
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/config/arm_controllers.yaml
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/launch
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/launch/controller.launch.py
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/ament_index/resource_index/package_run_dependencies/arm_controller
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/ament_index/resource_index/parent_prefix_path/arm_controller
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/environment/ament_prefix_path.sh
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/environment/ament_prefix_path.dsv
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/environment/path.sh
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/environment/path.dsv
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/local_setup.bash
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/local_setup.sh
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/local_setup.zsh
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/local_setup.dsv
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/package.dsv
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/ament_index/resource_index/packages/arm_controller
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig.cmake
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig-version.cmake
+-- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/package.xml

@@ -1,5 +1,8 @@
 /home/albert/ag_arm_ws/build/arm_cpp/CMakeFiles/uninstall.dir
 /home/albert/ag_arm_ws/build/arm_cpp/CMakeFiles/arm_cpp_uninstall.dir
+/home/albert/ag_arm_ws/build/arm_cpp/CMakeFiles/simple_lifecycle_node.dir
+/home/albert/ag_arm_ws/build/arm_cpp/CMakeFiles/move_group_to_cartesian.dir
+/home/albert/ag_arm_ws/build/arm_cpp/CMakeFiles/arm_moveit_interface.dir
 /home/albert/ag_arm_ws/build/arm_cpp/CMakeFiles/test.dir
 /home/albert/ag_arm_ws/build/arm_cpp/CMakeFiles/edit_cache.dir
 /home/albert/ag_arm_ws/build/arm_cpp/CMakeFiles/rebuild_cache.dir

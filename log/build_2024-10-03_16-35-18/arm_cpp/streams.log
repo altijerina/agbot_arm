@@ -1,0 +1,60 @@
+[0.058s] Invoking command in '/home/albert/ag_arm_ws/build/arm_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake /home/albert/ag_arm_ws/src/arm_cpp -DCMAKE_INSTALL_PREFIX=/home/albert/ag_arm_ws/install/arm_cpp
+[0.158s] -- The C compiler identification is GNU 11.4.0
+[0.258s] -- The CXX compiler identification is GNU 11.4.0
+[0.277s] -- Detecting C compiler ABI info
+[0.379s] -- Detecting C compiler ABI info - done
+[0.412s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.412s] -- Detecting C compile features
+[0.412s] -- Detecting C compile features - done
+[0.419s] -- Detecting CXX compiler ABI info
+[0.536s] -- Detecting CXX compiler ABI info - done
+[0.576s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.576s] -- Detecting CXX compile features
+[0.577s] -- Detecting CXX compile features - done
+[0.603s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.910s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[1.366s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.686s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.738s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.788s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.843s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.930s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.146s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.173s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[2.315s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.367s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.474s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.475s] -- Found Threads: TRUE
+[2.620s] -- Found agbot_full_msgs: 0.0.0 (/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/cmake)
+[2.636s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[2.760s] -- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)
+[2.838s] -- Found moveit_ros_planning_interface: 2.5.5 (/home/albert/ws_moveit2/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[2.965s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread
+[3.351s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread
+[3.595s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[3.672s] -- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[3.759s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem
+[4.048s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[4.178s] -- Found Eigen3: TRUE (found version "3.4.0")
+[4.178s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.626s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono
+[4.701s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options
+[4.919s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread
+[5.033s] [31mCMake Error at CMakeLists.txt:16 (find_package):
+[5.033s]   By not providing "Findplanning_scene_interface.cmake" in CMAKE_MODULE_PATH
+[5.034s]   this project has asked CMake to find a package configuration file provided
+[5.034s]   by "planning_scene_interface", but CMake did not find one.
+[5.034s] 
+[5.034s]   Could not find a package configuration file provided by
+[5.034s]   "planning_scene_interface" with any of the following names:
+[5.034s] 
+[5.034s]     planning_scene_interfaceConfig.cmake
+[5.034s]     planning_scene_interface-config.cmake
+[5.034s] 
+[5.035s]   Add the installation prefix of "planning_scene_interface" to
+[5.035s]   CMAKE_PREFIX_PATH or set "planning_scene_interface_DIR" to a directory
+[5.035s]   containing one of the above files.  If "planning_scene_interface" provides
+[5.035s]   a separate development package or SDK, be sure it has been installed.
+[5.035s] 
+[5.035s] [0m
+[5.035s] -- Configuring incomplete, errors occurred!
