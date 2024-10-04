@@ -1,0 +1,3 @@
+[ 33%] Built target simple_lifecycle_node
+[ 50%] [32mBuilding CXX object CMakeFiles/move_group_to_cartesian.dir/src/move_group_to_cartesian.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/arm_moveit_interface.dir/src/arm_moveit_interface.cpp.o[0m

@@ -1,0 +1,353 @@
+[0.029s] Invoking command in '/home/albert/ag_arm_ws/build/arm_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/build/arm_cpp -- -j8 -l8
+[0.054s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.373s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.417s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.422s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.430s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.451s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.477s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.539s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.549s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.584s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.661s] -- Found agbot_full_msgs: 0.0.0 (/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/cmake)
+[0.661s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.707s] -- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.734s] -- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.758s] -- Found moveit_ros_planning_interface: 2.5.5 (/home/albert/ws_moveit2/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[0.773s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread
+[0.999s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread
+[1.059s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.072s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem
+[1.134s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.176s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.313s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono
+[1.368s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options
+[1.412s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread
+[1.521s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.657s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.658s] -- Configured cppcheck include dirs: 
+[1.658s] -- Configured cppcheck exclude dirs and/or files: 
+[1.659s] -- Added test 'lint_cmake' to check CMake code style
+[1.660s] -- Added test 'uncrustify' to check C / C++ code style
+[1.660s] -- Configured uncrustify additional arguments: 
+[1.660s] -- Added test 'xmllint' to check XML markup files
+[1.661s] -- Configuring done (1.6s)
+[1.956s] -- Generating done (0.2s)
+[1.960s] -- Build files have been written to: /home/albert/ag_arm_ws/build/arm_cpp
+[1.999s] [ 16%] [32mBuilding CXX object CMakeFiles/move_group_to_cartesian.dir/src/move_group_to_cartesian.cpp.o[0m
+[2.005s] [ 50%] Built target simple_lifecycle_node
+[2.023s] [ 66%] [32mBuilding CXX object CMakeFiles/arm_moveit_interface.dir/src/arm_moveit_interface.cpp.o[0m
+[9.003s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:[m[K In member function ‘[01m[Kstd::vector<double, std::allocator<double> > RobotMover::extractJointPositionsFromSDF(const string&, const string&)[m[K’:
+[9.003s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdf[m[K’ has not been declared
+[9.003s]    51 |         [01;31m[Ksdf[m[K::SDF sdf;
+[9.004s]       |         [01;31m[K^~~[m[K
+[9.004s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:52:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdf[m[K’ has not been declared
+[9.004s]    52 |         [01;31m[Ksdf[m[K::init(sdf);
+[9.004s]       |         [01;31m[K^~~[m[K
+[9.014s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:52:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdf[m[K’ was not declared in this scope; did you mean ‘[01m[Ksrdf[m[K’?
+[9.014s]    52 |         sdf::init([01;31m[Ksdf[m[K);
+[9.014s]       |                   [01;31m[K^~~[m[K
+[9.015s]       |                   [32m[Ksrdf[m[K
+[9.015s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:53:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdf[m[K’ is not a class, namespace, or enumeration
+[9.015s]    53 |         [01;31m[Ksdf[m[K::readFile(sdf_file_path_, sdf);
+[9.015s]       |         [01;31m[K^~~[m[K
+[9.015s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdf[m[K’ is not a class, namespace, or enumeration
+[9.015s]    57 |         [01;31m[Ksdf[m[K::ElementPtr model = sdf.root->GetElement("model");
+[9.015s]       |         [01;31m[K^~~[m[K
+[9.015s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:58:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdf[m[K’ is not a class, namespace, or enumeration
+[9.015s]    58 |         [01;31m[Ksdf[m[K::ElementPtr joint_states = model->GetElement("joint_states");
+[9.015s]       |         [01;31m[K^~~[m[K
+[9.035s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:60:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_states[m[K’ was not declared in this scope
+[9.035s]    60 |         while ([01;31m[Kjoint_states[m[K) {
+[9.036s]       |                [01;31m[K^~~~~~~~~~~~[m[K
+[9.036s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:61:61:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[9.036s]    61 |             std::string name = joint_states->Get<std::string[01;31m[K>[m[K("name");
+[9.036s]       |                                                             [01;31m[K^[m[K
+[9.036s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:62:62:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[9.036s]    62 |             std::string state = joint_states->Get<std::string[01;31m[K>[m[K("state");
+[9.036s]       |                                                              [01;31m[K^[m[K
+[9.036s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:65:71:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[9.036s]    65 |                 joint_positions = joint_states->Get<std::vector<double[01;31m[K>>[m[K("positions");
+[9.036s]       |                                                                       [01;31m[K^~[m[K
+[9.070s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:[m[K In member function ‘[01m[Kvoid AgArmMover::moveRail()[m[K’:
+[9.070s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:41:85:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const char [12])[m[K’
+[9.070s]    41 |         moveit::planning_interface::MoveGroupInterface rail_plan_group("rail_group_"[01;31m[K)[m[K;
+[9.070s]       |                                                                                     [01;31m[K^[m[K
+[9.071s] In file included from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:3[m[K:
+[9.071s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)[m[K’
+[9.071s]   159 |   [01;36m[KMoveGroupInterface[m[K(MoveGroupInterface&& other) noexcept;
+[9.071s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.071s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [12][m[K’ to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface&&[m[K’
+[9.071s]   159 |   MoveGroupInterface([01;36m[KMoveGroupInterface&& other[m[K) noexcept;
+[9.072s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[9.072s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[9.072s]   145 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const std::string& group,
+[9.072s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.072s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[9.072s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[9.073s]   134 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const Options& opt,
+[9.073s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.073s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[9.084s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:43:43:[m[K [01;31m[Kerror: [m[K‘[01m[Krail_plan[m[K’ was not declared in this scope
+[9.084s]    43 |         bool success = (rail_group_->plan([01;31m[Krail_plan[m[K) == moveit::planning_interface::core::MoveItErrorCode::SUCCESS);
+[9.084s]       |                                           [01;31m[K^~~~~~~~~[m[K
+[9.084s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:43:85:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit::planning_interface::core[m[K’ has not been declared
+[9.084s]    43 |         bool success = (rail_group_->plan(rail_plan) == moveit::planning_interface::[01;31m[Kcore[m[K::MoveItErrorCode::SUCCESS);
+[9.084s]       |                                                                                     [01;31m[K^~~~[m[K
+[9.086s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:[m[K In member function ‘[01m[Kvoid AgArmMover::moveArm()[m[K’:
+[9.086s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:67:83:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit::planning_interface::core[m[K’ has not been declared
+[9.086s]    67 |         bool success = (arm_group_->plan(arm_plan) == moveit::planning_interface::[01;31m[Kcore[m[K::MoveItErrorCode::SUCCESS);
+[9.086s]       |                                                                                   [01;31m[K^~~~[m[K
+[9.089s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:[m[K In member function ‘[01m[Kvoid AgArmMover::controlGripper(bool)[m[K’:
+[9.089s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:87:91:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit::planning_interface::core[m[K’ has not been declared
+[9.089s]    87 |         bool success = (gripper_group_->plan(gripper_plan) == moveit::planning_interface::[01;31m[Kcore[m[K::MoveItErrorCode::SUCCESS);
+[9.089s]       |                                                                                           [01;31m[K^~~~[m[K
+[9.098s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[9.098s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:103:35:[m[K [01;31m[Kerror: [m[K‘[01m[KAgBotMover[m[K’ was not declared in this scope; did you mean ‘[01m[KAgArmMover[m[K’?
+[9.099s]   103 |     rclcpp::spin(std::make_shared<[01;31m[KAgBotMover[m[K>());
+[9.099s]       |                                   [01;31m[K^~~~~~~~~~[m[K
+[9.099s]       |                                   [32m[KAgArmMover[m[K
+[9.099s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:103:46:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[9.099s]   103 |     rclcpp::spin([01;31m[Kstd::make_shared<AgBotMover>()[m[K);
+[9.099s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[9.100s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[9.100s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[9.100s]                  from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:1[m[K:
+[9.100s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[9.100s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[9.100s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[9.101s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[9.101s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:103:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[9.101s]   103 |     rclcpp::spin([01;31m[Kstd::make_shared<AgBotMover>()[m[K);
+[9.101s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[11.117s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[11.117s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[11.117s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[11.117s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[11.118s]                  from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:1[m[K:
+[11.118s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[12]}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’:
+[11.118s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[12]}; _Tp = moveit::planning_interface::MoveGroupInterface; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<moveit::planning_interface::MoveGroupInterface>][m[K’
+[11.118s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[12]}; _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.119s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[12]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.119s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[12]}; _Tp = moveit::planning_interface::MoveGroupInterface; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.119s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[12]}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’
+[11.119s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[12]}][m[K’
+[11.119s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[12]}][m[K’
+[11.120s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:12:87:[m[K   required from here
+[11.120s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const char [12])[m[K’
+[11.120s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[11.120s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.120s] In file included from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:3[m[K:
+[11.120s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)[m[K’
+[11.120s]   159 |   [01;36m[KMoveGroupInterface[m[K(MoveGroupInterface&& other) noexcept;
+[11.121s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.121s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [12][m[K’ to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface&&[m[K’
+[11.121s]   159 |   MoveGroupInterface([01;36m[KMoveGroupInterface&& other[m[K) noexcept;
+[11.121s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[11.121s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.121s]   145 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const std::string& group,
+[11.122s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.122s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.122s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.122s]   134 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const Options& opt,
+[11.122s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.122s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.123s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[11.123s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[11.123s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[11.123s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[11.123s]                  from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:1[m[K:
+[11.123s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[4]}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’:
+[11.124s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[4]}; _Tp = moveit::planning_interface::MoveGroupInterface; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<moveit::planning_interface::MoveGroupInterface>][m[K’
+[11.124s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[4]}; _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.124s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[4]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.124s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[4]}; _Tp = moveit::planning_interface::MoveGroupInterface; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.124s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[4]}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’
+[11.124s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[4]}][m[K’
+[11.125s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[4]}][m[K’
+[11.125s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:13:86:[m[K   required from here
+[11.125s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const char [4])[m[K’
+[11.125s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[11.125s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.125s] In file included from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:3[m[K:
+[11.125s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)[m[K’
+[11.126s]   159 |   [01;36m[KMoveGroupInterface[m[K(MoveGroupInterface&& other) noexcept;
+[11.126s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.126s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [4][m[K’ to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface&&[m[K’
+[11.126s]   159 |   MoveGroupInterface([01;36m[KMoveGroupInterface&& other[m[K) noexcept;
+[11.126s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[11.126s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.127s]   145 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const std::string& group,
+[11.127s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.127s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.127s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.127s]   134 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const Options& opt,
+[11.127s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.128s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.128s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[11.128s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[11.128s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[11.128s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[11.128s]                  from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:1[m[K:
+[11.129s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[8]}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’:
+[11.129s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[8]}; _Tp = moveit::planning_interface::MoveGroupInterface; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<moveit::planning_interface::MoveGroupInterface>][m[K’
+[11.129s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[8]}; _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.129s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[8]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.129s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[8]}; _Tp = moveit::planning_interface::MoveGroupInterface; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.129s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[8]}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’
+[11.130s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[8]}][m[K’
+[11.130s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[8]}][m[K’
+[11.130s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:14:90:[m[K   required from here
+[11.130s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const char [8])[m[K’
+[11.130s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[11.130s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.130s] In file included from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/arm_moveit_interface.cpp:3[m[K:
+[11.131s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)[m[K’
+[11.131s]   159 |   [01;36m[KMoveGroupInterface[m[K(MoveGroupInterface&& other) noexcept;
+[11.131s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.131s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [8][m[K’ to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface&&[m[K’
+[11.131s]   159 |   MoveGroupInterface([01;36m[KMoveGroupInterface&& other[m[K) noexcept;
+[11.131s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[11.132s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.132s]   145 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const std::string& group,
+[11.132s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.132s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.132s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.132s]   134 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const Options& opt,
+[11.132s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.133s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.146s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[11.147s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[11.147s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[11.148s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[11.148s]                  from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:1[m[K:
+[11.148s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[12]}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’:
+[11.148s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[12]}; _Tp = moveit::planning_interface::MoveGroupInterface; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<moveit::planning_interface::MoveGroupInterface>][m[K’
+[11.148s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[12]}; _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.148s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[12]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.149s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[12]}; _Tp = moveit::planning_interface::MoveGroupInterface; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.149s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[12]}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’
+[11.149s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[12]}][m[K’
+[11.149s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[12]}][m[K’
+[11.149s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:15:87:[m[K   required from here
+[11.149s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const char [12])[m[K’
+[11.150s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[11.150s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.150s] In file included from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:2[m[K:
+[11.150s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)[m[K’
+[11.150s]   159 |   [01;36m[KMoveGroupInterface[m[K(MoveGroupInterface&& other) noexcept;
+[11.150s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.150s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [12][m[K’ to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface&&[m[K’
+[11.151s]   159 |   MoveGroupInterface([01;36m[KMoveGroupInterface&& other[m[K) noexcept;
+[11.151s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[11.151s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.151s]   145 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const std::string& group,
+[11.151s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.151s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.152s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.152s]   134 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const Options& opt,
+[11.152s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.152s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.152s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[11.152s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[11.153s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[11.153s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[11.153s]                  from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:1[m[K:
+[11.153s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[4]}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’:
+[11.153s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[4]}; _Tp = moveit::planning_interface::MoveGroupInterface; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<moveit::planning_interface::MoveGroupInterface>][m[K’
+[11.153s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[4]}; _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.154s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[4]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.154s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[4]}; _Tp = moveit::planning_interface::MoveGroupInterface; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.154s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[4]}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’
+[11.154s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[4]}][m[K’
+[11.154s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[4]}][m[K’
+[11.154s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:16:86:[m[K   required from here
+[11.155s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const char [4])[m[K’
+[11.155s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[11.155s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.155s] In file included from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:2[m[K:
+[11.155s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)[m[K’
+[11.155s]   159 |   [01;36m[KMoveGroupInterface[m[K(MoveGroupInterface&& other) noexcept;
+[11.155s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.156s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [4][m[K’ to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface&&[m[K’
+[11.156s]   159 |   MoveGroupInterface([01;36m[KMoveGroupInterface&& other[m[K) noexcept;
+[11.156s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[11.156s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.156s]   145 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const std::string& group,
+[11.156s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.157s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.157s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.157s]   134 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const Options& opt,
+[11.157s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.157s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.157s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[11.158s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[11.158s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[11.158s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[11.158s]                  from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:1[m[K:
+[11.158s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[8]}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’:
+[11.158s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[8]}; _Tp = moveit::planning_interface::MoveGroupInterface; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<moveit::planning_interface::MoveGroupInterface>][m[K’
+[11.158s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[8]}; _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.159s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[8]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.159s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[8]}; _Tp = moveit::planning_interface::MoveGroupInterface; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.159s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[8]}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’
+[11.159s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[8]}][m[K’
+[11.159s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[8]}][m[K’
+[11.159s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:17:90:[m[K   required from here
+[11.160s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const char [8])[m[K’
+[11.160s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[11.160s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.160s] In file included from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:2[m[K:
+[11.160s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)[m[K’
+[11.160s]   159 |   [01;36m[KMoveGroupInterface[m[K(MoveGroupInterface&& other) noexcept;
+[11.161s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.161s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [8][m[K’ to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface&&[m[K’
+[11.161s]   159 |   MoveGroupInterface([01;36m[KMoveGroupInterface&& other[m[K) noexcept;
+[11.161s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[11.161s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.161s]   145 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const std::string& group,
+[11.161s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.162s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.162s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.162s]   134 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const Options& opt,
+[11.162s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.162s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.162s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[11.163s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[11.163s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[11.163s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[11.163s]                  from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:1[m[K:
+[11.163s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’:
+[11.163s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&}; _Tp = moveit::planning_interface::MoveGroupInterface; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<moveit::planning_interface::MoveGroupInterface>][m[K’
+[11.164s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&}; _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.164s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.164s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&}; _Tp = moveit::planning_interface::MoveGroupInterface; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[11.164s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’
+[11.164s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&}][m[K’
+[11.164s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Args = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&}][m[K’
+[11.165s] [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:43:91:[m[K   required from here
+[11.165s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const std::__cxx11::basic_string<char>&)[m[K’
+[11.165s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[11.165s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.165s] In file included from [01m[K/home/albert/ag_arm_ws/src/arm_cpp/src/move_group_to_cartesian.cpp:2[m[K:
+[11.165s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)[m[K’
+[11.165s]   159 |   [01;36m[KMoveGroupInterface[m[K(MoveGroupInterface&& other) noexcept;
+[11.166s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.166s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:159:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::__cxx11::basic_string<char>[m[K’ to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface&&[m[K’
+[11.166s]   159 |   MoveGroupInterface([01;36m[KMoveGroupInterface&& other[m[K) noexcept;
+[11.166s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[11.166s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.166s]   145 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const std::string& group,
+[11.167s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.167s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.167s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[11.167s]   134 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const Options& opt,
+[11.167s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.167s] [01m[K/home/albert/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.723s] gmake[2]: *** [CMakeFiles/arm_moveit_interface.dir/build.make:76: CMakeFiles/arm_moveit_interface.dir/src/arm_moveit_interface.cpp.o] Error 1
+[12.724s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/arm_moveit_interface.dir/all] Error 2
+[12.724s] gmake[1]: *** Waiting for unfinished jobs....
+[12.749s] gmake[2]: *** [CMakeFiles/move_group_to_cartesian.dir/build.make:76: CMakeFiles/move_group_to_cartesian.dir/src/move_group_to_cartesian.cpp.o] Error 1
+[12.749s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/move_group_to_cartesian.dir/all] Error 2
+[12.750s] gmake: *** [Makefile:146: all] Error 2
+[12.752s] Invoked command in '/home/albert/ag_arm_ws/build/arm_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/build/arm_cpp -- -j8 -l8

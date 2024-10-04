@@ -538,6 +538,15 @@ iceoryx_hoofs_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_hoofs
 //The directory containing a CMake configuration file for iceoryx_posh.
 iceoryx_posh_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_posh
 
+//The directory containing a CMake configuration file for ignition-sdformat12.
+ignition-sdformat12_DIR:PATH=ignition-sdformat12_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for ignition-sdformat6.
+ignition-sdformat6_DIR:PATH=ignition-sdformat6_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for ignition-sdformat9.
+ignition-sdformat9_DIR:PATH=ignition-sdformat9_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for kdl_parser.
 kdl_parser_DIR:PATH=/opt/ros/humble/share/kdl_parser/cmake
 

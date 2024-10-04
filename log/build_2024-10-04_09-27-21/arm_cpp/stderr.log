@@ -1,0 +1,18 @@
+[31mCMake Error at CMakeLists.txt:18 (find_package):
+  By not providing "Findignition-sdformat12.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "ignition-sdformat12", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "ignition-sdformat12" with any of the following names:
+
+    ignition-sdformat12Config.cmake
+    ignition-sdformat12-config.cmake
+
+  Add the installation prefix of "ignition-sdformat12" to CMAKE_PREFIX_PATH
+  or set "ignition-sdformat12_DIR" to a directory containing one of the above
+  files.  If "ignition-sdformat12" provides a separate development package or
+  SDK, be sure it has been installed.
+
+[0m
+gmake: *** [Makefile:349: cmake_check_build_system] Error 1

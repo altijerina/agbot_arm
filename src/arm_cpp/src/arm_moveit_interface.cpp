@@ -32,12 +32,13 @@ private:
     {
         // Define a target for the rail system
         geometry_msgs::msg::Pose rail_target;
-        rail_target.position.x = 1.0;  // Adjust as needed
+        rail_target.position.x = 1.5;  // Adjust as needed
         rail_target.position.y = 0.0;
-        rail_target.position.z = 0.5;
+        rail_target.position.z = 0.01;
         rail_group_->setPoseTarget(rail_target);
 
         // Plan and execute the movement
+        // moveit::planning_interface::MoveGroupInterface rail_plan_group("rail_group_");
         moveit::planning_interface::MoveGroupInterface::Plan rail_plan;
         bool success = (rail_group_->plan(rail_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
         if (success)
@@ -99,7 +100,7 @@ private:
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<AgBotMover>());
+    rclcpp::spin(std::make_shared<AgArmMover>());
     rclcpp::shutdown();
     return 0;
 }
