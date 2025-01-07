@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "arm_msgs__py",
+		"source" : "/home/albert/ag_arm_ws/build/arm_msgs/arm_msgs__py"
+	}
+}

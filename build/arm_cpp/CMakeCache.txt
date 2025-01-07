@@ -349,9 +349,6 @@ _lib:FILEPATH=/opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.s
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
 
-//The directory containing a CMake configuration file for agbot_full_msgs.
-agbot_full_msgs_DIR:PATH=/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/cmake
-
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
 
@@ -451,6 +448,9 @@ arm_cpp_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 arm_cpp_SOURCE_DIR:STATIC=/home/albert/ag_arm_ws/src/arm_cpp
 
+//The directory containing a CMake configuration file for arm_msgs.
+arm_msgs_DIR:PATH=/home/albert/ag_arm_ws/install/arm_msgs/share/arm_msgs/cmake
+
 //The directory containing a CMake configuration file for boost_atomic.
 boost_atomic_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_atomic-1.74.0
 
@@ -538,15 +538,6 @@ iceoryx_hoofs_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_hoofs
 //The directory containing a CMake configuration file for iceoryx_posh.
 iceoryx_posh_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_posh
 
-//The directory containing a CMake configuration file for ignition-sdformat12.
-ignition-sdformat12_DIR:PATH=ignition-sdformat12_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for ignition-sdformat6.
-ignition-sdformat6_DIR:PATH=ignition-sdformat6_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for ignition-sdformat9.
-ignition-sdformat9_DIR:PATH=ignition-sdformat9_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for kdl_parser.
 kdl_parser_DIR:PATH=/opt/ros/humble/share/kdl_parser/cmake
 
@@ -571,8 +562,8 @@ moveit_core_DIR:PATH=/home/albert/ws_moveit2/install/moveit_core/share/moveit_co
 //The directory containing a CMake configuration file for moveit_msgs.
 moveit_msgs_DIR:PATH=/opt/ros/humble/share/moveit_msgs/cmake
 
-//The directory containing a CMake configuration file for moveit_planning_scene_interface.
-moveit_planning_scene_interface_DIR:PATH=moveit_planning_scene_interface_DIR-NOTFOUND
+//The directory containing a CMake configuration file for moveit_planners.
+moveit_planners_DIR:PATH=/home/albert/ws_moveit2/install/moveit_planners/share/moveit_planners/cmake
 
 //The directory containing a CMake configuration file for moveit_ros_move_group.
 moveit_ros_move_group_DIR:PATH=/home/albert/ws_moveit2/install/moveit_ros_move_group/share/moveit_ros_move_group/cmake
@@ -624,9 +615,6 @@ pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_ssl:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
-
-//The directory containing a CMake configuration file for planning_scene_interface.
-planning_scene_interface_DIR:PATH=planning_scene_interface_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/humble/share/pluginlib/cmake
@@ -741,9 +729,6 @@ rsl_DIR:PATH=/opt/ros/humble/share/rsl/cmake
 
 //The directory containing a CMake configuration file for ruckig.
 ruckig_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/cmake/ruckig
-
-//The directory containing a CMake configuration file for sdformat.
-sdformat_DIR:PATH=sdformat_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/humble/share/sensor_msgs/cmake
@@ -1013,8 +998,6 @@ CURL_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake][cfound components: system filesystem date_time program_options thread ][v1.74.0()]
 //Details about finding Eigen3
 FIND_PACKAGE_MESSAGE_DETAILS_Eigen3:INTERNAL=[1][v3.4.0()]
-//Details about finding PkgConfig
-FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3][cfound components: Interpreter ][v3.10.12()]
 //Details about finding Threads
@@ -1064,31 +1047,6 @@ PC_CURL_libcurl_VERSION:INTERNAL=
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-SDF_CFLAGS:INTERNAL=
-SDF_CFLAGS_I:INTERNAL=
-SDF_CFLAGS_OTHER:INTERNAL=
-SDF_FOUND:INTERNAL=
-SDF_INCLUDEDIR:INTERNAL=
-SDF_LIBDIR:INTERNAL=
-SDF_LIBS:INTERNAL=
-SDF_LIBS_L:INTERNAL=
-SDF_LIBS_OTHER:INTERNAL=
-SDF_LIBS_PATHS:INTERNAL=
-SDF_MODULE_NAME:INTERNAL=
-SDF_PREFIX:INTERNAL=
-SDF_STATIC_CFLAGS:INTERNAL=
-SDF_STATIC_CFLAGS_I:INTERNAL=
-SDF_STATIC_CFLAGS_OTHER:INTERNAL=
-SDF_STATIC_LIBDIR:INTERNAL=
-SDF_STATIC_LIBS:INTERNAL=
-SDF_STATIC_LIBS_L:INTERNAL=
-SDF_STATIC_LIBS_OTHER:INTERNAL=
-SDF_STATIC_LIBS_PATHS:INTERNAL=
-SDF_VERSION:INTERNAL=
-SDF_sdformat_INCLUDEDIR:INTERNAL=
-SDF_sdformat_LIBDIR:INTERNAL=
-SDF_sdformat_PREFIX:INTERNAL=
-SDF_sdformat_VERSION:INTERNAL=
 //ADVANCED property for variable: TINYXML2_INCLUDE_DIR
 TINYXML2_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: TINYXML2_LIBRARY
@@ -1172,5 +1130,5 @@ pkgcfg_lib_PC_CURL_curl-ADVANCED:INTERNAL=1
 pkgcfg_lib__OPENSSL_crypto-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_ssl
 pkgcfg_lib__OPENSSL_ssl-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=AsynchDNS;GSS-API;HSTS;HTTP2;HTTPS-proxy;IDN;IPv6;Kerberos;Largefile;NTLM;NTLM_WB;PSL;SPNEGO;SSL;TLS-SRP;UnixSockets;alt-svc;brotli;libz;zstd
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

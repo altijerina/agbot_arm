@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:19 (aadd_executable):
+  Unknown CMake command "aadd_executable".
+
+[0m
+gmake: *** [Makefile:226: cmake_check_build_system] Error 1

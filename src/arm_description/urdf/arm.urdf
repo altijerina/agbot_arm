@@ -35,11 +35,11 @@
       </plugin>
     </sensor>
   </gazebo>
-  <gazebo reference="roboball_cylinder">
+  <!-- <gazebo reference="roboball_cylinder">
     <material>Gazebo/GreyTransparent</material>
     <mu1>30.0</mu1>
     <mu2>30.0</mu2>
-  </gazebo>
+  </gazebo> -->
   <gazebo reference="arm_base_rail_link">
     <material>Gazebo/White</material>
   </gazebo>
@@ -212,7 +212,7 @@
   <!-- Robot Body -->
   <link name="world">
     </link>
-  <link name="roboball_cylinder">
+  <!-- <link name="roboball_cylinder">
     <visual>
       <geometry>
         <cylinder length="1.8288" radius="0.2032"/>
@@ -231,7 +231,7 @@
       <mass value="3.0"/>
       <inertia ixx="0.8670950399999999" ixy="0" ixz="0" iyy="0.8670950399999999" iyz="0" izz="0.061935359999999995"/>
     </inertial>
-  </link>
+  </link> -->
   <link name="arm_base_rail_link">
     <visual>
       <geometry>
@@ -575,13 +575,14 @@
     </collision>
   </link>
   <!-- Joint Descriptions -->
-  <joint name="robo_cylinder_joint" type="fixed">
+  <!-- <joint name="robo_cylinder_joint" type="fixed">
     <parent link="world"/>
     <child link="roboball_cylinder_link"/>
     <origin rpy="1.570796326795 0 0" xyz="0 0 0.2032"/>
-  </joint>
+  </joint> -->
   <joint name="body_arm_joint" type="fixed">
-    <parent link="roboball_cylinder_link"/>
+    <!-- <parent link="roboball_cylinder_link"/> -->
+    <parent link="world"/>
     <child link="arm_base_rail_link"/>
     <origin rpy="0 1.570796326795 1.570796326795" xyz="0 0 0"/>
   </joint>

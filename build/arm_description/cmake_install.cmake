@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_description/" TYPE DIRECTORY FILES
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_description" TYPE DIRECTORY FILES
     "/home/albert/ag_arm_ws/src/arm_description/launch"
     "/home/albert/ag_arm_ws/src/arm_description/meshes"
     "/home/albert/ag_arm_ws/src/arm_description/models"

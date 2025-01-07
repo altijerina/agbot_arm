@@ -16,8 +16,8 @@
     <xacro:property name="velocity" value="10.0" />
     <xacro:property name="scale" value="0.0025 0.0025 0.0025"/> 
     <xacro:property name="arm_scale" value="0.0015 0.0015 0.002"/>
-    <xacro:property name="claw_scale" value="0.004 0.004 0.004"/>  
-    <xacro:property name="claw_camera_scale" value="0.002 0.002 0.002"/>  
+    <xacro:property name="claw_scale" value="0.003 0.003 0.003"/>  
+    <xacro:property name="claw_camera_scale" value="0.001 0.001 0.001"/>  
     <xacro:property name="base_height" value="0.0" />    
 
     <xacro:property name = "forward_drive_arm_length" value = "0.75" />
@@ -85,7 +85,7 @@
     <link name = "world">
     </link>
 
-    <link name = "roboball_cylinder_link">
+    <!-- <link name = "roboball_cylinder_link">
         <visual>
             <geometry>
                 <cylinder length = "${robo_cylinder_length}" radius = "${robo_cylinder_radius}" />
@@ -101,7 +101,7 @@
         </collision>
         <xacro:cylinder_inertia m = "3.0" r = "${robo_cylinder_radius}" h = "${robo_cylinder_length}"
                                 xyz = "0 0 0" rpy = "0 0 0"/>
-    </link>
+    </link> -->
 
     <link name="arm_base_rail_link">
         <visual>
@@ -358,70 +358,71 @@
     </link> 
 
     <!-- Joint Descriptions -->
-    <joint name = "robo_cylinder_joint" type = "fixed">
+    <!-- <joint name = "robo_cylinder_joint" type = "fixed">
         <parent link="world" />
         <child link="roboball_cylinder_link" />
         <origin xyz = "0 0 ${base_height + robo_cylinder_radius}" rpy = "${PI/2} 0 0" />
-     </joint>   
+     </joint>    -->
     
      <joint name = "body_arm_joint" type = "fixed">
-        <parent link="roboball_cylinder_link" />
+        <!-- <parent link="roboball_cylinder_link" /> -->
+        <parent link="world" />
         <child link="arm_base_rail_link" />
-        <!-- <origin xyz = "0 0 ${3*arm_base_rail_height}" rpy = "0 ${PI/2} ${PI/2}" />       -->
-        <origin xyz = "0 -${robo_cylinder_radius - (5*arm_base_rail_height)} 0" rpy = "0 ${PI/2} ${PI/2}" />
+        <!-- <origin xyz = "0 -${robo_cylinder_radius - (5*arm_base_rail_height)} 0" rpy = "0 ${PI/2} ${PI/2}" /> -->
+        <origin xyz = "0 -${robo_cylinder_radius - (5*arm_base_rail_height)} 0" rpy = "0 0 0" />
      </joint>    
      
      <joint name = "base_rail_to_ mid_rail_joint" type = "prismatic">
         <parent link = "arm_base_rail_link"/>
         <child link="arm_mid_rail_link" />
-        <origin xyz = "0 0 ${arm_base_rail_height}" rpy = "0 0 0" />
+        <origin xyz = "0 0 ${arm_base_rail_height + 0.001}" rpy = "0 0 0" />
         <limit lower="0" upper="${((arm_base_rail_length / 2) + (arm_base_rail_length / 4))/2}" effort="100.0" velocity="0.5"/>
      </joint>       
      
      <joint name = "box_one_joint" type = "fixed">
         <parent link = "arm_base_car_link"/>
         <child link = "box_one_link" />
-        <origin xyz = "-${(arm_base_rail_length / 2) - (box_length / 2)} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+        <origin xyz = "-${(arm_base_rail_length / 2) - (box_length / 2)} 0 ${arm_base_rail_height + .001}" rpy = "0 0 0"/>
      </joint>
 
      <joint name = "box_two_joint" type = "fixed">
         <parent link = "arm_base_car_link"/>
         <child link = "box_two_link" />
-        <origin xyz = "-${(arm_base_rail_length / 2) - (box_length * 1.5) - 0.05} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+        <origin xyz = "-${(arm_base_rail_length / 2) - (box_length * 1.5) - 0.05} 0 ${arm_base_rail_height + .001}" rpy = "0 0 0"/>
      </joint>
      
      <joint name = "box_three_joint" type = "fixed">
         <parent link = "arm_base_car_link"/>
         <child link = "box_three_link" />
-        <origin xyz = "${(box_length / 2) - 0.05} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+        <origin xyz = "${(box_length / 2) - 0.05} 0 ${arm_base_rail_height + .001}" rpy = "0 0 0"/>
      </joint>     
 
      <joint name = "box_four_joint" type = "fixed">
         <parent link = "arm_base_car_link"/>
         <child link = "box_four_link" />
-        <origin xyz = "${box_length *1.5} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+        <origin xyz = "${box_length *1.5} 0 ${arm_base_rail_height + .001}" rpy = "0 0 0"/>
      </joint>       
    
     <!-- Robot Arm -->
     <joint name = "mid_rail_to_arm_car_joint" type = "prismatic">
         <parent link = "arm_mid_rail_link"/>
         <child link = "arm_base_car_link"/>
-        <origin xyz = "0 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+        <origin xyz = "0 0 ${arm_base_rail_height + 0.001}" rpy = "0 0 0"/>
         <limit lower="0" upper="${(arm_base_rail_length / 2) + (arm_base_rail_length / 4)}" effort="100.0" velocity="0.5"/>
     </joint>    
 
     <joint name = "arm_car_to_arm_base_joint" type = "fixed">
         <parent link = "arm_base_car_link"/>
         <child link = "arm_base_link"/>
-        <origin xyz = "${(arm_base_rail_length / 2) - (arm_base_rail_length / 20)} 0 ${arm_base_car_height}" rpy = "0 0 ${PI/2}"/>
+        <origin xyz = "${(arm_base_rail_length / 2) - (arm_base_rail_length / 20)} -0.02 ${arm_base_car_height+.002}" rpy = "0 0 ${PI/2}"/>
     </joint>       
 
     <joint name ="arm_base_joint" type="revolute">
         <parent link="arm_base_link"/>
         <child link = "base_plate_link"/>
-        <origin xyz="0 0 0.07"/>
+        <origin xyz="0 0 0.072" />
         <axis xyz="0 0 1"/>
-        <limit lower="-${PI}" upper="${PI}" 
+        <limit lower="0" upper="${PI}" 
                effort="${effort}" velocity="${velocity}"/>
     </joint> 
 
@@ -436,13 +437,13 @@
     <joint name = "shoulder_elbow_joint" type = "fixed">
         <parent link = "forward_drive_arm_link"/>
         <child link = "elbow_link"/>
-        <origin xyz = "${(forward_drive_arm_width / 1.5) + 0.02} 0 ${forward_drive_arm_length}" rpy = "0 0 0"/>
+        <origin xyz = "${(forward_drive_arm_width / 1.5) + 0.02} 0 ${forward_drive_arm_length + 0.022}" rpy = "0 0 0"/>
     </joint>
     
     <joint name="elbow_joint" type="revolute">
         <parent link="elbow_link"/>
         <child link="horizontal_arm_link"/>
-        <origin xyz="${cylinder_length/4} 0 0" rpy="-${PI} 0 0"/>
+        <origin xyz="${cylinder_length/4} 0 -0.022" rpy="-${PI} 0 0"/>
         <axis xyz="1 0 0"/>
         <limit lower="-${PI}" upper="0" effort="${effort}" velocity="${velocity}"/>
     </joint>   
@@ -450,13 +451,13 @@
     <joint name = "elbow_forearm_joint" type = "fixed">
         <parent link = "horizontal_arm_link"/>
         <child link = "wrist_link"/>
-        <origin xyz = "0 0 ${horizontal_arm_length}" rpy = "0 0 0"/>
+        <origin xyz = "0 0 ${horizontal_arm_length + 0.02}" rpy = "0 0 0"/>
     </joint>    
 
     <joint name="wrist_joint" type="revolute">
         <parent link="wrist_link"/>
         <child link="claw_support_link"/>
-        <origin xyz="0 0 0" /> 
+        <origin xyz="0 0 0.02" /> 
         <axis xyz="1 0 0"/>
         <limit lower="-${PI / 2}" upper="${PI / 2}" effort="${effort}" velocity="${velocity}"/>
     </joint>     
@@ -464,7 +465,7 @@
     <joint name="gripper_right_joint" type="revolute">
         <parent link="claw_support_link"/>
         <child link="gripper_right_link"/>
-        <origin xyz="-0.037 -0.015 0.083"/> 
+        <origin xyz="-0.046 -0.013 0.014"/> 
         <axis xyz="0 1 0"/>
         <limit lower="-${PI / 2}" upper="0.0" effort="${effort}" velocity="${velocity}"/>
     </joint> 
@@ -473,7 +474,7 @@
         <mimic joint="gripper_right_joint" multiplier="-1"/> 
         <parent link="claw_support_link"/>
         <child link="gripper_left_link"/>
-        <origin xyz="0.042 -0.015 0.083"/> 
+        <origin xyz="0.015 -0.013 0.014"/> 
         <axis xyz="0 1 0"/>
         <limit lower="0.0" upper="${PI / 2}" effort="${effort}" velocity="${velocity}"/>
     </joint>   

@@ -34,11 +34,11 @@
         </sensor>
       </gazebo>          
 
-    <gazebo reference = "roboball_cylinder_link">
+    <!-- <gazebo reference = "roboball_cylinder_link">
       <material>Gazebo/GreyTransparent</material>
       <mu1>30.0</mu1>
       <mu2>30.0</mu2>
-    </gazebo>
+    </gazebo> -->
 
     <gazebo reference="arm_base_rail_link">
         <material>Gazebo/White</material>

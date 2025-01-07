@@ -1,0 +1,103 @@
+[0.076s] Invoking command in '/home/albert/ag_arm_ws/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/opt/ros/humble /home/albert/.local/bin/cmake /home/albert/ag_arm_ws/src/arm_description -DCMAKE_INSTALL_PREFIX=/home/albert/ag_arm_ws/install/arm_description
+[0.172s] -- The C compiler identification is GNU 11.4.0
+[0.287s] -- The CXX compiler identification is GNU 11.4.0
+[0.314s] -- Detecting C compiler ABI info
+[0.450s] -- Detecting C compiler ABI info - done
+[0.488s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.488s] -- Detecting C compile features
+[0.489s] -- Detecting C compile features - done
+[0.495s] -- Detecting CXX compiler ABI info
+[0.648s] -- Detecting CXX compiler ABI info - done
+[0.681s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.682s] -- Detecting CXX compile features
+[0.683s] -- Detecting CXX compile features - done
+[0.702s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.095s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[1.653s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.942s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.950s] -- Added test 'lint_cmake' to check CMake code style
+[1.955s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.967s] -- Added test 'xmllint' to check XML markup files
+[1.976s] -- Configuring done (1.9s)
+[1.980s] -- Generating done (0.0s)
+[1.983s] -- Build files have been written to: /home/albert/ag_arm_ws/build/arm_description
+[1.990s] Invoked command in '/home/albert/ag_arm_ws/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/opt/ros/humble /home/albert/.local/bin/cmake /home/albert/ag_arm_ws/src/arm_description -DCMAKE_INSTALL_PREFIX=/home/albert/ag_arm_ws/install/arm_description
+[1.994s] Invoking command in '/home/albert/ag_arm_ws/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/build/arm_description -- -j8 -l8
+[2.023s] Invoked command in '/home/albert/ag_arm_ws/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/build/arm_description -- -j8 -l8
+[2.030s] Invoking command in '/home/albert/ag_arm_ws/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/ag_arm_ws/build/arm_description
+[2.035s] -- Install configuration: ""
+[2.035s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//launch
+[2.035s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//launch/arm_display.launch.py
+[2.036s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//launch/arm_gazebo.launch.py
+[2.036s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes
+[2.036s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/right_finger.STL
+[2.037s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/triangular_link.STL
+[2.039s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/round_plate.STL
+[2.040s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/left_finger.STL
+[2.040s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/vertical_drive_arm.STL
+[2.048s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/astra.jpg
+[2.048s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/claw_support.STL
+[2.051s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/link.STL
+[2.063s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/r200.jpg
+[2.064s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/horizontal_arm.STL
+[2.078s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/r200.dae
+[2.079s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/astra.dae
+[2.100s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/basement.STL
+[2.102s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/forward_drive_arm.STL
+[2.106s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/right_tire.stl
+[2.107s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/lidar.stl
+[2.109s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/servo_plate.STL
+[2.110s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/plate.STL
+[2.122s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/base_plate.STL
+[2.126s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/left_tire copy.stl
+[2.129s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/left_tire.stl
+[2.131s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/right_tire copy.stl
+[2.134s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//meshes/pi_camera.STL
+[2.135s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models
+[2.135s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/ground_plane
+[2.135s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/ground_plane/model-1_2.sdf
+[2.135s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/ground_plane/model-1_3.sdf
+[2.135s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/ground_plane/model.config
+[2.136s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/ground_plane/model.sdf
+[2.136s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/ground_plane/model-1_4.sdf
+[2.136s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/basic_agbot_description
+[2.136s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/basic_agbot_description/agbot.sdf
+[2.137s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/basic_agbot_description/agbot_model.config
+[2.137s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/sun
+[2.137s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/sun/model-1_2.sdf
+[2.138s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/sun/model-1_3.sdf
+[2.138s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/sun/model.config
+[2.138s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/sun/model.sdf
+[2.139s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//models/sun/model-1_4.sdf
+[2.139s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//rviz
+[2.139s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//rviz/arm_config.rviz
+[2.140s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//urdf
+[2.140s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//urdf/arm_gazebo.xacro
+[2.140s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//urdf/arm_common_properties.xacro
+[2.140s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//urdf/arm.urdf
+[2.141s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//urdf/arm_ros2_control.xacro
+[2.141s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//urdf/arm.xacro
+[2.142s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//worlds
+[2.142s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//worlds/test_world.world
+[2.142s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//worlds/smalltown.world
+[2.143s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//worlds/turtlebot3_world.world
+[2.143s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//worlds/new_world.world
+[2.144s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//worlds/house.world
+[2.145s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//worlds/new_world-old.world
+[2.145s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description//worlds/empty_world.world
+[2.146s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/ament_index/resource_index/package_run_dependencies/arm_description
+[2.146s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/ament_index/resource_index/parent_prefix_path/arm_description
+[2.147s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/environment/ament_prefix_path.sh
+[2.147s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/environment/ament_prefix_path.dsv
+[2.147s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/environment/path.sh
+[2.147s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/environment/path.dsv
+[2.148s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/local_setup.bash
+[2.148s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/local_setup.sh
+[2.148s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/local_setup.zsh
+[2.148s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/local_setup.dsv
+[2.148s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/package.dsv
+[2.149s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/ament_index/resource_index/packages/arm_description
+[2.149s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig.cmake
+[2.149s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig-version.cmake
+[2.149s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/package.xml
+[2.151s] Invoked command in '/home/albert/ag_arm_ws/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/ag_arm_ws/build/arm_description

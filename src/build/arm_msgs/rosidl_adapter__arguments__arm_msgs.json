@@ -1,0 +1,8 @@
+{
+  "package_name": "arm_msgs",
+  "non_idl_tuples": [
+    "/home/albert/ag_arm_ws/src/arm_msgs:srv/EulerToQuaternion.srv",
+    "/home/albert/ag_arm_ws/src/arm_msgs:srv/QuaternionToEuler.srv",
+    "/home/albert/ag_arm_ws/src/arm_msgs:action/ArmTask.action"
+  ]
+}

@@ -1,0 +1,20 @@
+[4.890s] Invoking command in '/home/albert/ag_arm_ws/src/arm_py': PYTHONPATH=/home/albert/ag_arm_ws/build/arm_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/albert/ag_arm_ws/install/arm_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arm_py build --build-base /home/albert/ag_arm_ws/build/arm_py/build install --record /home/albert/ag_arm_ws/build/arm_py/install.log --single-version-externally-managed install_data
+[6.869s] running egg_info
+[6.873s] writing ../../build/arm_py/arm_py.egg-info/PKG-INFO
+[6.873s] writing dependency_links to ../../build/arm_py/arm_py.egg-info/dependency_links.txt
+[6.874s] writing entry points to ../../build/arm_py/arm_py.egg-info/entry_points.txt
+[6.874s] writing requirements to ../../build/arm_py/arm_py.egg-info/requires.txt
+[6.875s] writing top-level names to ../../build/arm_py/arm_py.egg-info/top_level.txt
+[6.881s] reading manifest file '../../build/arm_py/arm_py.egg-info/SOURCES.txt'
+[6.887s] writing manifest file '../../build/arm_py/arm_py.egg-info/SOURCES.txt'
+[6.888s] running build
+[6.889s] running build_py
+[6.889s] running install
+[6.890s] running install_lib
+[6.896s] running install_data
+[6.896s] running install_egg_info
+[6.905s] removing '/home/albert/ag_arm_ws/install/arm_py/lib/python3.10/site-packages/arm_py-0.0.0-py3.10.egg-info' (and everything under it)
+[6.907s] Copying ../../build/arm_py/arm_py.egg-info to /home/albert/ag_arm_ws/install/arm_py/lib/python3.10/site-packages/arm_py-0.0.0-py3.10.egg-info
+[6.910s] running install_scripts
+[7.002s] writing list of installed files to '/home/albert/ag_arm_ws/build/arm_py/install.log'
+[7.119s] Invoked command in '/home/albert/ag_arm_ws/src/arm_py' returned '0': PYTHONPATH=/home/albert/ag_arm_ws/build/arm_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/albert/ag_arm_ws/install/arm_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arm_py build --build-base /home/albert/ag_arm_ws/build/arm_py/build install --record /home/albert/ag_arm_ws/build/arm_py/install.log --single-version-externally-managed install_data

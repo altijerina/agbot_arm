@@ -1,0 +1,80 @@
+[0.480s] Invoking command in '/home/albert/ag_arm_ws/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/build/arm_description -- -j8 -l8
+[2.757s] Invoked command in '/home/albert/ag_arm_ws/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/build/arm_description -- -j8 -l8
+[2.772s] Invoking command in '/home/albert/ag_arm_ws/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/ag_arm_ws/build/arm_description
+[2.826s] -- Install configuration: ""
+[2.827s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/launch
+[2.836s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/launch/arm_display.launch.py
+[2.838s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/launch/arm_gazebo.launch.py
+[2.848s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes
+[2.852s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/right_finger.STL
+[2.853s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/triangular_link.STL
+[2.856s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/round_plate.STL
+[2.856s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/left_finger.STL
+[2.857s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/vertical_drive_arm.STL
+[2.861s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/astra.jpg
+[2.863s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/claw_support.STL
+[2.865s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/link.STL
+[2.868s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/r200.jpg
+[2.869s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/horizontal_arm.STL
+[2.870s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/r200.dae
+[2.871s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/astra.dae
+[2.871s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/basement.STL
+[2.871s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/forward_drive_arm.STL
+[2.872s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/right_tire.stl
+[2.872s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/lidar.stl
+[2.876s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/servo_plate.STL
+[2.877s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/plate.STL
+[2.878s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/base_plate.STL
+[2.879s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/left_tire copy.stl
+[2.880s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/left_tire.stl
+[2.881s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/right_tire copy.stl
+[2.881s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/meshes/pi_camera.STL
+[2.881s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models
+[2.882s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/ground_plane
+[2.882s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/ground_plane/model-1_2.sdf
+[2.882s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/ground_plane/model-1_3.sdf
+[2.883s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/ground_plane/model.config
+[2.883s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/ground_plane/model.sdf
+[2.883s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/ground_plane/model-1_4.sdf
+[2.889s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/basic_agbot_description
+[2.890s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/basic_agbot_description/agbot.sdf
+[2.890s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/basic_agbot_description/agbot_model.config
+[2.915s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/sun
+[2.915s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/sun/model-1_2.sdf
+[2.915s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/sun/model-1_3.sdf
+[2.916s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/sun/model.config
+[2.916s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/sun/model.sdf
+[2.916s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/models/sun/model-1_4.sdf
+[2.916s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/rviz
+[2.917s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/rviz/arm_config.rviz
+[2.917s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/urdf
+[2.917s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/urdf/arm_gazebo.xacro
+[2.917s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/urdf/arm_common_properties.xacro
+[2.918s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/urdf/arm.urdf
+[2.918s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/urdf/arm_ros2_control.xacro
+[2.919s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/urdf/arm.xacro
+[2.919s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/urdf/arm copy.xacro
+[2.920s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/worlds
+[2.920s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/worlds/test_world.world
+[2.920s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/worlds/smalltown.world
+[2.922s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/worlds/turtlebot3_world.world
+[2.923s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/worlds/new_world.world
+[2.924s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/worlds/house.world
+[2.926s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/worlds/new_world-old.world
+[2.927s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/worlds/empty_world.world
+[2.927s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/ament_index/resource_index/package_run_dependencies/arm_description
+[2.928s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/ament_index/resource_index/parent_prefix_path/arm_description
+[2.931s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/environment/ament_prefix_path.sh
+[2.933s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/environment/ament_prefix_path.dsv
+[2.933s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/environment/path.sh
+[2.936s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/environment/path.dsv
+[2.937s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/local_setup.bash
+[2.939s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/local_setup.sh
+[2.940s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/local_setup.zsh
+[2.946s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/local_setup.dsv
+[2.954s] -- Installing: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/package.dsv
+[2.954s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/ament_index/resource_index/packages/arm_description
+[2.955s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig.cmake
+[2.955s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig-version.cmake
+[2.956s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_description/share/arm_description/package.xml
+[2.988s] Invoked command in '/home/albert/ag_arm_ws/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/ag_arm_ws/build/arm_description

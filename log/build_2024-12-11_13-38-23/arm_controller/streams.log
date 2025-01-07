@@ -1,0 +1,63 @@
+[0.065s] Invoking command in '/home/albert/ag_arm_ws/build/arm_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/opt/ros/humble /home/albert/.local/bin/cmake /home/albert/ag_arm_ws/src/arm_controller -DCMAKE_INSTALL_PREFIX=/home/albert/ag_arm_ws/install/arm_controller
+[0.147s] -- The C compiler identification is GNU 11.4.0
+[0.256s] -- The CXX compiler identification is GNU 11.4.0
+[0.283s] -- Detecting C compiler ABI info
+[0.424s] -- Detecting C compiler ABI info - done
+[0.464s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.464s] -- Detecting C compile features
+[0.464s] -- Detecting C compile features - done
+[0.471s] -- Detecting CXX compiler ABI info
+[0.621s] -- Detecting CXX compiler ABI info - done
+[0.658s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.658s] -- Detecting CXX compile features
+[0.659s] -- Detecting CXX compile features - done
+[0.683s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.125s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[1.590s] -- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[1.772s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.807s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.847s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.905s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.990s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.230s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.280s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.499s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.535s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[2.677s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.734s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.846s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.848s] -- Found Threads: TRUE
+[3.040s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[3.064s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.409s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.415s] -- Added test 'lint_cmake' to check CMake code style
+[3.422s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.433s] -- Added test 'xmllint' to check XML markup files
+[3.445s] -- Configuring done (3.4s)
+[3.454s] -- Generating done (0.0s)
+[3.459s] -- Build files have been written to: /home/albert/ag_arm_ws/build/arm_controller
+[3.475s] Invoked command in '/home/albert/ag_arm_ws/build/arm_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/opt/ros/humble /home/albert/.local/bin/cmake /home/albert/ag_arm_ws/src/arm_controller -DCMAKE_INSTALL_PREFIX=/home/albert/ag_arm_ws/install/arm_controller
+[3.479s] Invoking command in '/home/albert/ag_arm_ws/build/arm_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/build/arm_controller -- -j8 -l8
+[3.512s] Invoked command in '/home/albert/ag_arm_ws/build/arm_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/build/arm_controller -- -j8 -l8
+[3.514s] Invoking command in '/home/albert/ag_arm_ws/build/arm_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/ag_arm_ws/build/arm_controller
+[3.519s] -- Install configuration: ""
+[3.519s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/config
+[3.519s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/config/arm_controllers.yaml
+[3.520s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/launch
+[3.520s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/launch/controller.launch.py
+[3.520s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/ament_index/resource_index/package_run_dependencies/arm_controller
+[3.521s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/ament_index/resource_index/parent_prefix_path/arm_controller
+[3.521s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/environment/ament_prefix_path.sh
+[3.521s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/environment/ament_prefix_path.dsv
+[3.521s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/environment/path.sh
+[3.522s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/environment/path.dsv
+[3.522s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/local_setup.bash
+[3.522s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/local_setup.sh
+[3.522s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/local_setup.zsh
+[3.523s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/local_setup.dsv
+[3.523s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/package.dsv
+[3.523s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/ament_index/resource_index/packages/arm_controller
+[3.523s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig.cmake
+[3.524s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig-version.cmake
+[3.524s] -- Installing: /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/package.xml
+[3.526s] Invoked command in '/home/albert/ag_arm_ws/build/arm_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/ag_arm_ws/build/arm_controller

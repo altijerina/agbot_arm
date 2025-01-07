@@ -1,0 +1,15 @@
+/home/albert/ag_arm_ws/src/install/arm_remote/share/ament_index/resource_index/package_run_dependencies/arm_remote
+/home/albert/ag_arm_ws/src/install/arm_remote/share/ament_index/resource_index/parent_prefix_path/arm_remote
+/home/albert/ag_arm_ws/src/install/arm_remote/share/arm_remote/environment/ament_prefix_path.sh
+/home/albert/ag_arm_ws/src/install/arm_remote/share/arm_remote/environment/ament_prefix_path.dsv
+/home/albert/ag_arm_ws/src/install/arm_remote/share/arm_remote/environment/path.sh
+/home/albert/ag_arm_ws/src/install/arm_remote/share/arm_remote/environment/path.dsv
+/home/albert/ag_arm_ws/src/install/arm_remote/share/arm_remote/local_setup.bash
+/home/albert/ag_arm_ws/src/install/arm_remote/share/arm_remote/local_setup.sh
+/home/albert/ag_arm_ws/src/install/arm_remote/share/arm_remote/local_setup.zsh
+/home/albert/ag_arm_ws/src/install/arm_remote/share/arm_remote/local_setup.dsv
+/home/albert/ag_arm_ws/src/install/arm_remote/share/arm_remote/package.dsv
+/home/albert/ag_arm_ws/src/install/arm_remote/share/ament_index/resource_index/packages/arm_remote
+/home/albert/ag_arm_ws/src/install/arm_remote/share/arm_remote/cmake/arm_remoteConfig.cmake
+/home/albert/ag_arm_ws/src/install/arm_remote/share/arm_remote/cmake/arm_remoteConfig-version.cmake
+/home/albert/ag_arm_ws/src/install/arm_remote/share/arm_remote/package.xml

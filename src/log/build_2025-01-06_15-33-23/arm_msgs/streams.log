@@ -1,0 +1,331 @@
+[0.097s] Invoking command in '/home/albert/ag_arm_ws/src/build/arm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/src/build/arm_msgs -- -j8 -l8
+[0.123s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.454s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.679s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.720s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.799s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.878s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.974s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.067s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.076s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.450s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.038s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.041s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[4.041s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.041s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.041s]   the cmake_policy command to set the policy and suppress this warning.
+[4.041s] 
+[4.041s] Call Stack (most recent call first):
+[4.042s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.042s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.042s]   CMakeLists.txt:12 (rosidl_generate_interfaces)
+[4.042s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.042s] [0m
+[4.100s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+[4.116s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.117s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[4.117s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.117s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.118s]   the cmake_policy command to set the policy and suppress this warning.
+[4.118s] 
+[4.118s] Call Stack (most recent call first):
+[4.118s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[4.118s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.118s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.118s]   CMakeLists.txt:12 (rosidl_generate_interfaces)
+[4.119s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.119s] [0m
+[4.155s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[4.155s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.155s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.155s]   the cmake_policy command to set the policy and suppress this warning.
+[4.155s] 
+[4.155s] Call Stack (most recent call first):
+[4.155s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[4.155s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.155s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.155s]   CMakeLists.txt:12 (rosidl_generate_interfaces)
+[4.155s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.156s] [0m
+[4.181s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[4.181s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.182s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.182s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.218s] -- Found PythonExtra: .so
+[4.508s] -- Configuring done (4.4s)
+[4.562s] -- Generating done (0.0s)
+[4.577s] -- Build files have been written to: /home/albert/ag_arm_ws/src/build/arm_msgs
+[4.606s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.619s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.634s] [  4%] Built target ament_cmake_python_copy_arm_msgs
+[5.266s] running egg_info
+[5.266s] creating arm_msgs.egg-info
+[5.267s] writing arm_msgs.egg-info/PKG-INFO
+[5.267s] writing dependency_links to arm_msgs.egg-info/dependency_links.txt
+[5.267s] writing top-level names to arm_msgs.egg-info/top_level.txt
+[5.267s] writing manifest file 'arm_msgs.egg-info/SOURCES.txt'
+[5.272s] reading manifest file 'arm_msgs.egg-info/SOURCES.txt'
+[5.273s] writing manifest file 'arm_msgs.egg-info/SOURCES.txt'
+[5.312s] [  4%] Built target ament_cmake_python_build_arm_msgs_egg
+[5.806s] [ 10%] [32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_c.dir/rosidl_generator_c/arm_msgs/srv/detail/euler_to_quaternion__functions.c.o[0m
+[5.806s] [ 10%] [32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_c.dir/rosidl_generator_c/arm_msgs/srv/detail/quaternion_to_euler__functions.c.o[0m
+[5.806s] [ 10%] [32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_c.dir/rosidl_generator_c/arm_msgs/action/detail/arm_task__functions.c.o[0m
+[5.900s] [ 10%] Built target arm_msgs__cpp
+[5.912s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.912s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.912s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.031s] [ 19%] [32m[1mLinking C shared library libarm_msgs__rosidl_generator_c.so[0m
+[6.091s] [ 19%] Built target arm_msgs__rosidl_generator_c
+[6.109s] [ 21%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.111s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[6.126s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.909s] [ 27%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_msgs/srv/euler_to_quaternion__type_support.cpp.o[0m
+[6.914s] [ 29%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_msgs/action/arm_task__type_support.cpp.o[0m
+[6.916s] [ 31%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_msgs/srv/quaternion_to_euler__type_support.cpp.o[0m
+[7.080s] [ 34%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_msgs/srv/euler_to_quaternion__type_support.cpp.o[0m
+[7.179s] [ 36%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_msgs/srv/quaternion_to_euler__type_support.cpp.o[0m
+[7.243s] [ 38%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_msgs/action/arm_task__type_support.cpp.o[0m
+[7.381s] [ 40%] [32m[1mLinking CXX shared library libarm_msgs__rosidl_typesupport_c.so[0m
+[7.385s] [ 42%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_msgs/srv/detail/euler_to_quaternion__type_support.cpp.o[0m
+[7.482s] [ 44%] [32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_msgs/srv/detail/euler_to_quaternion__type_support.c.o[0m
+[7.484s] [ 44%] Built target arm_msgs__rosidl_typesupport_c
+[7.513s] [ 46%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_msgs/srv/detail/quaternion_to_euler__type_support.cpp.o[0m
+[7.556s] [ 48%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_msgs/srv/detail/euler_to_quaternion__type_support_c.cpp.o[0m
+[7.561s] [ 51%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_msgs/action/detail/arm_task__type_support.cpp.o[0m
+[7.621s] [ 53%] [32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_msgs/srv/detail/quaternion_to_euler__type_support.c.o[0m
+[7.725s] [ 55%] [32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_msgs/action/detail/arm_task__type_support.c.o[0m
+[7.805s] [ 57%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_msgs/srv/detail/quaternion_to_euler__type_support_c.cpp.o[0m
+[7.875s] [ 59%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_msgs/srv/detail/dds_fastrtps/euler_to_quaternion__type_support.cpp.o[0m
+[7.919s] [ 61%] [32m[1mLinking C shared library libarm_msgs__rosidl_typesupport_introspection_c.so[0m
+[7.993s] [ 61%] Built target arm_msgs__rosidl_typesupport_introspection_c
+[8.010s] [ 63%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_msgs/srv/detail/dds_fastrtps/quaternion_to_euler__type_support.cpp.o[0m
+[8.651s] [ 65%] [32m[1mLinking CXX shared library libarm_msgs__rosidl_typesupport_cpp.so[0m
+[8.758s] [ 68%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_msgs/action/detail/dds_fastrtps/arm_task__type_support.cpp.o[0m
+[8.770s] [ 68%] Built target arm_msgs__rosidl_typesupport_cpp
+[8.779s] [ 70%] [32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_msgs/action/detail/arm_task__type_support_c.cpp.o[0m
+[9.249s] [ 72%] [32m[1mLinking CXX shared library libarm_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[9.495s] [ 72%] Built target arm_msgs__rosidl_typesupport_introspection_cpp
+[9.739s] [ 74%] [32m[1mLinking CXX shared library libarm_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[9.879s] [ 74%] Built target arm_msgs__rosidl_typesupport_fastrtps_c
+[10.157s] [ 76%] [32m[1mLinking CXX shared library libarm_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[10.277s] [ 76%] Built target arm_msgs__rosidl_typesupport_fastrtps_cpp
+[10.303s] [ 76%] Built target arm_msgs
+[10.333s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[12.079s] [ 78%] Built target arm_msgs__py
+[12.103s] [ 80%] [32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_py.dir/rosidl_generator_py/arm_msgs/srv/_euler_to_quaternion_s.c.o[0m
+[12.104s] [ 85%] [32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_py.dir/rosidl_generator_py/arm_msgs/srv/_quaternion_to_euler_s.c.o[0m
+[12.104s] [ 85%] [32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_py.dir/rosidl_generator_py/arm_msgs/action/_arm_task_s.c.o[0m
+[12.297s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/arm_msgs/libarm_msgs__rosidl_generator_py.so[0m
+[12.352s] [ 87%] Built target arm_msgs__rosidl_generator_py
+[12.377s] [ 89%] [32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[12.378s] [ 91%] [32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[12.378s] [ 93%] [32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[12.580s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/arm_msgs/arm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.583s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/arm_msgs/arm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.608s] [100%] [32m[1mLinking C shared library rosidl_generator_py/arm_msgs/arm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.640s] [100%] Built target arm_msgs__rosidl_typesupport_fastrtps_c__pyext
+[12.644s] [100%] Built target arm_msgs__rosidl_typesupport_c__pyext
+[12.668s] [100%] Built target arm_msgs__rosidl_typesupport_introspection_c__pyext
+[12.678s] Invoked command in '/home/albert/ag_arm_ws/src/build/arm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/src/build/arm_msgs -- -j8 -l8
+[12.681s] Invoking command in '/home/albert/ag_arm_ws/src/build/arm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/ag_arm_ws/src/build/arm_msgs
+[12.688s] -- Install configuration: ""
+[12.688s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/ament_index/resource_index/rosidl_interfaces/arm_msgs
+[12.688s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs
+[12.688s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/msg
+[12.689s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/msg/rosidl_generator_c__visibility_control.h
+[12.689s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action
+[12.689s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/arm_task.h
+[12.689s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail
+[12.689s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__type_support.h
+[12.690s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__functions.h
+[12.690s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__struct.h
+[12.690s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__functions.c
+[12.690s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv
+[12.690s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/quaternion_to_euler.h
+[12.691s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail
+[12.691s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__functions.c
+[12.691s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__struct.h
+[12.691s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__functions.c
+[12.691s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__functions.h
+[12.691s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__functions.h
+[12.692s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__type_support.h
+[12.692s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__type_support.h
+[12.692s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__struct.h
+[12.692s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/euler_to_quaternion.h
+[12.692s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/environment/library_path.sh
+[12.692s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/environment/library_path.dsv
+[12.693s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_generator_c.so
+[12.693s] -- Set non-toolchain portion of runtime path of "/home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_generator_c.so" to ""
+[12.693s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs
+[12.694s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/msg
+[12.694s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.694s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action
+[12.694s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail
+[12.695s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__rosidl_typesupport_fastrtps_c.h
+[12.695s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv
+[12.695s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail
+[12.695s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_fastrtps_c.h
+[12.695s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_fastrtps_c.h
+[12.695s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_fastrtps_c.so
+[12.695s] -- Set non-toolchain portion of runtime path of "/home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[12.696s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs
+[12.696s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/msg
+[12.696s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[12.696s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action
+[12.696s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/arm_task.hpp
+[12.697s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail
+[12.697s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__struct.hpp
+[12.697s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__builder.hpp
+[12.697s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__traits.hpp
+[12.697s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__type_support.hpp
+[12.698s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv
+[12.698s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/euler_to_quaternion.hpp
+[12.698s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail
+[12.698s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__struct.hpp
+[12.698s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__builder.hpp
+[12.698s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__traits.hpp
+[12.699s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__type_support.hpp
+[12.699s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__traits.hpp
+[12.699s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__builder.hpp
+[12.699s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__struct.hpp
+[12.700s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__type_support.hpp
+[12.700s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/quaternion_to_euler.hpp
+[12.700s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs
+[12.700s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/msg
+[12.700s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.701s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action
+[12.701s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail
+[12.701s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__rosidl_typesupport_fastrtps_cpp.hpp
+[12.701s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/dds_fastrtps
+[12.701s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv
+[12.702s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail
+[12.702s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_fastrtps_cpp.hpp
+[12.702s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_fastrtps_cpp.hpp
+[12.702s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/dds_fastrtps
+[12.702s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_fastrtps_cpp.so
+[12.703s] -- Set non-toolchain portion of runtime path of "/home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[12.703s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs
+[12.703s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/msg
+[12.703s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.703s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action
+[12.703s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail
+[12.704s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__type_support.c
+[12.704s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__rosidl_typesupport_introspection_c.h
+[12.704s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv
+[12.704s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail
+[12.704s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__type_support.c
+[12.704s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__type_support.c
+[12.705s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_introspection_c.h
+[12.705s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_introspection_c.h
+[12.705s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_introspection_c.so
+[12.705s] -- Set non-toolchain portion of runtime path of "/home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_introspection_c.so" to ""
+[12.705s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_c.so
+[12.706s] -- Set non-toolchain portion of runtime path of "/home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_c.so" to ""
+[12.706s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs
+[12.706s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action
+[12.706s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail
+[12.706s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__rosidl_typesupport_introspection_cpp.hpp
+[12.706s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__type_support.cpp
+[12.707s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv
+[12.707s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail
+[12.707s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_introspection_cpp.hpp
+[12.707s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__type_support.cpp
+[12.707s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__type_support.cpp
+[12.707s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_introspection_cpp.hpp
+[12.707s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_introspection_cpp.so
+[12.708s] -- Set non-toolchain portion of runtime path of "/home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[12.708s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_cpp.so
+[12.708s] -- Set non-toolchain portion of runtime path of "/home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_cpp.so" to ""
+[12.708s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/environment/pythonpath.sh
+[12.708s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/environment/pythonpath.dsv
+[12.708s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info
+[12.709s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[12.709s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[12.709s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[12.709s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[12.709s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs
+[12.709s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/__init__.py
+[12.710s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.710s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.710s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[12.710s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action
+[12.710s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/__init__.py
+[12.711s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/_arm_task_s.c
+[12.711s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/_arm_task.py
+[12.711s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_c.c
+[12.711s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.711s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.711s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/libarm_msgs__rosidl_generator_py.so
+[12.712s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv
+[12.712s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_quaternion_to_euler_s.c
+[12.712s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_euler_to_quaternion.py
+[12.712s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/__init__.py
+[12.713s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_quaternion_to_euler.py
+[12.713s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_euler_to_quaternion_s.c
+[12.828s] Listing '/home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs'...
+[12.828s] Compiling '/home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/__init__.py'...
+[12.828s] Listing '/home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action'...
+[12.828s] Compiling '/home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/__init__.py'...
+[12.828s] Compiling '/home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/_arm_task.py'...
+[12.828s] Listing '/home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv'...
+[12.828s] Compiling '/home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/__init__.py'...
+[12.829s] Compiling '/home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_euler_to_quaternion.py'...
+[12.829s] Compiling '/home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_quaternion_to_euler.py'...
+[12.834s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.835s] -- Set non-toolchain portion of runtime path of "/home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.835s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.836s] -- Set non-toolchain portion of runtime path of "/home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.836s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.837s] -- Set non-toolchain portion of runtime path of "/home/albert/ag_arm_ws/src/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.837s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_generator_py.so
+[12.838s] -- Set non-toolchain portion of runtime path of "/home/albert/ag_arm_ws/src/install/arm_msgs/lib/libarm_msgs__rosidl_generator_py.so" to ""
+[12.838s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/srv/EulerToQuaternion.idl
+[12.839s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/srv/QuaternionToEuler.idl
+[12.839s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/action/ArmTask.idl
+[12.839s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/srv/EulerToQuaternion.srv
+[12.839s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/srv/EulerToQuaternion_Request.msg
+[12.840s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/srv/EulerToQuaternion_Response.msg
+[12.840s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/srv/QuaternionToEuler.srv
+[12.840s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/srv/QuaternionToEuler_Request.msg
+[12.840s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/srv/QuaternionToEuler_Response.msg
+[12.841s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/action/ArmTask.action
+[12.841s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/ament_index/resource_index/package_run_dependencies/arm_msgs
+[12.841s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/share/ament_index/resource_index/parent_prefix_path/arm_msgs
+[12.842s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/environment/ament_prefix_path.sh
+[12.842s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/environment/ament_prefix_path.dsv
+[12.842s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/environment/path.sh
+[12.842s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/environment/path.dsv
+[12.842s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/local_setup.bash
+[12.843s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/local_setup.sh
+[12.843s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/local_setup.zsh
+[12.843s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/local_setup.dsv
+[12.843s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/package.dsv
+[12.843s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/share/ament_index/resource_index/packages/arm_msgs
+[12.844s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_cExport.cmake
+[12.844s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_cExport-noconfig.cmake
+[12.844s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[12.844s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[12.845s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_cppExport.cmake
+[12.845s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[12.845s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[12.846s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_introspection_cExport.cmake
+[12.846s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[12.846s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_cExport.cmake
+[12.846s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[12.847s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[12.847s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[12.847s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_cppExport.cmake
+[12.847s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[12.848s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_pyExport.cmake
+[12.848s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_pyExport-noconfig.cmake
+[12.848s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/rosidl_cmake-extras.cmake
+[12.849s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.849s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.849s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[12.849s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[12.850s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[12.850s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[12.850s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/arm_msgsConfig.cmake
+[12.850s] -- Up-to-date: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/cmake/arm_msgsConfig-version.cmake
+[12.851s] -- Installing: /home/albert/ag_arm_ws/src/install/arm_msgs/share/arm_msgs/package.xml
+[12.854s] Invoked command in '/home/albert/ag_arm_ws/src/build/arm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/ag_arm_ws/src/build/arm_msgs

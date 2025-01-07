@@ -1,0 +1,34 @@
+[0.236s] Invoking command in '/home/albert/ag_arm_ws/build/arm_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/build/arm_moveit -- -j8 -l8
+[1.672s] Invoked command in '/home/albert/ag_arm_ws/build/arm_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/ag_arm_ws/build/arm_moveit -- -j8 -l8
+[1.682s] Invoking command in '/home/albert/ag_arm_ws/build/arm_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/ag_arm_ws/build/arm_moveit
+[1.774s] -- Install configuration: ""
+[1.774s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/launch
+[1.775s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/launch/moveit.launch.py
+[1.777s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/launch/arm_moveit.launch.py
+[1.777s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/config
+[1.777s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/config/joint_limits.yaml
+[1.778s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/config/moveit_controllers.yaml
+[1.778s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/config/initial_positions.yaml
+[1.778s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/config/pilz_cartesian_limits.yaml
+[1.778s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/config/pilz_instustrial_motion_planner_planning.yaml
+[1.780s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/config/kinematics.yaml
+[1.780s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/config/agbot_arm.srdf
+[1.783s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/config/moveit.rviz
+[1.784s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/rviz
+[1.786s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/rviz/move_group.rviz
+[1.786s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/ament_index/resource_index/package_run_dependencies/arm_moveit
+[1.786s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/ament_index/resource_index/parent_prefix_path/arm_moveit
+[1.792s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/environment/ament_prefix_path.sh
+[1.792s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/environment/ament_prefix_path.dsv
+[1.792s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/environment/path.sh
+[1.794s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/environment/path.dsv
+[1.794s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/local_setup.bash
+[1.794s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/local_setup.sh
+[1.797s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/local_setup.zsh
+[1.797s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/local_setup.dsv
+[1.798s] -- Installing: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/package.dsv
+[1.798s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/ament_index/resource_index/packages/arm_moveit
+[1.799s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/cmake/arm_moveitConfig.cmake
+[1.803s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/cmake/arm_moveitConfig-version.cmake
+[1.804s] -- Up-to-date: /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/package.xml
+[1.896s] Invoked command in '/home/albert/ag_arm_ws/build/arm_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/ag_arm_ws/build/arm_moveit
