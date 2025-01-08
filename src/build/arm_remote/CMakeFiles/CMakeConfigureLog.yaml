@@ -577,3 +577,53 @@ events:
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils for Ubuntu) 2.38
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/albert/.local/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/albert/.local/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/albert/.local/share/cmake-3.29/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/albert/.local/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/spdlog/spdlogConfig.cmake:40 (find_package)"
+      - "/opt/ros/humble/share/rcl_logging_spdlog/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/humble/share/rcl_logging_spdlog/cmake/rcl_logging_spdlogConfig.cmake:41 (include)"
+      - "/opt/ros/humble/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/humble/share/rcl/cmake/rclConfig.cmake:41 (include)"
+      - "/opt/ros/humble/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/humble/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)"
+      - "/opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)"
+      - "CMakeLists.txt:11 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/albert/ag_arm_ws/src/build/arm_remote/CMakeFiles/CMakeScratch/TryCompile-iPbwcj"
+      binary: "/home/albert/ag_arm_ws/src/build/arm_remote/CMakeFiles/CMakeScratch/TryCompile-iPbwcj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/ros/humble/share/fastrtps_cmake_module/cmake/Modules;/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_hoofs;/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_posh"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/albert/ag_arm_ws/src/build/arm_remote/CMakeFiles/CMakeScratch/TryCompile-iPbwcj'
+        
+        Run Build Command(s): /home/albert/.local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2a655/fast
+        gmake[1]: Entering directory '/home/albert/ag_arm_ws/src/build/arm_remote/CMakeFiles/CMakeScratch/TryCompile-iPbwcj'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2a655.dir/build.make CMakeFiles/cmTC_2a655.dir/build
+        gmake[2]: Entering directory '/home/albert/ag_arm_ws/src/build/arm_remote/CMakeFiles/CMakeScratch/TryCompile-iPbwcj'
+        Building C object CMakeFiles/cmTC_2a655.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_2a655.dir/src.c.o -c /home/albert/ag_arm_ws/src/build/arm_remote/CMakeFiles/CMakeScratch/TryCompile-iPbwcj/src.c
+        Linking C executable cmTC_2a655
+        /home/albert/.local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a655.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_2a655.dir/src.c.o -o cmTC_2a655
+        gmake[2]: Leaving directory '/home/albert/ag_arm_ws/src/build/arm_remote/CMakeFiles/CMakeScratch/TryCompile-iPbwcj'
+        gmake[1]: Leaving directory '/home/albert/ag_arm_ws/src/build/arm_remote/CMakeFiles/CMakeScratch/TryCompile-iPbwcj'
+        
+      exitCode: 0
+...

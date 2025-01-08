@@ -1,4 +1,4 @@
-/home/albert/ag_arm_ws/src/install/arm_cpp/lib/arm_cpp/moveit_interface
+/home/albert/ag_arm_ws/src/install/arm_cpp/lib/arm_cpp/arm_moveit_interface
 /home/albert/ag_arm_ws/src/install/arm_cpp/share/ament_index/resource_index/package_run_dependencies/arm_cpp
 /home/albert/ag_arm_ws/src/install/arm_cpp/share/ament_index/resource_index/parent_prefix_path/arm_cpp
 /home/albert/ag_arm_ws/src/install/arm_cpp/share/arm_cpp/environment/ament_prefix_path.sh

@@ -1,0 +1,17 @@
+[  0%] Built target ament_cmake_python_copy_arm_remote
+[ 50%] Built target task_server_node
+[ 75%] [32mBuilding CXX object CMakeFiles/task_server.dir/src/task_server.cpp.o[0m
+running egg_info
+writing arm_remote.egg-info/PKG-INFO
+writing dependency_links to arm_remote.egg-info/dependency_links.txt
+writing top-level names to arm_remote.egg-info/top_level.txt
+reading manifest file 'arm_remote.egg-info/SOURCES.txt'
+writing manifest file 'arm_remote.egg-info/SOURCES.txt'
+[ 75%] Built target ament_cmake_python_build_arm_remote_egg
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:[m[K In constructor ‘[01m[Karm_remote::TaskServer::TaskServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:35:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Krail_move_group_[m[K’
+   35 |     [01;31m[Krail_move_group_[m[K->move();
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/task_server.dir/build.make:76: CMakeFiles/task_server.dir/src/task_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:142: CMakeFiles/task_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

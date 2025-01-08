@@ -43,27 +43,27 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/moveit_interface" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/moveit_interface")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/arm_moveit_interface" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/arm_moveit_interface")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/moveit_interface"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/arm_moveit_interface"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arm_cpp" TYPE EXECUTABLE FILES "/home/albert/ag_arm_ws/src/build/arm_cpp/moveit_interface")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/moveit_interface" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/moveit_interface")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arm_cpp" TYPE EXECUTABLE FILES "/home/albert/ag_arm_ws/src/build/arm_cpp/arm_moveit_interface")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/arm_moveit_interface" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/arm_moveit_interface")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/moveit_interface"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/arm_moveit_interface"
          OLD_RPATH "/home/albert/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/albert/ws_moveit2/install/moveit_ros_move_group/lib:/opt/ros/humble/lib:/home/albert/ws_moveit2/install/moveit_ros_warehouse/lib:/home/albert/ws_moveit2/install/moveit_ros_planning/lib:/home/albert/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/albert/ws_moveit2/install/moveit_core/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/home/albert/ws_moveit2/install/srdfdom/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/moveit_interface")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_cpp/arm_moveit_interface")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/albert/ag_arm_ws/src/build/arm_cpp/CMakeFiles/moveit_interface.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/albert/ag_arm_ws/src/build/arm_cpp/CMakeFiles/arm_moveit_interface.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

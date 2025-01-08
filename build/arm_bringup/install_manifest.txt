@@ -1,0 +1,16 @@
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/launch/simulated_robot.launch.py
+/home/albert/ag_arm_ws/install/arm_bringup/share/ament_index/resource_index/package_run_dependencies/arm_bringup
+/home/albert/ag_arm_ws/install/arm_bringup/share/ament_index/resource_index/parent_prefix_path/arm_bringup
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/environment/ament_prefix_path.sh
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/environment/ament_prefix_path.dsv
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/environment/path.sh
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/environment/path.dsv
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/local_setup.bash
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/local_setup.sh
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/local_setup.zsh
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/local_setup.dsv
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/package.dsv
+/home/albert/ag_arm_ws/install/arm_bringup/share/ament_index/resource_index/packages/arm_bringup
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/cmake/arm_bringupConfig.cmake
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/cmake/arm_bringupConfig-version.cmake
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/package.xml

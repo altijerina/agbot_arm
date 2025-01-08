@@ -1,0 +1,8 @@
+setup.py
+arm_remote/__init__.py
+arm_remote/alexa_interface.py
+arm_remote/task_server.py
+arm_remote.egg-info/PKG-INFO
+arm_remote.egg-info/SOURCES.txt
+arm_remote.egg-info/dependency_links.txt
+arm_remote.egg-info/top_level.txt

@@ -8,6 +8,19 @@
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>ament_cmake_python</build_depend>
+
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>rclcpp_components</depend>
+  <depend>arm_msgs</depend>
+  <depend>moveit_ros_planning_interface</depend>
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>   
+
+  <exec_depend>ros2_launch</exec_depend>
+  <exec_depend>arm_moveit</exec_depend>
+  <exec_depend condition="$ROS_DISTRO >=iron">moveit_py</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

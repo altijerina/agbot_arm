@@ -1,0 +1,8 @@
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:[m[K In member function ‘[01m[Kvoid arm_remote::AgbotTaskServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<arm_msgs::action::ArmTask> >)[m[K’:
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:156:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kmovit[m[K’ has not been declared
+  156 |  rail_plan_success = (rails_move_group_->plan(rail_plan) == [01;31m[Kmovit[m[K::core::MoveitErrorCode::SUCCESS);
+      |                                                             [01;31m[K^~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/task_server.dir/build.make:76: CMakeFiles/task_server.dir/src/task_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:142: CMakeFiles/task_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -198,41 +198,41 @@ arm_cpp_uninstall/fast:
 .PHONY : arm_cpp_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named moveit_interface
+# Target rules for targets named arm_moveit_interface
 
 # Build rule for target.
-moveit_interface: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 moveit_interface
-.PHONY : moveit_interface
+arm_moveit_interface: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arm_moveit_interface
+.PHONY : arm_moveit_interface
 
 # fast build rule for target.
-moveit_interface/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/moveit_interface.dir/build.make CMakeFiles/moveit_interface.dir/build
-.PHONY : moveit_interface/fast
+arm_moveit_interface/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_moveit_interface.dir/build.make CMakeFiles/arm_moveit_interface.dir/build
+.PHONY : arm_moveit_interface/fast
 
-src/moveit_interface.o: src/moveit_interface.cpp.o
-.PHONY : src/moveit_interface.o
+src/arm_moveit_interface.o: src/arm_moveit_interface.cpp.o
+.PHONY : src/arm_moveit_interface.o
 
 # target to build an object file
-src/moveit_interface.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/moveit_interface.dir/build.make CMakeFiles/moveit_interface.dir/src/moveit_interface.cpp.o
-.PHONY : src/moveit_interface.cpp.o
+src/arm_moveit_interface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_moveit_interface.dir/build.make CMakeFiles/arm_moveit_interface.dir/src/arm_moveit_interface.cpp.o
+.PHONY : src/arm_moveit_interface.cpp.o
 
-src/moveit_interface.i: src/moveit_interface.cpp.i
-.PHONY : src/moveit_interface.i
+src/arm_moveit_interface.i: src/arm_moveit_interface.cpp.i
+.PHONY : src/arm_moveit_interface.i
 
 # target to preprocess a source file
-src/moveit_interface.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/moveit_interface.dir/build.make CMakeFiles/moveit_interface.dir/src/moveit_interface.cpp.i
-.PHONY : src/moveit_interface.cpp.i
+src/arm_moveit_interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_moveit_interface.dir/build.make CMakeFiles/arm_moveit_interface.dir/src/arm_moveit_interface.cpp.i
+.PHONY : src/arm_moveit_interface.cpp.i
 
-src/moveit_interface.s: src/moveit_interface.cpp.s
-.PHONY : src/moveit_interface.s
+src/arm_moveit_interface.s: src/arm_moveit_interface.cpp.s
+.PHONY : src/arm_moveit_interface.s
 
 # target to generate assembly for a file
-src/moveit_interface.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/moveit_interface.dir/build.make CMakeFiles/moveit_interface.dir/src/moveit_interface.cpp.s
-.PHONY : src/moveit_interface.cpp.s
+src/arm_moveit_interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_moveit_interface.dir/build.make CMakeFiles/arm_moveit_interface.dir/src/arm_moveit_interface.cpp.s
+.PHONY : src/arm_moveit_interface.cpp.s
 
 # Help Target
 help:
@@ -249,10 +249,10 @@ help:
 	@echo "... test"
 	@echo "... arm_cpp_uninstall"
 	@echo "... uninstall"
-	@echo "... moveit_interface"
-	@echo "... src/moveit_interface.o"
-	@echo "... src/moveit_interface.i"
-	@echo "... src/moveit_interface.s"
+	@echo "... arm_moveit_interface"
+	@echo "... src/arm_moveit_interface.o"
+	@echo "... src/arm_moveit_interface.i"
+	@echo "... src/arm_moveit_interface.s"
 .PHONY : help
 
 

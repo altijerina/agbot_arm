@@ -29,6 +29,10 @@ prismatic_controller:
     state_interfaces:
       - position
 
+    open_loop_control: false
+    allow_integration_in_goal_trajectories: true
+    allow_nonzero_velocity_at_trajectory_end: true 
+
 arm_controller:
   ros__parameters:
     joints:
@@ -40,6 +44,10 @@ arm_controller:
       - position
     state_interfaces:
       - position
+
+    open_loop_control: false
+    allow_integration_in_goal_trajectories: true
+    allow_nonzero_velocity_at_trajectory_end: true 
 
 gripper_controller:
   ros__parameters:

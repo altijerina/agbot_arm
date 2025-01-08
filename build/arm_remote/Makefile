@@ -197,6 +197,106 @@ arm_remote_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_remote_uninstall.dir/build.make CMakeFiles/arm_remote_uninstall.dir/build
 .PHONY : arm_remote_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named task_server
+
+# Build rule for target.
+task_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_server
+.PHONY : task_server
+
+# fast build rule for target.
+task_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server.dir/build.make CMakeFiles/task_server.dir/build
+.PHONY : task_server/fast
+
+#=============================================================================
+# Target rules for targets named task_server_node
+
+# Build rule for target.
+task_server_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_server_node
+.PHONY : task_server_node
+
+# fast build rule for target.
+task_server_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server_node.dir/build.make CMakeFiles/task_server_node.dir/build
+.PHONY : task_server_node/fast
+
+#=============================================================================
+# Target rules for targets named ament_cmake_python_copy_arm_remote
+
+# Build rule for target.
+ament_cmake_python_copy_arm_remote: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_arm_remote
+.PHONY : ament_cmake_python_copy_arm_remote
+
+# fast build rule for target.
+ament_cmake_python_copy_arm_remote/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_arm_remote.dir/build.make CMakeFiles/ament_cmake_python_copy_arm_remote.dir/build
+.PHONY : ament_cmake_python_copy_arm_remote/fast
+
+#=============================================================================
+# Target rules for targets named ament_cmake_python_build_arm_remote_egg
+
+# Build rule for target.
+ament_cmake_python_build_arm_remote_egg: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_build_arm_remote_egg
+.PHONY : ament_cmake_python_build_arm_remote_egg
+
+# fast build rule for target.
+ament_cmake_python_build_arm_remote_egg/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_arm_remote_egg.dir/build.make CMakeFiles/ament_cmake_python_build_arm_remote_egg.dir/build
+.PHONY : ament_cmake_python_build_arm_remote_egg/fast
+
+rclcpp_components/node_main_task_server_node.o: rclcpp_components/node_main_task_server_node.cpp.o
+.PHONY : rclcpp_components/node_main_task_server_node.o
+
+# target to build an object file
+rclcpp_components/node_main_task_server_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server_node.dir/build.make CMakeFiles/task_server_node.dir/rclcpp_components/node_main_task_server_node.cpp.o
+.PHONY : rclcpp_components/node_main_task_server_node.cpp.o
+
+rclcpp_components/node_main_task_server_node.i: rclcpp_components/node_main_task_server_node.cpp.i
+.PHONY : rclcpp_components/node_main_task_server_node.i
+
+# target to preprocess a source file
+rclcpp_components/node_main_task_server_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server_node.dir/build.make CMakeFiles/task_server_node.dir/rclcpp_components/node_main_task_server_node.cpp.i
+.PHONY : rclcpp_components/node_main_task_server_node.cpp.i
+
+rclcpp_components/node_main_task_server_node.s: rclcpp_components/node_main_task_server_node.cpp.s
+.PHONY : rclcpp_components/node_main_task_server_node.s
+
+# target to generate assembly for a file
+rclcpp_components/node_main_task_server_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server_node.dir/build.make CMakeFiles/task_server_node.dir/rclcpp_components/node_main_task_server_node.cpp.s
+.PHONY : rclcpp_components/node_main_task_server_node.cpp.s
+
+src/task_server.o: src/task_server.cpp.o
+.PHONY : src/task_server.o
+
+# target to build an object file
+src/task_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server.dir/build.make CMakeFiles/task_server.dir/src/task_server.cpp.o
+.PHONY : src/task_server.cpp.o
+
+src/task_server.i: src/task_server.cpp.i
+.PHONY : src/task_server.i
+
+# target to preprocess a source file
+src/task_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server.dir/build.make CMakeFiles/task_server.dir/src/task_server.cpp.i
+.PHONY : src/task_server.cpp.i
+
+src/task_server.s: src/task_server.cpp.s
+.PHONY : src/task_server.s
+
+# target to generate assembly for a file
+src/task_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server.dir/build.make CMakeFiles/task_server.dir/src/task_server.cpp.s
+.PHONY : src/task_server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,8 +310,18 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... ament_cmake_python_build_arm_remote_egg"
+	@echo "... ament_cmake_python_copy_arm_remote"
 	@echo "... arm_remote_uninstall"
 	@echo "... uninstall"
+	@echo "... task_server"
+	@echo "... task_server_node"
+	@echo "... rclcpp_components/node_main_task_server_node.o"
+	@echo "... rclcpp_components/node_main_task_server_node.i"
+	@echo "... rclcpp_components/node_main_task_server_node.s"
+	@echo "... src/task_server.o"
+	@echo "... src/task_server.i"
+	@echo "... src/task_server.s"
 .PHONY : help
 
 

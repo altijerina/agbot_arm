@@ -17,6 +17,7 @@
         <chain base_link="arm_base_link" tip_link="wrist_link"/>
     </group>
     <group name="gripper">
+        <joint name="gripper_right_joint" />
         <chain base_link="claw_support_link" tip_link="gripper_right_link"/>
     </group>
     

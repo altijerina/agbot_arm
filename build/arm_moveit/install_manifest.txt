@@ -1,5 +1,6 @@
 /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/launch/moveit.launch.py
 /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/launch/arm_moveit.launch.py
+/home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/config/planning_python_api.yaml
 /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/config/joint_limits.yaml
 /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/config/moveit_controllers.yaml
 /home/albert/ag_arm_ws/install/arm_moveit/share/arm_moveit/config/initial_positions.yaml
