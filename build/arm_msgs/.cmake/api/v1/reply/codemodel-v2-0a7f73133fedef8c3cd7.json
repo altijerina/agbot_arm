@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-5314342c6200c4a897c7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "arm_msgs__py",
+					"jsonFile" : "directory-arm_msgs__py-63dfd125ae3844d85ddf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/albert/ag_arm_ws/build/arm_msgs/arm_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "arm_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_arm_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_arm_msgs_egg-f8d387ec7ed0a7e3f798.json",
+					"name" : "ament_cmake_python_build_arm_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_arm_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_arm_msgs-3ae22c1e093f8b1c0450.json",
+					"name" : "ament_cmake_python_copy_arm_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs-41bbd870b0c98ca443d6.json",
+					"name" : "arm_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs__cpp-399e35292133df4caeb0.json",
+					"name" : "arm_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "arm_msgs__py::@e9dce8d5ad228c1e98e0",
+					"jsonFile" : "target-arm_msgs__py-3ad790c11e83e5e2be9f.json",
+					"name" : "arm_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs__rosidl_generator_c-c52ca1f79d1b9a1618fc.json",
+					"name" : "arm_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs__rosidl_generator_py-42a3426acd2dd6b89c37.json",
+					"name" : "arm_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs__rosidl_typesupport_c-d96983d6293879be4850.json",
+					"name" : "arm_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs__rosidl_typesupport_c__pyext-2c2b720a5fc5f0ac5f41.json",
+					"name" : "arm_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs__rosidl_typesupport_cpp-102650950e9f2c1d6f7b.json",
+					"name" : "arm_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs__rosidl_typesupport_fastrtps_c-790b385e6a13a15d85c8.json",
+					"name" : "arm_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs__rosidl_typesupport_fastrtps_c__pyext-d401b6a4601eb6047721.json",
+					"name" : "arm_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs__rosidl_typesupport_fastrtps_cpp-e7defd43de007a001eea.json",
+					"name" : "arm_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs__rosidl_typesupport_introspection_c-260f2e1f4c441b943bd3.json",
+					"name" : "arm_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs__rosidl_typesupport_introspection_c__pyext-38cf27acbb85d728dc13.json",
+					"name" : "arm_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs__rosidl_typesupport_introspection_cpp-56149af816a92a07eacc.json",
+					"name" : "arm_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_msgs_uninstall-f5a9f51774df265a8aa6.json",
+					"name" : "arm_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-907568206959bc04b7c4.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/albert/ag_arm_ws/build/arm_msgs",
+		"source" : "/home/albert/ag_arm_ws/src/arm_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

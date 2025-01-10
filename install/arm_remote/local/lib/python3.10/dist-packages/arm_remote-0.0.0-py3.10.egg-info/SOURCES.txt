@@ -1,6 +1,8 @@
 setup.py
 arm_remote/__init__.py
 arm_remote/alexa_interface.py
+arm_remote/arm_alexa_interface.py
+arm_remote/arm_task_server.py
 arm_remote/task_server.py
 arm_remote.egg-info/PKG-INFO
 arm_remote.egg-info/SOURCES.txt

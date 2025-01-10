@@ -1,0 +1,129 @@
+[  0%] Built target ament_cmake_python_copy_arm_remote
+[ 50%] Built target task_server_node
+[ 75%] [32mBuilding CXX object CMakeFiles/task_server.dir/src/task_server.cpp.o[0m
+running egg_info
+writing arm_remote.egg-info/PKG-INFO
+writing dependency_links to arm_remote.egg-info/dependency_links.txt
+writing top-level names to arm_remote.egg-info/top_level.txt
+reading manifest file 'arm_remote.egg-info/SOURCES.txt'
+writing manifest file 'arm_remote.egg-info/SOURCES.txt'
+[ 75%] Built target ament_cmake_python_build_arm_remote_egg
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:48:42:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’
+   48 |     const std::shared_ptr<agbotGoalHandle[01;31m[K>[m[K agbot_goal_handle)
+      |                                          [01;31m[K^[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:48:42:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[Karm_remote::AgbotTaskServer::agbotGoalHandle[m[K’
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:65:44:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’
+   65 |       const std::shared_ptr<agbotGoalHandle[01;31m[K>[m[K goal_handle)
+      |                                            [01;31m[K^[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:65:44:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[Karm_remote::AgbotTaskServer::agbotGoalHandle[m[K’
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:71:53:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’
+   71 |   void execute(const std::shared_ptr<agbotGoalHandle[01;31m[K>[m[K goal_handle)
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:71:53:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[Karm_remote::AgbotTaskServer::agbotGoalHandle[m[K’
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:[m[K In constructor ‘[01m[Karm_remote::AgbotTaskServer::AgbotTaskServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:23:71:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_server<AgbotRobotTask>(arm_remote::AgbotTaskServer*, const char [18], std::_Bind_helper<false, rclcpp_action::GoalResponse (arm_remote::AgbotTaskServer::*)(const std::array<unsigned char, 16>&, std::shared_ptr<const arm_msgs::action::ArmTask_Goal_<std::allocator<void> > >), arm_remote::AgbotTaskServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type, std::_Bind_helper<false, rclcpp_action::CancelResponse (arm_remote::AgbotTaskServer::*)(int), arm_remote::AgbotTaskServer*, const std::_Placeholder<1>&>::type, std::_Bind_helper<false, void (arm_remote::AgbotTaskServer::*)(int), arm_remote::AgbotTaskServer*, const std::_Placeholder<1>&>::type)[m[K’
+   23 |     agbot_action_server = [01;31m[Krclcpp_action::create_server<AgbotRobotTask>([m[K
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   24 | [01;31m[K        this, "agbot_task_server", std::bind(&AgbotTaskServer::agbotGoalHandle, this, _1, _2),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   25 | [01;31m[K        std::bind(&AgbotTaskServer::agbotCancelCallback, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K    
+   26 | [01;31m[K        std::bind(&AgbotTaskServer::agbotAcceptedCallback, this, _1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+                 from [01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktypename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr) [with ActionT = arm_msgs::action::ArmTask; typename rclcpp_action::Server<ActionT>::SharedPtr = std::shared_ptr<rclcpp_action::Server<arm_msgs::action::ArmTask> >; rclcpp::node_interfaces::NodeBaseInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>; rclcpp::node_interfaces::NodeClockInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeClockInterface>; rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeLoggingInterface>; rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeWaitablesInterface>; std::string = std::__cxx11::basic_string<char>; typename rclcpp_action::Server<ActionT>::GoalCallback = std::function<rclcpp_action::GoalResponse(const std::array<unsigned char, 16>&, std::shared_ptr<const arm_msgs::action::ArmTask_Goal_<std::allocator<void> > >)>; typename rclcpp_action::Server<ActionT>::CancelCallback = std::function<rclcpp_action::CancelResponse(std::shared_ptr<rclcpp_action::ServerGoalHandle<arm_msgs::action::ArmTask> >)>; typename rclcpp_action::Server<ActionT>::AcceptedCallback = std::function<void(std::shared_ptr<rclcpp_action::ServerGoalHandle<arm_msgs::action::ArmTask> >)>; rcl_action_server_options_t = rcl_action_server_options_s; rclcpp::CallbackGroup::SharedPtr = std::shared_ptr<rclcpp::CallbackGroup>][m[K’
+   58 | [01;36m[Kcreate_server[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[K  candidate expects 10 arguments, 5 provided
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT, class NodeT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(NodeT, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  132 | [01;36m[Kcreate_server[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:25:18:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::bind(_Func&&, _BoundArgs&& ...) [with _Func = rclcpp_action::CancelResponse (arm_remote::AgbotTaskServer::*)(int); _BoundArgs = {arm_remote::AgbotTaskServer*, const std::_Placeholder<1>&}; typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type = std::_Bind_helper<false, rclcpp_action::CancelResponse (arm_remote::AgbotTaskServer::*)(int), arm_remote::AgbotTaskServer*, const std::_Placeholder<1>&>::type; std::__is_socketlike<_Func> = std::__is_socketlike<rclcpp_action::CancelResponse (arm_remote::AgbotTaskServer::*)(int), rclcpp_action::CancelResponse (arm_remote::AgbotTaskServer::*)(int)>; typename std::decay<_Tp>::type = rclcpp_action::CancelResponse (arm_remote::AgbotTaskServer::*)(int)](((arm_remote::AgbotTaskServer*)this), std::placeholders::_1)[m[K’ (type ‘[01m[Kstd::_Bind_helper<false, rclcpp_action::CancelResponse (arm_remote::AgbotTaskServer::*)(int), arm_remote::AgbotTaskServer*, const std::_Placeholder<1>&>::type[m[K’) to type ‘[01m[Krclcpp_action::Server<arm_msgs::action::ArmTask>::CancelCallback[m[K’ {aka ‘[01m[Kstd::function<rclcpp_action::CancelResponse(std::shared_ptr<rclcpp_action::ServerGoalHandle<arm_msgs::action::ArmTask> >)>[m[K’}
+   25 |         [01;36m[Kstd::bind(&AgbotTaskServer::agbotCancelCallback, this, _1)[m[K,
+      |         [01;36m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:1[m[K:
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse arm_remote::AgbotTaskServer::agbotGoalHandle(const GoalUUID&, std::shared_ptr<const arm_msgs::action::ArmTask_Goal_<std::allocator<void> > >)[m[K’:
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:42:89:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct arm_msgs::action::ArmTask_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct arm_msgs::action::ArmTask_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktask_number[m[K’; did you mean ‘[01m[Karm_task_number[m[K’?
+   42 | , "Received goal request with task_number: %d", agbot_goal->[01;31m[Ktask_number[m[K);
+      |                                                             [01;31m[K^~~~~~~~~~~[m[K
+
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse arm_remote::AgbotTaskServer::agbotCancelCallback(int)[m[K’:
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:60:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_handle[m[K’ was not declared in this scope
+   60 |     (void)[01;31m[Kgoal_handle[m[K;
+      |           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:48:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kagbot_goal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   48 |     [01;35m[Kconst std::shared_ptr<agbotGoalHandle> agbot_goal_handle[m[K)
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:1[m[K:
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:[m[K In member function ‘[01m[Kvoid arm_remote::AgbotTaskServer::execute(int)[m[K’:
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:73:69:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kgoal_handle[m[K’
+   73 | PP_INFO(get_logger(), "Executing goal with task number: %d" [01;31m[Kgoal_handle[m[K->get_goal()->task_number);
+      |                                                             [01;31m[K^~~~~~~~~~~[m[K
+
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:73:5:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   73 |     [01;36m[KRCLCPP_INFO[m[K(get_logger(), "Executing goal with task number: %d" goal_handle->get_goal()->task_number);
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:73:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects a matching ‘[01m[Kint[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   73 |     RCLCPP_INFO(get_logger(), [01;35m[K"Executing goal with task number: %d"[m[K goal_handle->get_goal()->task_number);
+      |                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:73:66:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   73 | CLCPP_INFO(get_logger(), "Executing goal with task number: [01;36m[K%d[m[K" goal_handle->get_goal()->task_number);
+      |                                                            [01;36m[K~^[m[K
+      |                                                             [01;36m[K|[m[K
+      |                                                             [01;36m[Kint[m[K
+
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:84:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+   84 |     if(goal_handle[01;31m[K->[m[Kget_goal()->task_number == 0) //Home position
+      |                   [01;31m[K^~[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:90:24:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+   90 |     else if(goal_handle[01;31m[K->[m[Kget_goal()->task_number == 1) //Arm Ready
+      |                        [01;31m[K^~[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:96:24:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+   96 |     else if(goal_handle[01;31m[K->[m[Kget_goal()->task_number == 2) //Arm Ready Low Left
+      |                        [01;31m[K^~[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:102:24:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  102 |     else if(goal_handle[01;31m[K->[m[Kget_goal()->task_number == 3) //Arm Ready Low Right
+      |                        [01;31m[K^~[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:108:24:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  108 |     else if(goal_handle[01;31m[K->[m[Kget_goal()->task_number == 4) //Arm Ready High Right
+      |                        [01;31m[K^~[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:114:24:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  114 |     else if(goal_handle[01;31m[K->[m[Kget_goal()->task_number == 5) //Arm Ready High Left
+      |                        [01;31m[K^~[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:120:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  120 |     if(goal_handle[01;31m[K->[m[Kget_goal()->task_number == 6) //Home position
+      |                   [01;31m[K^~[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:200:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct arm_msgs::action::ArmTask_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct arm_msgs::action::ArmTask_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksuccess[m[K’; did you mean ‘[01m[Karm_success[m[K’?
+  200 |     result->[01;31m[Ksuccess[m[K = true;
+      |             [01;31m[K^~~~~~~[m[K
+      |             [32m[Karm_success[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:201:16:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  201 |     goal_handle[01;31m[K->[m[Ksucceed(result);
+      |                [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/task_server.dir/build.make:76: CMakeFiles/task_server.dir/src/task_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:142: CMakeFiles/task_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

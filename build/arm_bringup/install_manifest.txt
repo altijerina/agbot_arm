@@ -1,4 +1,4 @@
-/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/launch/simulated_robot.launch.py
+/home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/launch/arm_simulated_robot.launch.py
 /home/albert/ag_arm_ws/install/arm_bringup/share/ament_index/resource_index/package_run_dependencies/arm_bringup
 /home/albert/ag_arm_ws/install/arm_bringup/share/ament_index/resource_index/parent_prefix_path/arm_bringup
 /home/albert/ag_arm_ws/install/arm_bringup/share/arm_bringup/environment/ament_prefix_path.sh

@@ -420,9 +420,9 @@
     <joint name ="arm_base_joint" type="revolute">
         <parent link="arm_base_link"/>
         <child link = "base_plate_link"/>
-        <origin xyz="0 0 0.072" />
+        <origin xyz="0 0 0.072" rpy = "0 0 0"/>
         <axis xyz="0 0 1"/>
-        <limit lower="0" upper="${PI}" 
+        <limit lower="-${PI/2}" upper="${PI/2}" 
                effort="${effort}" velocity="${velocity}"/>
     </joint> 
 
@@ -431,7 +431,7 @@
         <child link="forward_drive_arm_link"/>
         <origin xyz="0 0 0.075" rpy="-${PI/2} 0 0"/>
         <axis xyz="1 0 0"/>
-        <limit lower="0" upper="4.0" effort="${effort}" velocity="${velocity}"/>
+        <limit lower="0" upper="${PI}" effort="${effort}" velocity="${velocity}"/>
     </joint>   
     
     <joint name = "shoulder_elbow_joint" type = "fixed">

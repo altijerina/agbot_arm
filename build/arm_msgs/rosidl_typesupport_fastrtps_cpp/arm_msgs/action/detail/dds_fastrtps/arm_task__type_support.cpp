@@ -32,8 +32,8 @@ cdr_serialize(
   const arm_msgs::action::ArmTask_Goal & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: task_number
-  cdr << ros_message.task_number;
+  // Member: arm_task_number
+  cdr << ros_message.arm_task_number;
   return true;
 }
 
@@ -43,8 +43,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   arm_msgs::action::ArmTask_Goal & ros_message)
 {
-  // Member: task_number
-  cdr >> ros_message.task_number;
+  // Member: arm_task_number
+  cdr >> ros_message.arm_task_number;
 
   return true;
 }
@@ -62,9 +62,9 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: task_number
+  // Member: arm_task_number
   {
-    size_t item_size = sizeof(ros_message.task_number);
+    size_t item_size = sizeof(ros_message.arm_task_number);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -92,7 +92,7 @@ max_serialized_size_ArmTask_Goal(
   is_plain = true;
 
 
-  // Member: task_number
+  // Member: arm_task_number
   {
     size_t array_size = 1;
 
@@ -109,7 +109,7 @@ max_serialized_size_ArmTask_Goal(
     using DataType = arm_msgs::action::ArmTask_Goal;
     is_plain =
       (
-      offsetof(DataType, task_number) +
+      offsetof(DataType, arm_task_number) +
       last_member_size
       ) == ret_val;
   }
@@ -244,8 +244,8 @@ cdr_serialize(
   const arm_msgs::action::ArmTask_Result & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: success
-  cdr << (ros_message.success ? true : false);
+  // Member: arm_success
+  cdr << (ros_message.arm_success ? true : false);
   return true;
 }
 
@@ -255,11 +255,11 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   arm_msgs::action::ArmTask_Result & ros_message)
 {
-  // Member: success
+  // Member: arm_success
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message.success = tmp ? true : false;
+    ros_message.arm_success = tmp ? true : false;
   }
 
   return true;
@@ -278,9 +278,9 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: success
+  // Member: arm_success
   {
-    size_t item_size = sizeof(ros_message.success);
+    size_t item_size = sizeof(ros_message.arm_success);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -308,7 +308,7 @@ max_serialized_size_ArmTask_Result(
   is_plain = true;
 
 
-  // Member: success
+  // Member: arm_success
   {
     size_t array_size = 1;
 
@@ -324,7 +324,7 @@ max_serialized_size_ArmTask_Result(
     using DataType = arm_msgs::action::ArmTask_Result;
     is_plain =
       (
-      offsetof(DataType, success) +
+      offsetof(DataType, arm_success) +
       last_member_size
       ) == ret_val;
   }
@@ -459,8 +459,8 @@ cdr_serialize(
   const arm_msgs::action::ArmTask_Feedback & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: percentage
-  cdr << ros_message.percentage;
+  // Member: arm_percentage
+  cdr << ros_message.arm_percentage;
   return true;
 }
 
@@ -470,8 +470,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   arm_msgs::action::ArmTask_Feedback & ros_message)
 {
-  // Member: percentage
-  cdr >> ros_message.percentage;
+  // Member: arm_percentage
+  cdr >> ros_message.arm_percentage;
 
   return true;
 }
@@ -489,9 +489,9 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: percentage
+  // Member: arm_percentage
   {
-    size_t item_size = sizeof(ros_message.percentage);
+    size_t item_size = sizeof(ros_message.arm_percentage);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -519,7 +519,7 @@ max_serialized_size_ArmTask_Feedback(
   is_plain = true;
 
 
-  // Member: percentage
+  // Member: arm_percentage
   {
     size_t array_size = 1;
 
@@ -536,7 +536,7 @@ max_serialized_size_ArmTask_Feedback(
     using DataType = arm_msgs::action::ArmTask_Feedback;
     is_plain =
       (
-      offsetof(DataType, percentage) +
+      offsetof(DataType, arm_percentage) +
       last_member_size
       ) == ret_val;
   }

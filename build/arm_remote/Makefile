@@ -198,30 +198,30 @@ arm_remote_uninstall/fast:
 .PHONY : arm_remote_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named task_server
+# Target rules for targets named arm_task_server
 
 # Build rule for target.
-task_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_server
-.PHONY : task_server
+arm_task_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arm_task_server
+.PHONY : arm_task_server
 
 # fast build rule for target.
-task_server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server.dir/build.make CMakeFiles/task_server.dir/build
-.PHONY : task_server/fast
+arm_task_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server.dir/build.make CMakeFiles/arm_task_server.dir/build
+.PHONY : arm_task_server/fast
 
 #=============================================================================
-# Target rules for targets named task_server_node
+# Target rules for targets named arm_task_server_node
 
 # Build rule for target.
-task_server_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_server_node
-.PHONY : task_server_node
+arm_task_server_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arm_task_server_node
+.PHONY : arm_task_server_node
 
 # fast build rule for target.
-task_server_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server_node.dir/build.make CMakeFiles/task_server_node.dir/build
-.PHONY : task_server_node/fast
+arm_task_server_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server_node.dir/build.make CMakeFiles/arm_task_server_node.dir/build
+.PHONY : arm_task_server_node/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_copy_arm_remote
@@ -249,53 +249,53 @@ ament_cmake_python_build_arm_remote_egg/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_arm_remote_egg.dir/build.make CMakeFiles/ament_cmake_python_build_arm_remote_egg.dir/build
 .PHONY : ament_cmake_python_build_arm_remote_egg/fast
 
-rclcpp_components/node_main_task_server_node.o: rclcpp_components/node_main_task_server_node.cpp.o
-.PHONY : rclcpp_components/node_main_task_server_node.o
+rclcpp_components/node_main_arm_task_server_node.o: rclcpp_components/node_main_arm_task_server_node.cpp.o
+.PHONY : rclcpp_components/node_main_arm_task_server_node.o
 
 # target to build an object file
-rclcpp_components/node_main_task_server_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server_node.dir/build.make CMakeFiles/task_server_node.dir/rclcpp_components/node_main_task_server_node.cpp.o
-.PHONY : rclcpp_components/node_main_task_server_node.cpp.o
+rclcpp_components/node_main_arm_task_server_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server_node.dir/build.make CMakeFiles/arm_task_server_node.dir/rclcpp_components/node_main_arm_task_server_node.cpp.o
+.PHONY : rclcpp_components/node_main_arm_task_server_node.cpp.o
 
-rclcpp_components/node_main_task_server_node.i: rclcpp_components/node_main_task_server_node.cpp.i
-.PHONY : rclcpp_components/node_main_task_server_node.i
+rclcpp_components/node_main_arm_task_server_node.i: rclcpp_components/node_main_arm_task_server_node.cpp.i
+.PHONY : rclcpp_components/node_main_arm_task_server_node.i
 
 # target to preprocess a source file
-rclcpp_components/node_main_task_server_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server_node.dir/build.make CMakeFiles/task_server_node.dir/rclcpp_components/node_main_task_server_node.cpp.i
-.PHONY : rclcpp_components/node_main_task_server_node.cpp.i
+rclcpp_components/node_main_arm_task_server_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server_node.dir/build.make CMakeFiles/arm_task_server_node.dir/rclcpp_components/node_main_arm_task_server_node.cpp.i
+.PHONY : rclcpp_components/node_main_arm_task_server_node.cpp.i
 
-rclcpp_components/node_main_task_server_node.s: rclcpp_components/node_main_task_server_node.cpp.s
-.PHONY : rclcpp_components/node_main_task_server_node.s
+rclcpp_components/node_main_arm_task_server_node.s: rclcpp_components/node_main_arm_task_server_node.cpp.s
+.PHONY : rclcpp_components/node_main_arm_task_server_node.s
 
 # target to generate assembly for a file
-rclcpp_components/node_main_task_server_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server_node.dir/build.make CMakeFiles/task_server_node.dir/rclcpp_components/node_main_task_server_node.cpp.s
-.PHONY : rclcpp_components/node_main_task_server_node.cpp.s
+rclcpp_components/node_main_arm_task_server_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server_node.dir/build.make CMakeFiles/arm_task_server_node.dir/rclcpp_components/node_main_arm_task_server_node.cpp.s
+.PHONY : rclcpp_components/node_main_arm_task_server_node.cpp.s
 
-src/task_server.o: src/task_server.cpp.o
-.PHONY : src/task_server.o
+src/arm_task_server.o: src/arm_task_server.cpp.o
+.PHONY : src/arm_task_server.o
 
 # target to build an object file
-src/task_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server.dir/build.make CMakeFiles/task_server.dir/src/task_server.cpp.o
-.PHONY : src/task_server.cpp.o
+src/arm_task_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server.dir/build.make CMakeFiles/arm_task_server.dir/src/arm_task_server.cpp.o
+.PHONY : src/arm_task_server.cpp.o
 
-src/task_server.i: src/task_server.cpp.i
-.PHONY : src/task_server.i
+src/arm_task_server.i: src/arm_task_server.cpp.i
+.PHONY : src/arm_task_server.i
 
 # target to preprocess a source file
-src/task_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server.dir/build.make CMakeFiles/task_server.dir/src/task_server.cpp.i
-.PHONY : src/task_server.cpp.i
+src/arm_task_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server.dir/build.make CMakeFiles/arm_task_server.dir/src/arm_task_server.cpp.i
+.PHONY : src/arm_task_server.cpp.i
 
-src/task_server.s: src/task_server.cpp.s
-.PHONY : src/task_server.s
+src/arm_task_server.s: src/arm_task_server.cpp.s
+.PHONY : src/arm_task_server.s
 
 # target to generate assembly for a file
-src/task_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server.dir/build.make CMakeFiles/task_server.dir/src/task_server.cpp.s
-.PHONY : src/task_server.cpp.s
+src/arm_task_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server.dir/build.make CMakeFiles/arm_task_server.dir/src/arm_task_server.cpp.s
+.PHONY : src/arm_task_server.cpp.s
 
 # Help Target
 help:
@@ -314,14 +314,14 @@ help:
 	@echo "... ament_cmake_python_copy_arm_remote"
 	@echo "... arm_remote_uninstall"
 	@echo "... uninstall"
-	@echo "... task_server"
-	@echo "... task_server_node"
-	@echo "... rclcpp_components/node_main_task_server_node.o"
-	@echo "... rclcpp_components/node_main_task_server_node.i"
-	@echo "... rclcpp_components/node_main_task_server_node.s"
-	@echo "... src/task_server.o"
-	@echo "... src/task_server.i"
-	@echo "... src/task_server.s"
+	@echo "... arm_task_server"
+	@echo "... arm_task_server_node"
+	@echo "... rclcpp_components/node_main_arm_task_server_node.o"
+	@echo "... rclcpp_components/node_main_arm_task_server_node.i"
+	@echo "... rclcpp_components/node_main_arm_task_server_node.s"
+	@echo "... src/arm_task_server.o"
+	@echo "... src/arm_task_server.i"
+	@echo "... src/arm_task_server.s"
 .PHONY : help
 
 

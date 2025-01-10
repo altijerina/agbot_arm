@@ -26,8 +26,8 @@
         <joint name="mid_rail_to_arm_car_joint" value="0"/>  <!-- joint 2 -->
     </group_state>
     <group_state name="rail_ready" group="rails"> <!-- Position 1 -->
-        <joint name="base_rail_to_ mid_rail_joint" value="0.5715"/>
-        <joint name="mid_rail_to_arm_car_joint" value="1.143"/>
+        <joint name="base_rail_to_ mid_rail_joint" value="0.500"/>
+        <joint name="mid_rail_to_arm_car_joint" value="1.130"/>
     </group_state>
     <group_state name="arm_home" group="arm">   <!-- Position 2 -->
         <joint name="arm_base_joint" value="0"/>  <!-- joint 3 -->
@@ -42,7 +42,7 @@
         <joint name="wrist_joint" value="0"/>
     </group_state>
     <group_state name="arm_ready_low_left" group="arm"> <!-- Position 4 -->
-        <joint name="arm_base_joint" value="-1.6489"/>
+        <joint name="arm_base_joint" value="-1.4489"/>
         <joint name="elbow_joint" value="-1.9092"/>
         <joint name="shoulder_joint" value="2.6961"/>
         <joint name="wrist_joint" value="-0.7723"/>

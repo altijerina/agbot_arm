@@ -50,13 +50,13 @@ bool arm_msgs__action__arm_task__goal__convert_from_py(PyObject * _pymsg, void *
     assert(strncmp("arm_msgs.action._arm_task.ArmTask_Goal", full_classname_dest, 38) == 0);
   }
   arm_msgs__action__ArmTask_Goal * ros_message = _ros_message;
-  {  // task_number
-    PyObject * field = PyObject_GetAttrString(_pymsg, "task_number");
+  {  // arm_task_number
+    PyObject * field = PyObject_GetAttrString(_pymsg, "arm_task_number");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->task_number = (int32_t)PyLong_AsLong(field);
+    ros_message->arm_task_number = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -81,11 +81,11 @@ PyObject * arm_msgs__action__arm_task__goal__convert_to_py(void * raw_ros_messag
     }
   }
   arm_msgs__action__ArmTask_Goal * ros_message = (arm_msgs__action__ArmTask_Goal *)raw_ros_message;
-  {  // task_number
+  {  // arm_task_number
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->task_number);
+    field = PyLong_FromLong(ros_message->arm_task_number);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "task_number", field);
+      int rc = PyObject_SetAttrString(_pymessage, "arm_task_number", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -145,13 +145,13 @@ bool arm_msgs__action__arm_task__result__convert_from_py(PyObject * _pymsg, void
     assert(strncmp("arm_msgs.action._arm_task.ArmTask_Result", full_classname_dest, 40) == 0);
   }
   arm_msgs__action__ArmTask_Result * ros_message = _ros_message;
-  {  // success
-    PyObject * field = PyObject_GetAttrString(_pymsg, "success");
+  {  // arm_success
+    PyObject * field = PyObject_GetAttrString(_pymsg, "arm_success");
     if (!field) {
       return false;
     }
     assert(PyBool_Check(field));
-    ros_message->success = (Py_True == field);
+    ros_message->arm_success = (Py_True == field);
     Py_DECREF(field);
   }
 
@@ -176,11 +176,11 @@ PyObject * arm_msgs__action__arm_task__result__convert_to_py(void * raw_ros_mess
     }
   }
   arm_msgs__action__ArmTask_Result * ros_message = (arm_msgs__action__ArmTask_Result *)raw_ros_message;
-  {  // success
+  {  // arm_success
     PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->success ? 1 : 0);
+    field = PyBool_FromLong(ros_message->arm_success ? 1 : 0);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "success", field);
+      int rc = PyObject_SetAttrString(_pymessage, "arm_success", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -240,13 +240,13 @@ bool arm_msgs__action__arm_task__feedback__convert_from_py(PyObject * _pymsg, vo
     assert(strncmp("arm_msgs.action._arm_task.ArmTask_Feedback", full_classname_dest, 42) == 0);
   }
   arm_msgs__action__ArmTask_Feedback * ros_message = _ros_message;
-  {  // percentage
-    PyObject * field = PyObject_GetAttrString(_pymsg, "percentage");
+  {  // arm_percentage
+    PyObject * field = PyObject_GetAttrString(_pymsg, "arm_percentage");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->percentage = (int32_t)PyLong_AsLong(field);
+    ros_message->arm_percentage = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -271,11 +271,11 @@ PyObject * arm_msgs__action__arm_task__feedback__convert_to_py(void * raw_ros_me
     }
   }
   arm_msgs__action__ArmTask_Feedback * ros_message = (arm_msgs__action__ArmTask_Feedback *)raw_ros_message;
-  {  // percentage
+  {  // arm_percentage
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->percentage);
+    field = PyLong_FromLong(ros_message->arm_percentage);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "percentage", field);
+      int rc = PyObject_SetAttrString(_pymessage, "arm_percentage", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

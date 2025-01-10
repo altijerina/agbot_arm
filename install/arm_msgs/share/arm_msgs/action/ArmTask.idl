@@ -8,17 +8,17 @@ module arm_msgs {
     @verbatim (language="comment", text=
       "Goal")
     struct ArmTask_Goal {
-      int32 task_number;
+      int32 arm_task_number;
     };
     @verbatim (language="comment", text=
       "Result")
     struct ArmTask_Result {
-      boolean success;
+      boolean arm_success;
     };
     @verbatim (language="comment", text=
       "Feedback")
     struct ArmTask_Feedback {
-      int32 percentage;
+      int32 arm_percentage;
     };
   };
 };

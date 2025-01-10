@@ -457,6 +457,9 @@ arm_remote_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 arm_remote_SOURCE_DIR:STATIC=/home/albert/ag_arm_ws/src/arm_remote
 
+//Dependencies for the target
+arm_task_server_LIB_DEPENDS:STATIC=general;arm_msgs::arm_msgs__rosidl_generator_c;general;arm_msgs::arm_msgs__rosidl_typesupport_fastrtps_c;general;arm_msgs::arm_msgs__rosidl_typesupport_fastrtps_cpp;general;arm_msgs::arm_msgs__rosidl_typesupport_introspection_c;general;arm_msgs::arm_msgs__rosidl_typesupport_c;general;arm_msgs::arm_msgs__rosidl_typesupport_introspection_cpp;general;arm_msgs::arm_msgs__rosidl_typesupport_cpp;general;arm_msgs::arm_msgs__rosidl_generator_py;general;rclcpp::rclcpp;general;rclcpp_action::rclcpp_action;general;rclcpp_components::component_manager;general;moveit_ros_planning_interface::moveit_common_planning_interface_objects;general;moveit_ros_planning_interface::moveit_planning_scene_interface;general;moveit_ros_planning_interface::moveit_move_group_interface;
+
 //The directory containing a CMake configuration file for boost_atomic.
 boost_atomic_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_atomic-1.74.0
 

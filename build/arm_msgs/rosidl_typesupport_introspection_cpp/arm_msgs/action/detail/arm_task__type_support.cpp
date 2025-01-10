@@ -39,14 +39,14 @@ void ArmTask_Goal_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember ArmTask_Goal_message_member_array[1] = {
   {
-    "task_number",  // name
+    "arm_task_number",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(arm_msgs::action::ArmTask_Goal, task_number),  // bytes offset in struct
+    offsetof(arm_msgs::action::ArmTask_Goal, arm_task_number),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -158,14 +158,14 @@ void ArmTask_Result_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember ArmTask_Result_message_member_array[1] = {
   {
-    "success",  // name
+    "arm_success",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(arm_msgs::action::ArmTask_Result, success),  // bytes offset in struct
+    offsetof(arm_msgs::action::ArmTask_Result, arm_success),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -277,14 +277,14 @@ void ArmTask_Feedback_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember ArmTask_Feedback_message_member_array[1] = {
   {
-    "percentage",  // name
+    "arm_percentage",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(arm_msgs::action::ArmTask_Feedback, percentage),  // bytes offset in struct
+    offsetof(arm_msgs::action::ArmTask_Feedback, arm_percentage),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

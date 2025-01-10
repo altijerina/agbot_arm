@@ -1,1 +1,1 @@
-arm_remote::AgbotTaskServer;lib/libtask_server.so
+arm_remote::AgbotTaskServer;lib/libarm_task_server.so

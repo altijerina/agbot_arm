@@ -1,5 +1,5 @@
 /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/config/arm_controllers.yaml
-/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/launch/controller.launch.py
+/home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/launch/arm_controller.launch.py
 /home/albert/ag_arm_ws/install/arm_controller/share/ament_index/resource_index/package_run_dependencies/arm_controller
 /home/albert/ag_arm_ws/install/arm_controller/share/ament_index/resource_index/parent_prefix_path/arm_controller
 /home/albert/ag_arm_ws/install/arm_controller/share/arm_controller/environment/ament_prefix_path.sh

@@ -38,7 +38,7 @@ struct ArmTask_Goal_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->task_number = 0l;
+      this->arm_task_number = 0l;
     }
   }
 
@@ -48,20 +48,20 @@ struct ArmTask_Goal_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->task_number = 0l;
+      this->arm_task_number = 0l;
     }
   }
 
   // field types and members
-  using _task_number_type =
+  using _arm_task_number_type =
     int32_t;
-  _task_number_type task_number;
+  _arm_task_number_type arm_task_number;
 
   // setters for named parameter idiom
-  Type & set__task_number(
+  Type & set__arm_task_number(
     const int32_t & _arg)
   {
-    this->task_number = _arg;
+    this->arm_task_number = _arg;
     return *this;
   }
 
@@ -107,7 +107,7 @@ struct ArmTask_Goal_
   // comparison operators
   bool operator==(const ArmTask_Goal_ & other) const
   {
-    if (this->task_number != other.task_number) {
+    if (this->arm_task_number != other.arm_task_number) {
       return false;
     }
     return true;
@@ -152,7 +152,7 @@ struct ArmTask_Result_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->success = false;
+      this->arm_success = false;
     }
   }
 
@@ -162,20 +162,20 @@ struct ArmTask_Result_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->success = false;
+      this->arm_success = false;
     }
   }
 
   // field types and members
-  using _success_type =
+  using _arm_success_type =
     bool;
-  _success_type success;
+  _arm_success_type arm_success;
 
   // setters for named parameter idiom
-  Type & set__success(
+  Type & set__arm_success(
     const bool & _arg)
   {
-    this->success = _arg;
+    this->arm_success = _arg;
     return *this;
   }
 
@@ -221,7 +221,7 @@ struct ArmTask_Result_
   // comparison operators
   bool operator==(const ArmTask_Result_ & other) const
   {
-    if (this->success != other.success) {
+    if (this->arm_success != other.arm_success) {
       return false;
     }
     return true;
@@ -266,7 +266,7 @@ struct ArmTask_Feedback_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->percentage = 0l;
+      this->arm_percentage = 0l;
     }
   }
 
@@ -276,20 +276,20 @@ struct ArmTask_Feedback_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->percentage = 0l;
+      this->arm_percentage = 0l;
     }
   }
 
   // field types and members
-  using _percentage_type =
+  using _arm_percentage_type =
     int32_t;
-  _percentage_type percentage;
+  _arm_percentage_type arm_percentage;
 
   // setters for named parameter idiom
-  Type & set__percentage(
+  Type & set__arm_percentage(
     const int32_t & _arg)
   {
-    this->percentage = _arg;
+    this->arm_percentage = _arg;
     return *this;
   }
 
@@ -335,7 +335,7 @@ struct ArmTask_Feedback_
   // comparison operators
   bool operator==(const ArmTask_Feedback_ & other) const
   {
-    if (this->percentage != other.percentage) {
+    if (this->arm_percentage != other.arm_percentage) {
       return false;
     }
     return true;

@@ -21,15 +21,15 @@ namespace action
 namespace builder
 {
 
-class Init_ArmTask_Goal_task_number
+class Init_ArmTask_Goal_arm_task_number
 {
 public:
-  Init_ArmTask_Goal_task_number()
+  Init_ArmTask_Goal_arm_task_number()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::arm_msgs::action::ArmTask_Goal task_number(::arm_msgs::action::ArmTask_Goal::_task_number_type arg)
+  ::arm_msgs::action::ArmTask_Goal arm_task_number(::arm_msgs::action::ArmTask_Goal::_arm_task_number_type arg)
   {
-    msg_.task_number = std::move(arg);
+    msg_.arm_task_number = std::move(arg);
     return std::move(msg_);
   }
 
@@ -48,7 +48,7 @@ template<>
 inline
 auto build<::arm_msgs::action::ArmTask_Goal>()
 {
-  return arm_msgs::action::builder::Init_ArmTask_Goal_task_number();
+  return arm_msgs::action::builder::Init_ArmTask_Goal_arm_task_number();
 }
 
 }  // namespace arm_msgs
@@ -63,15 +63,15 @@ namespace action
 namespace builder
 {
 
-class Init_ArmTask_Result_success
+class Init_ArmTask_Result_arm_success
 {
 public:
-  Init_ArmTask_Result_success()
+  Init_ArmTask_Result_arm_success()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::arm_msgs::action::ArmTask_Result success(::arm_msgs::action::ArmTask_Result::_success_type arg)
+  ::arm_msgs::action::ArmTask_Result arm_success(::arm_msgs::action::ArmTask_Result::_arm_success_type arg)
   {
-    msg_.success = std::move(arg);
+    msg_.arm_success = std::move(arg);
     return std::move(msg_);
   }
 
@@ -90,7 +90,7 @@ template<>
 inline
 auto build<::arm_msgs::action::ArmTask_Result>()
 {
-  return arm_msgs::action::builder::Init_ArmTask_Result_success();
+  return arm_msgs::action::builder::Init_ArmTask_Result_arm_success();
 }
 
 }  // namespace arm_msgs
@@ -105,15 +105,15 @@ namespace action
 namespace builder
 {
 
-class Init_ArmTask_Feedback_percentage
+class Init_ArmTask_Feedback_arm_percentage
 {
 public:
-  Init_ArmTask_Feedback_percentage()
+  Init_ArmTask_Feedback_arm_percentage()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::arm_msgs::action::ArmTask_Feedback percentage(::arm_msgs::action::ArmTask_Feedback::_percentage_type arg)
+  ::arm_msgs::action::ArmTask_Feedback arm_percentage(::arm_msgs::action::ArmTask_Feedback::_arm_percentage_type arg)
   {
-    msg_.percentage = std::move(arg);
+    msg_.arm_percentage = std::move(arg);
     return std::move(msg_);
   }
 
@@ -132,7 +132,7 @@ template<>
 inline
 auto build<::arm_msgs::action::ArmTask_Feedback>()
 {
-  return arm_msgs::action::builder::Init_ArmTask_Feedback_percentage();
+  return arm_msgs::action::builder::Init_ArmTask_Feedback_arm_percentage();
 }
 
 }  // namespace arm_msgs

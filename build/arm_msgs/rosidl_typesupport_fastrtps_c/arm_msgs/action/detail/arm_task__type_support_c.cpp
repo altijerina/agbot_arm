@@ -49,9 +49,9 @@ static bool _ArmTask_Goal__cdr_serialize(
     return false;
   }
   const _ArmTask_Goal__ros_msg_type * ros_message = static_cast<const _ArmTask_Goal__ros_msg_type *>(untyped_ros_message);
-  // Field name: task_number
+  // Field name: arm_task_number
   {
-    cdr << ros_message->task_number;
+    cdr << ros_message->arm_task_number;
   }
 
   return true;
@@ -66,9 +66,9 @@ static bool _ArmTask_Goal__cdr_deserialize(
     return false;
   }
   _ArmTask_Goal__ros_msg_type * ros_message = static_cast<_ArmTask_Goal__ros_msg_type *>(untyped_ros_message);
-  // Field name: task_number
+  // Field name: arm_task_number
   {
-    cdr >> ros_message->task_number;
+    cdr >> ros_message->arm_task_number;
   }
 
   return true;
@@ -88,9 +88,9 @@ size_t get_serialized_size_arm_msgs__action__ArmTask_Goal(
   (void)padding;
   (void)wchar_size;
 
-  // field.name task_number
+  // field.name arm_task_number
   {
-    size_t item_size = sizeof(ros_message->task_number);
+    size_t item_size = sizeof(ros_message->arm_task_number);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -123,7 +123,7 @@ size_t max_serialized_size_arm_msgs__action__ArmTask_Goal(
   full_bounded = true;
   is_plain = true;
 
-  // member: task_number
+  // member: arm_task_number
   {
     size_t array_size = 1;
 
@@ -140,7 +140,7 @@ size_t max_serialized_size_arm_msgs__action__ArmTask_Goal(
     using DataType = arm_msgs__action__ArmTask_Goal;
     is_plain =
       (
-      offsetof(DataType, task_number) +
+      offsetof(DataType, arm_task_number) +
       last_member_size
       ) == ret_val;
   }
@@ -243,9 +243,9 @@ static bool _ArmTask_Result__cdr_serialize(
     return false;
   }
   const _ArmTask_Result__ros_msg_type * ros_message = static_cast<const _ArmTask_Result__ros_msg_type *>(untyped_ros_message);
-  // Field name: success
+  // Field name: arm_success
   {
-    cdr << (ros_message->success ? true : false);
+    cdr << (ros_message->arm_success ? true : false);
   }
 
   return true;
@@ -260,11 +260,11 @@ static bool _ArmTask_Result__cdr_deserialize(
     return false;
   }
   _ArmTask_Result__ros_msg_type * ros_message = static_cast<_ArmTask_Result__ros_msg_type *>(untyped_ros_message);
-  // Field name: success
+  // Field name: arm_success
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message->success = tmp ? true : false;
+    ros_message->arm_success = tmp ? true : false;
   }
 
   return true;
@@ -284,9 +284,9 @@ size_t get_serialized_size_arm_msgs__action__ArmTask_Result(
   (void)padding;
   (void)wchar_size;
 
-  // field.name success
+  // field.name arm_success
   {
-    size_t item_size = sizeof(ros_message->success);
+    size_t item_size = sizeof(ros_message->arm_success);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -319,7 +319,7 @@ size_t max_serialized_size_arm_msgs__action__ArmTask_Result(
   full_bounded = true;
   is_plain = true;
 
-  // member: success
+  // member: arm_success
   {
     size_t array_size = 1;
 
@@ -335,7 +335,7 @@ size_t max_serialized_size_arm_msgs__action__ArmTask_Result(
     using DataType = arm_msgs__action__ArmTask_Result;
     is_plain =
       (
-      offsetof(DataType, success) +
+      offsetof(DataType, arm_success) +
       last_member_size
       ) == ret_val;
   }
@@ -438,9 +438,9 @@ static bool _ArmTask_Feedback__cdr_serialize(
     return false;
   }
   const _ArmTask_Feedback__ros_msg_type * ros_message = static_cast<const _ArmTask_Feedback__ros_msg_type *>(untyped_ros_message);
-  // Field name: percentage
+  // Field name: arm_percentage
   {
-    cdr << ros_message->percentage;
+    cdr << ros_message->arm_percentage;
   }
 
   return true;
@@ -455,9 +455,9 @@ static bool _ArmTask_Feedback__cdr_deserialize(
     return false;
   }
   _ArmTask_Feedback__ros_msg_type * ros_message = static_cast<_ArmTask_Feedback__ros_msg_type *>(untyped_ros_message);
-  // Field name: percentage
+  // Field name: arm_percentage
   {
-    cdr >> ros_message->percentage;
+    cdr >> ros_message->arm_percentage;
   }
 
   return true;
@@ -477,9 +477,9 @@ size_t get_serialized_size_arm_msgs__action__ArmTask_Feedback(
   (void)padding;
   (void)wchar_size;
 
-  // field.name percentage
+  // field.name arm_percentage
   {
-    size_t item_size = sizeof(ros_message->percentage);
+    size_t item_size = sizeof(ros_message->arm_percentage);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -512,7 +512,7 @@ size_t max_serialized_size_arm_msgs__action__ArmTask_Feedback(
   full_bounded = true;
   is_plain = true;
 
-  // member: percentage
+  // member: arm_percentage
   {
     size_t array_size = 1;
 
@@ -529,7 +529,7 @@ size_t max_serialized_size_arm_msgs__action__ArmTask_Feedback(
     using DataType = arm_msgs__action__ArmTask_Feedback;
     is_plain =
       (
-      offsetof(DataType, percentage) +
+      offsetof(DataType, arm_percentage) +
       last_member_size
       ) == ret_val;
   }

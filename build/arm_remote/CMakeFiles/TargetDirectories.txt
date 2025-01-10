@@ -1,7 +1,7 @@
 /home/albert/ag_arm_ws/build/arm_remote/CMakeFiles/uninstall.dir
 /home/albert/ag_arm_ws/build/arm_remote/CMakeFiles/arm_remote_uninstall.dir
-/home/albert/ag_arm_ws/build/arm_remote/CMakeFiles/task_server.dir
-/home/albert/ag_arm_ws/build/arm_remote/CMakeFiles/task_server_node.dir
+/home/albert/ag_arm_ws/build/arm_remote/CMakeFiles/arm_task_server.dir
+/home/albert/ag_arm_ws/build/arm_remote/CMakeFiles/arm_task_server_node.dir
 /home/albert/ag_arm_ws/build/arm_remote/CMakeFiles/ament_cmake_python_copy_arm_remote.dir
 /home/albert/ag_arm_ws/build/arm_remote/CMakeFiles/ament_cmake_python_build_arm_remote_egg.dir
 /home/albert/ag_arm_ws/build/arm_remote/CMakeFiles/test.dir

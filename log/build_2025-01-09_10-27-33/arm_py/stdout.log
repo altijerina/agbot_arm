@@ -1,0 +1,34 @@
+running egg_info
+creating ../../build/arm_py/arm_py.egg-info
+writing ../../build/arm_py/arm_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/arm_py/arm_py.egg-info/dependency_links.txt
+writing entry points to ../../build/arm_py/arm_py.egg-info/entry_points.txt
+writing requirements to ../../build/arm_py/arm_py.egg-info/requires.txt
+writing top-level names to ../../build/arm_py/arm_py.egg-info/top_level.txt
+writing manifest file '../../build/arm_py/arm_py.egg-info/SOURCES.txt'
+reading manifest file '../../build/arm_py/arm_py.egg-info/SOURCES.txt'
+writing manifest file '../../build/arm_py/arm_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/albert/ag_arm_ws/build/arm_py/build
+creating /home/albert/ag_arm_ws/build/arm_py/build/lib
+creating /home/albert/ag_arm_ws/build/arm_py/build/lib/arm_py
+copying arm_py/__init__.py -> /home/albert/ag_arm_ws/build/arm_py/build/lib/arm_py
+copying arm_py/moveit_interface.py -> /home/albert/ag_arm_ws/build/arm_py/build/lib/arm_py
+running install
+running install_lib
+creating /home/albert/ag_arm_ws/install/arm_py/lib/python3.10/site-packages/arm_py
+copying /home/albert/ag_arm_ws/build/arm_py/build/lib/arm_py/__init__.py -> /home/albert/ag_arm_ws/install/arm_py/lib/python3.10/site-packages/arm_py
+copying /home/albert/ag_arm_ws/build/arm_py/build/lib/arm_py/moveit_interface.py -> /home/albert/ag_arm_ws/install/arm_py/lib/python3.10/site-packages/arm_py
+byte-compiling /home/albert/ag_arm_ws/install/arm_py/lib/python3.10/site-packages/arm_py/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/albert/ag_arm_ws/install/arm_py/lib/python3.10/site-packages/arm_py/moveit_interface.py to moveit_interface.cpython-310.pyc
+running install_data
+creating /home/albert/ag_arm_ws/install/arm_py/share/ament_index
+creating /home/albert/ag_arm_ws/install/arm_py/share/ament_index/resource_index
+creating /home/albert/ag_arm_ws/install/arm_py/share/ament_index/resource_index/packages
+copying resource/arm_py -> /home/albert/ag_arm_ws/install/arm_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/albert/ag_arm_ws/install/arm_py/share/arm_py
+running install_egg_info
+Copying ../../build/arm_py/arm_py.egg-info to /home/albert/ag_arm_ws/install/arm_py/lib/python3.10/site-packages/arm_py-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/albert/ag_arm_ws/build/arm_py/install.log'

@@ -59,7 +59,7 @@ def generate_launch_description():
     
     alexa_interface_node = Node(
         package = "arm_remote",
-        executable = "alexa_interface.py",
+        executable = "arm_alexa_interface.py",
         parameters=[{"use_sim_time": is_sim}]
     )
     

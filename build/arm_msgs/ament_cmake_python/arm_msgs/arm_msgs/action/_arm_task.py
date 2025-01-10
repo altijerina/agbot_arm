@@ -55,11 +55,11 @@ class ArmTask_Goal(metaclass=Metaclass_ArmTask_Goal):
     """Message class 'ArmTask_Goal'."""
 
     __slots__ = [
-        '_task_number',
+        '_arm_task_number',
     ]
 
     _fields_and_field_types = {
-        'task_number': 'int32',
+        'arm_task_number': 'int32',
     }
 
     SLOT_TYPES = (
@@ -70,7 +70,7 @@ class ArmTask_Goal(metaclass=Metaclass_ArmTask_Goal):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.task_number = kwargs.get('task_number', int())
+        self.arm_task_number = kwargs.get('arm_task_number', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -101,7 +101,7 @@ class ArmTask_Goal(metaclass=Metaclass_ArmTask_Goal):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.task_number != other.task_number:
+        if self.arm_task_number != other.arm_task_number:
             return False
         return True
 
@@ -111,19 +111,19 @@ class ArmTask_Goal(metaclass=Metaclass_ArmTask_Goal):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def task_number(self):
-        """Message field 'task_number'."""
-        return self._task_number
+    def arm_task_number(self):
+        """Message field 'arm_task_number'."""
+        return self._arm_task_number
 
-    @task_number.setter
-    def task_number(self, value):
+    @arm_task_number.setter
+    def arm_task_number(self, value):
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'task_number' field must be of type 'int'"
+                "The 'arm_task_number' field must be of type 'int'"
             assert value >= -2147483648 and value < 2147483648, \
-                "The 'task_number' field must be an integer in [-2147483648, 2147483647]"
-        self._task_number = value
+                "The 'arm_task_number' field must be an integer in [-2147483648, 2147483647]"
+        self._arm_task_number = value
 
 
 # Import statements for member types
@@ -180,11 +180,11 @@ class ArmTask_Result(metaclass=Metaclass_ArmTask_Result):
     """Message class 'ArmTask_Result'."""
 
     __slots__ = [
-        '_success',
+        '_arm_success',
     ]
 
     _fields_and_field_types = {
-        'success': 'boolean',
+        'arm_success': 'boolean',
     }
 
     SLOT_TYPES = (
@@ -195,7 +195,7 @@ class ArmTask_Result(metaclass=Metaclass_ArmTask_Result):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.success = kwargs.get('success', bool())
+        self.arm_success = kwargs.get('arm_success', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -226,7 +226,7 @@ class ArmTask_Result(metaclass=Metaclass_ArmTask_Result):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.success != other.success:
+        if self.arm_success != other.arm_success:
             return False
         return True
 
@@ -236,17 +236,17 @@ class ArmTask_Result(metaclass=Metaclass_ArmTask_Result):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def success(self):
-        """Message field 'success'."""
-        return self._success
+    def arm_success(self):
+        """Message field 'arm_success'."""
+        return self._arm_success
 
-    @success.setter
-    def success(self, value):
+    @arm_success.setter
+    def arm_success(self, value):
         if __debug__:
             assert \
                 isinstance(value, bool), \
-                "The 'success' field must be of type 'bool'"
-        self._success = value
+                "The 'arm_success' field must be of type 'bool'"
+        self._arm_success = value
 
 
 # Import statements for member types
@@ -303,11 +303,11 @@ class ArmTask_Feedback(metaclass=Metaclass_ArmTask_Feedback):
     """Message class 'ArmTask_Feedback'."""
 
     __slots__ = [
-        '_percentage',
+        '_arm_percentage',
     ]
 
     _fields_and_field_types = {
-        'percentage': 'int32',
+        'arm_percentage': 'int32',
     }
 
     SLOT_TYPES = (
@@ -318,7 +318,7 @@ class ArmTask_Feedback(metaclass=Metaclass_ArmTask_Feedback):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.percentage = kwargs.get('percentage', int())
+        self.arm_percentage = kwargs.get('arm_percentage', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -349,7 +349,7 @@ class ArmTask_Feedback(metaclass=Metaclass_ArmTask_Feedback):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.percentage != other.percentage:
+        if self.arm_percentage != other.arm_percentage:
             return False
         return True
 
@@ -359,19 +359,19 @@ class ArmTask_Feedback(metaclass=Metaclass_ArmTask_Feedback):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def percentage(self):
-        """Message field 'percentage'."""
-        return self._percentage
+    def arm_percentage(self):
+        """Message field 'arm_percentage'."""
+        return self._arm_percentage
 
-    @percentage.setter
-    def percentage(self, value):
+    @arm_percentage.setter
+    def arm_percentage(self, value):
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'percentage' field must be of type 'int'"
+                "The 'arm_percentage' field must be of type 'int'"
             assert value >= -2147483648 and value < 2147483648, \
-                "The 'percentage' field must be an integer in [-2147483648, 2147483647]"
-        self._percentage = value
+                "The 'arm_percentage' field must be an integer in [-2147483648, 2147483647]"
+        self._arm_percentage = value
 
 
 # Import statements for member types

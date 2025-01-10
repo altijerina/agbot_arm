@@ -33,14 +33,14 @@ void arm_msgs__action__ArmTask_Goal__rosidl_typesupport_introspection_c__ArmTask
 
 static rosidl_typesupport_introspection_c__MessageMember arm_msgs__action__ArmTask_Goal__rosidl_typesupport_introspection_c__ArmTask_Goal_message_member_array[1] = {
   {
-    "task_number",  // name
+    "arm_task_number",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(arm_msgs__action__ArmTask_Goal, task_number),  // bytes offset in struct
+    offsetof(arm_msgs__action__ArmTask_Goal, arm_task_number),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -121,14 +121,14 @@ void arm_msgs__action__ArmTask_Result__rosidl_typesupport_introspection_c__ArmTa
 
 static rosidl_typesupport_introspection_c__MessageMember arm_msgs__action__ArmTask_Result__rosidl_typesupport_introspection_c__ArmTask_Result_message_member_array[1] = {
   {
-    "success",  // name
+    "arm_success",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(arm_msgs__action__ArmTask_Result, success),  // bytes offset in struct
+    offsetof(arm_msgs__action__ArmTask_Result, arm_success),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -209,14 +209,14 @@ void arm_msgs__action__ArmTask_Feedback__rosidl_typesupport_introspection_c__Arm
 
 static rosidl_typesupport_introspection_c__MessageMember arm_msgs__action__ArmTask_Feedback__rosidl_typesupport_introspection_c__ArmTask_Feedback_message_member_array[1] = {
   {
-    "percentage",  // name
+    "arm_percentage",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(arm_msgs__action__ArmTask_Feedback, percentage),  // bytes offset in struct
+    offsetof(arm_msgs__action__ArmTask_Feedback, arm_percentage),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

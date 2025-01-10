@@ -43,27 +43,27 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/task_server_node" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/task_server_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/arm_task_server_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/arm_task_server_node")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/task_server_node"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/arm_task_server_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arm_remote" TYPE EXECUTABLE FILES "/home/albert/ag_arm_ws/build/arm_remote/task_server_node")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/task_server_node" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/task_server_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arm_remote" TYPE EXECUTABLE FILES "/home/albert/ag_arm_ws/build/arm_remote/arm_task_server_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/arm_task_server_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/arm_task_server_node")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/task_server_node"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/arm_task_server_node"
          OLD_RPATH "/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/task_server_node")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arm_remote/arm_task_server_node")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/albert/ag_arm_ws/build/arm_remote/CMakeFiles/task_server_node.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/albert/ag_arm_ws/build/arm_remote/CMakeFiles/arm_task_server_node.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -95,21 +95,21 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtask_server.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtask_server.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libarm_task_server.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libarm_task_server.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtask_server.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libarm_task_server.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/albert/ag_arm_ws/build/arm_remote/libtask_server.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtask_server.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtask_server.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/albert/ag_arm_ws/build/arm_remote/libarm_task_server.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libarm_task_server.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libarm_task_server.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtask_server.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libarm_task_server.so"
          OLD_RPATH "/home/albert/ag_arm_ws/install/arm_msgs/lib:/opt/ros/humble/lib:/home/albert/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/albert/ws_moveit2/install/moveit_ros_move_group/lib:/home/albert/ws_moveit2/install/moveit_ros_warehouse/lib:/home/albert/ws_moveit2/install/moveit_ros_planning/lib:/home/albert/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/albert/ws_moveit2/install/moveit_core/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/home/albert/ws_moveit2/install/srdfdom/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtask_server.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libarm_task_server.so")
     endif()
   endif()
 endif()
@@ -119,8 +119,8 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arm_remote" TYPE PROGRAM FILES
-    "/home/albert/ag_arm_ws/src/arm_remote/arm_remote/alexa_interface.py"
-    "/home/albert/ag_arm_ws/src/arm_remote/arm_remote/task_server.py"
+    "/home/albert/ag_arm_ws/src/arm_remote/arm_remote/arm_alexa_interface.py"
+    "/home/albert/ag_arm_ws/src/arm_remote/arm_remote/arm_task_server.py"
     )
 endif()
 

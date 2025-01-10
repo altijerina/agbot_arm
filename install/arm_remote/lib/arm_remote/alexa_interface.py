@@ -34,9 +34,9 @@ class LaunchRequestHandler(AbstractRequestHandler):
             SimpleCard("Hello World", speech_text)).set_should_end_session(
             False)
         
-        goal = ArmTask.Goal()
-        goal.task_number = 0
-        action_client.send_goal_async(goal)            
+        agbot_goal = ArmTask.Goal()
+        agbot_goal.arm_task_number = 0
+        action_client.send_goal_async(agbot_goal)            
         return handler_input.response_builder.response
 
 class PositionZeroHandler(AbstractRequestHandler):
@@ -52,9 +52,9 @@ class PositionZeroHandler(AbstractRequestHandler):
             SimpleCard("PositionZero", speech_text)).set_should_end_session(
             False)
             
-        goal = ArmTask.Goal()
-        goal.task_number = 0
-        action_client.send_goal_async(goal)            
+        agbot_goal = ArmTask.Goal()
+        agbot_goal.arm_task_number = 0
+        action_client.send_goal_async(agbot_goal)            
         return handler_input.response_builder.response
 
 class PositionOneHandler(AbstractRequestHandler):
@@ -70,9 +70,9 @@ class PositionOneHandler(AbstractRequestHandler):
             SimpleCard("PositionOne", speech_text)).set_should_end_session(
             False)
             
-        goal = ArmTask.Goal()
-        goal.task_number = 1
-        action_client.send_goal_async(goal)            
+        agbot_goal = ArmTask.Goal()
+        agbot_goal.arm_task_number = 1
+        action_client.send_goal_async(agbot_goal)            
         return handler_input.response_builder.response    
 
 class PositionTwoHandler(AbstractRequestHandler):
@@ -88,9 +88,9 @@ class PositionTwoHandler(AbstractRequestHandler):
             SimpleCard("PositionTwo", speech_text)).set_should_end_session(
             False)
             
-        goal = ArmTask.Goal()
-        goal.task_number = 2
-        action_client.send_goal_async(goal)            
+        agbot_goal = ArmTask.Goal()
+        agbot_goal.arm_task_number = 2
+        action_client.send_goal_async(agbot_goal)            
         return handler_input.response_builder.response     
     
 class PositionThreeHandler(AbstractRequestHandler):
@@ -106,9 +106,9 @@ class PositionThreeHandler(AbstractRequestHandler):
             SimpleCard("PositionThree", speech_text)).set_should_end_session(
             False)
             
-        goal = ArmTask.Goal()
-        goal.task_number = 3
-        action_client.send_goal_async(goal)            
+        agbot_goal = ArmTask.Goal()
+        agbot_goal.arm_task_number = 3
+        action_client.send_goal_async(agbot_goal)            
         return handler_input.response_builder.response   
 
 class PositionFourHandler(AbstractRequestHandler):
@@ -124,9 +124,9 @@ class PositionFourHandler(AbstractRequestHandler):
             SimpleCard("PositionFour", speech_text)).set_should_end_session(
             False)
             
-        goal = ArmTask.Goal()
-        goal.task_number = 4
-        action_client.send_goal_async(goal)            
+        agbot_goal = ArmTask.Goal()
+        agbot_goal.arm_task_number = 4
+        action_client.send_goal_async(agbot_goal)            
         return handler_input.response_builder.response 
 
 class PositionFiveHandler(AbstractRequestHandler):
@@ -142,9 +142,9 @@ class PositionFiveHandler(AbstractRequestHandler):
             SimpleCard("PositionFive", speech_text)).set_should_end_session(
             False)
             
-        goal = ArmTask.Goal()
-        goal.task_number = 5
-        action_client.send_goal_async(goal)            
+        agbot_goal = ArmTask.Goal()
+        agbot_goal.arm_task_number = 5
+        action_client.send_goal_async(agbot_goal)            
         return handler_input.response_builder.response 
 
 class SleepIntentHandler(AbstractRequestHandler):
@@ -160,9 +160,9 @@ class SleepIntentHandler(AbstractRequestHandler):
             SimpleCard("sleep", speech_text)).set_should_end_session(
             True)
             
-        goal = ArmTask.Goal()
-        goal.task_number = 6
-        action_client.send_goal_async(goal)            
+        agbot_goal = ArmTask.Goal()
+        agbot_goal.arm_task_number = 6
+        action_client.send_goal_async(agbot_goal)            
         return handler_input.response_builder.response 
     
 class AllExceptionHandler(AbstractExceptionHandler):

@@ -17,7 +17,7 @@ arm_msgs__action__ArmTask_Goal__init(arm_msgs__action__ArmTask_Goal * msg)
   if (!msg) {
     return false;
   }
-  // task_number
+  // arm_task_number
   return true;
 }
 
@@ -27,7 +27,7 @@ arm_msgs__action__ArmTask_Goal__fini(arm_msgs__action__ArmTask_Goal * msg)
   if (!msg) {
     return;
   }
-  // task_number
+  // arm_task_number
 }
 
 bool
@@ -36,8 +36,8 @@ arm_msgs__action__ArmTask_Goal__are_equal(const arm_msgs__action__ArmTask_Goal *
   if (!lhs || !rhs) {
     return false;
   }
-  // task_number
-  if (lhs->task_number != rhs->task_number) {
+  // arm_task_number
+  if (lhs->arm_task_number != rhs->arm_task_number) {
     return false;
   }
   return true;
@@ -51,8 +51,8 @@ arm_msgs__action__ArmTask_Goal__copy(
   if (!input || !output) {
     return false;
   }
-  // task_number
-  output->task_number = input->task_number;
+  // arm_task_number
+  output->arm_task_number = input->arm_task_number;
   return true;
 }
 
@@ -242,7 +242,7 @@ arm_msgs__action__ArmTask_Result__init(arm_msgs__action__ArmTask_Result * msg)
   if (!msg) {
     return false;
   }
-  // success
+  // arm_success
   return true;
 }
 
@@ -252,7 +252,7 @@ arm_msgs__action__ArmTask_Result__fini(arm_msgs__action__ArmTask_Result * msg)
   if (!msg) {
     return;
   }
-  // success
+  // arm_success
 }
 
 bool
@@ -261,8 +261,8 @@ arm_msgs__action__ArmTask_Result__are_equal(const arm_msgs__action__ArmTask_Resu
   if (!lhs || !rhs) {
     return false;
   }
-  // success
-  if (lhs->success != rhs->success) {
+  // arm_success
+  if (lhs->arm_success != rhs->arm_success) {
     return false;
   }
   return true;
@@ -276,8 +276,8 @@ arm_msgs__action__ArmTask_Result__copy(
   if (!input || !output) {
     return false;
   }
-  // success
-  output->success = input->success;
+  // arm_success
+  output->arm_success = input->arm_success;
   return true;
 }
 
@@ -467,7 +467,7 @@ arm_msgs__action__ArmTask_Feedback__init(arm_msgs__action__ArmTask_Feedback * ms
   if (!msg) {
     return false;
   }
-  // percentage
+  // arm_percentage
   return true;
 }
 
@@ -477,7 +477,7 @@ arm_msgs__action__ArmTask_Feedback__fini(arm_msgs__action__ArmTask_Feedback * ms
   if (!msg) {
     return;
   }
-  // percentage
+  // arm_percentage
 }
 
 bool
@@ -486,8 +486,8 @@ arm_msgs__action__ArmTask_Feedback__are_equal(const arm_msgs__action__ArmTask_Fe
   if (!lhs || !rhs) {
     return false;
   }
-  // percentage
-  if (lhs->percentage != rhs->percentage) {
+  // arm_percentage
+  if (lhs->arm_percentage != rhs->arm_percentage) {
     return false;
   }
   return true;
@@ -501,8 +501,8 @@ arm_msgs__action__ArmTask_Feedback__copy(
   if (!input || !output) {
     return false;
   }
-  // percentage
-  output->percentage = input->percentage;
+  // arm_percentage
+  output->arm_percentage = input->arm_percentage;
   return true;
 }
 

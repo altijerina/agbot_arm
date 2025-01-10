@@ -63,8 +63,8 @@ CMAKE_BINARY_DIR = /home/albert/ag_arm_ws/build/arm_remote
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/task_server.dir/all
-all: CMakeFiles/task_server_node.dir/all
+all: CMakeFiles/arm_task_server.dir/all
+all: CMakeFiles/arm_task_server_node.dir/all
 all: CMakeFiles/ament_cmake_python_build_arm_remote_egg.dir/all
 .PHONY : all
 
@@ -75,8 +75,8 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/arm_remote_uninstall.dir/clean
-clean: CMakeFiles/task_server.dir/clean
-clean: CMakeFiles/task_server_node.dir/clean
+clean: CMakeFiles/arm_task_server.dir/clean
+clean: CMakeFiles/arm_task_server_node.dir/clean
 clean: CMakeFiles/ament_cmake_python_copy_arm_remote.dir/clean
 clean: CMakeFiles/ament_cmake_python_build_arm_remote_egg.dir/clean
 .PHONY : clean
@@ -134,56 +134,56 @@ CMakeFiles/arm_remote_uninstall.dir/clean:
 .PHONY : CMakeFiles/arm_remote_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/task_server.dir
+# Target rules for target CMakeFiles/arm_task_server.dir
 
 # All Build rule for target.
-CMakeFiles/task_server.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server.dir/build.make CMakeFiles/task_server.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server.dir/build.make CMakeFiles/task_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/albert/ag_arm_ws/build/arm_remote/CMakeFiles --progress-num=1,2 "Built target task_server"
-.PHONY : CMakeFiles/task_server.dir/all
+CMakeFiles/arm_task_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server.dir/build.make CMakeFiles/arm_task_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server.dir/build.make CMakeFiles/arm_task_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/albert/ag_arm_ws/build/arm_remote/CMakeFiles --progress-num=1,2 "Built target arm_task_server"
+.PHONY : CMakeFiles/arm_task_server.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/task_server.dir/rule: cmake_check_build_system
+CMakeFiles/arm_task_server.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/albert/ag_arm_ws/build/arm_remote/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/task_server.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/arm_task_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/albert/ag_arm_ws/build/arm_remote/CMakeFiles 0
-.PHONY : CMakeFiles/task_server.dir/rule
+.PHONY : CMakeFiles/arm_task_server.dir/rule
 
 # Convenience name for target.
-task_server: CMakeFiles/task_server.dir/rule
-.PHONY : task_server
+arm_task_server: CMakeFiles/arm_task_server.dir/rule
+.PHONY : arm_task_server
 
 # clean rule for target.
-CMakeFiles/task_server.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server.dir/build.make CMakeFiles/task_server.dir/clean
-.PHONY : CMakeFiles/task_server.dir/clean
+CMakeFiles/arm_task_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server.dir/build.make CMakeFiles/arm_task_server.dir/clean
+.PHONY : CMakeFiles/arm_task_server.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/task_server_node.dir
+# Target rules for target CMakeFiles/arm_task_server_node.dir
 
 # All Build rule for target.
-CMakeFiles/task_server_node.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server_node.dir/build.make CMakeFiles/task_server_node.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server_node.dir/build.make CMakeFiles/task_server_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/albert/ag_arm_ws/build/arm_remote/CMakeFiles --progress-num=3,4 "Built target task_server_node"
-.PHONY : CMakeFiles/task_server_node.dir/all
+CMakeFiles/arm_task_server_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server_node.dir/build.make CMakeFiles/arm_task_server_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server_node.dir/build.make CMakeFiles/arm_task_server_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/albert/ag_arm_ws/build/arm_remote/CMakeFiles --progress-num=3,4 "Built target arm_task_server_node"
+.PHONY : CMakeFiles/arm_task_server_node.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/task_server_node.dir/rule: cmake_check_build_system
+CMakeFiles/arm_task_server_node.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/albert/ag_arm_ws/build/arm_remote/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/task_server_node.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/arm_task_server_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/albert/ag_arm_ws/build/arm_remote/CMakeFiles 0
-.PHONY : CMakeFiles/task_server_node.dir/rule
+.PHONY : CMakeFiles/arm_task_server_node.dir/rule
 
 # Convenience name for target.
-task_server_node: CMakeFiles/task_server_node.dir/rule
-.PHONY : task_server_node
+arm_task_server_node: CMakeFiles/arm_task_server_node.dir/rule
+.PHONY : arm_task_server_node
 
 # clean rule for target.
-CMakeFiles/task_server_node.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_server_node.dir/build.make CMakeFiles/task_server_node.dir/clean
-.PHONY : CMakeFiles/task_server_node.dir/clean
+CMakeFiles/arm_task_server_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_task_server_node.dir/build.make CMakeFiles/arm_task_server_node.dir/clean
+.PHONY : CMakeFiles/arm_task_server_node.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ament_cmake_python_copy_arm_remote.dir

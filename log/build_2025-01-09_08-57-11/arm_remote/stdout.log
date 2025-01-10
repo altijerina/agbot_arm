@@ -1,0 +1,10 @@
+[ 25%] Built target ament_cmake_python_copy_arm_remote
+[ 50%] Built target task_server_node
+[ 75%] [32mBuilding CXX object CMakeFiles/task_server.dir/src/task_server.cpp.o[0m
+running egg_info
+writing arm_remote.egg-info/PKG-INFO
+writing dependency_links to arm_remote.egg-info/dependency_links.txt
+writing top-level names to arm_remote.egg-info/top_level.txt
+reading manifest file 'arm_remote.egg-info/SOURCES.txt'
+writing manifest file 'arm_remote.egg-info/SOURCES.txt'
+[ 75%] Built target ament_cmake_python_build_arm_remote_egg

@@ -20,7 +20,7 @@ extern "C"
 /// Struct defined in action/ArmTask in the package arm_msgs.
 typedef struct arm_msgs__action__ArmTask_Goal
 {
-  int32_t task_number;
+  int32_t arm_task_number;
 } arm_msgs__action__ArmTask_Goal;
 
 // Struct for a sequence of arm_msgs__action__ArmTask_Goal.
@@ -39,7 +39,7 @@ typedef struct arm_msgs__action__ArmTask_Goal__Sequence
 /// Struct defined in action/ArmTask in the package arm_msgs.
 typedef struct arm_msgs__action__ArmTask_Result
 {
-  bool success;
+  bool arm_success;
 } arm_msgs__action__ArmTask_Result;
 
 // Struct for a sequence of arm_msgs__action__ArmTask_Result.
@@ -58,7 +58,7 @@ typedef struct arm_msgs__action__ArmTask_Result__Sequence
 /// Struct defined in action/ArmTask in the package arm_msgs.
 typedef struct arm_msgs__action__ArmTask_Feedback
 {
-  int32_t percentage;
+  int32_t arm_percentage;
 } arm_msgs__action__ArmTask_Feedback;
 
 // Struct for a sequence of arm_msgs__action__ArmTask_Feedback.

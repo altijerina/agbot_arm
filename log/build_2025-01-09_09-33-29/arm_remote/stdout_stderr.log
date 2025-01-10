@@ -1,0 +1,49 @@
+[  0%] Built target ament_cmake_python_copy_arm_remote
+[ 50%] Built target task_server_node
+[ 75%] [32mBuilding CXX object CMakeFiles/task_server.dir/src/task_server.cpp.o[0m
+running egg_info
+writing arm_remote.egg-info/PKG-INFO
+writing dependency_links to arm_remote.egg-info/dependency_links.txt
+writing top-level names to arm_remote.egg-info/top_level.txt
+reading manifest file 'arm_remote.egg-info/SOURCES.txt'
+writing manifest file 'arm_remote.egg-info/SOURCES.txt'
+[ 75%] Built target ament_cmake_python_build_arm_remote_egg
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:1[m[K:
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:[m[K In member function ‘[01m[Kvoid arm_remote::AgbotTaskServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<arm_msgs::action::ArmTask> >)[m[K’:
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:73:69:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kagbot_goal_handle[m[K’
+   73 | PP_INFO(get_logger(), "Executing goal with task number: %d" [01;31m[Kagbot_goal_handle[m[K->get_goal()->arm_task_number);
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:73:5:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   73 |     [01;36m[KRCLCPP_INFO[m[K(get_logger(), "Executing goal with task number: %d" agbot_goal_handle->get_goal()->arm_task_number);
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:73:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects a matching ‘[01m[Kint[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   73 |     RCLCPP_INFO(get_logger(), [01;35m[K"Executing goal with task number: %d"[m[K agbot_goal_handle->get_goal()->arm_task_number);
+      |                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:73:66:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   73 | CLCPP_INFO(get_logger(), "Executing goal with task number: [01;36m[K%d[m[K" agbot_goal_handle->get_goal()->arm_task_number);
+      |                                                            [01;36m[K~^[m[K
+      |                                                             [01;36m[K|[m[K
+      |                                                             [01;36m[Kint[m[K
+
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:200:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct arm_msgs::action::ArmTask_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct arm_msgs::action::ArmTask_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksuccess[m[K’; did you mean ‘[01m[Karm_success[m[K’?
+  200 |     result->[01;31m[Ksuccess[m[K = true;
+      |             [01;31m[K^~~~~~~[m[K
+      |             [32m[Karm_success[m[K
+[01m[K/home/albert/ag_arm_ws/src/arm_remote/src/task_server.cpp:201:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_handle[m[K’ was not declared in this scope
+  201 |     [01;31m[Kgoal_handle[m[K->succeed(result);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/task_server.dir/build.make:76: CMakeFiles/task_server.dir/src/task_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:142: CMakeFiles/task_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-fc18e6824e3c6f9db914.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "arm_remote",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_arm_remote_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_arm_remote_egg-c097abeb22a88ce1e051.json",
+					"name" : "ament_cmake_python_build_arm_remote_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_arm_remote::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_arm_remote-f3651bb5b4a38e844119.json",
+					"name" : "ament_cmake_python_copy_arm_remote",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_remote_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_remote_uninstall-c21e3690fa27263f1699.json",
+					"name" : "arm_remote_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_task_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_task_server-9f7894fadfbb51299842.json",
+					"name" : "arm_task_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_task_server_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_task_server_node-621fae9af2f69728172b.json",
+					"name" : "arm_task_server_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-81d00f4cd5a89bc53188.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/albert/ag_arm_ws/build/arm_remote",
+		"source" : "/home/albert/ag_arm_ws/src/arm_remote"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
