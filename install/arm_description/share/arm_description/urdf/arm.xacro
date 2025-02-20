@@ -55,7 +55,6 @@
 
     <xacro:macro name="default_transmission" params="name">
         <transmission name="transmission_${name}">
-            <!-- <plugin>transmission_interface/DifferentialTransmission</plugin> -->
             <plugin>transmission_interface/SimpleTransmission</plugin>
             <actuator name="motor_${name}" role="actuator1"/>
             <joint name="${name}" role="joint1">
@@ -85,7 +84,7 @@
     <link name = "world">
     </link>
 
-    <!-- <link name = "roboball_cylinder_link">
+    <link name = "roboball_cylinder_link">
         <visual>
             <geometry>
                 <cylinder length = "${robo_cylinder_length}" radius = "${robo_cylinder_radius}" />
@@ -101,7 +100,7 @@
         </collision>
         <xacro:cylinder_inertia m = "3.0" r = "${robo_cylinder_radius}" h = "${robo_cylinder_length}"
                                 xyz = "0 0 0" rpy = "0 0 0"/>
-    </link> -->
+    </link>
 
     <link name="arm_base_rail_link">
         <visual>
@@ -358,18 +357,18 @@
     </link> 
 
     <!-- Joint Descriptions -->
-    <!-- <joint name = "robo_cylinder_joint" type = "fixed">
+    <joint name = "robo_cylinder_joint" type = "fixed">
         <parent link="world" />
         <child link="roboball_cylinder_link" />
         <origin xyz = "0 0 ${base_height + robo_cylinder_radius}" rpy = "${PI/2} 0 0" />
-     </joint>    -->
+     </joint>   
     
      <joint name = "body_arm_joint" type = "fixed">
-        <!-- <parent link="roboball_cylinder_link" /> -->
-        <parent link="world" />
+        <parent link="roboball_cylinder_link" />
+        <!-- <parent link="world" /> -->
         <child link="arm_base_rail_link" />
-        <!-- <origin xyz = "0 -${robo_cylinder_radius - (5*arm_base_rail_height)} 0" rpy = "0 ${PI/2} ${PI/2}" /> -->
-        <origin xyz = "0 -${robo_cylinder_radius - (5*arm_base_rail_height)} 0" rpy = "0 0 0" />
+        <origin xyz = "0 -${robo_cylinder_radius - (5*arm_base_rail_height)} 0" rpy = "0 ${PI/2} ${PI/2}" />
+        <!-- <origin xyz = "0 -${robo_cylinder_radius - (5*arm_base_rail_height)} 0" rpy = "0 0 0" /> -->
      </joint>    
      
      <joint name = "base_rail_to_ mid_rail_joint" type = "prismatic">

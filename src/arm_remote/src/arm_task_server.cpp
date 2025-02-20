@@ -87,14 +87,14 @@ private:
     if (agbot_goal_handle->get_goal()->arm_task_number == 0) //Home position
     {
       agbot_rail_joint_goal = {0.500, 1.130};
-      agbot_arm_joint_goal = {0.00, 0.00, 0.00, 0.00};
-      agbot_gripper_joint_goal = {-0.00};
+      agbot_arm_joint_goal = {0.00, 0.00, -0.00, 0.00};
+      agbot_gripper_joint_goal = {-0.001};
     }
     else if(agbot_goal_handle->get_goal()->arm_task_number == 1) //Arm Ready
     {
       agbot_rail_joint_goal = {0.500, 1.130};
-      agbot_arm_joint_goal = {0.0, 1.502, -1.423, 0.0};
-      agbot_gripper_joint_goal = {-0.7} ;      
+      agbot_arm_joint_goal = {0.0, 1.502, -1.423, -0.001};
+      agbot_gripper_joint_goal = {-0.65} ;      
     }
     else if(agbot_goal_handle->get_goal()->arm_task_number == 2) //Arm Ready Low Left
     {
@@ -112,19 +112,19 @@ private:
     {
       agbot_rail_joint_goal = {0.500, 1.130};
       agbot_arm_joint_goal = {1.503, 1.967, -2.378, 0.408};
-      agbot_gripper_joint_goal = {-1.50} ;      
+      agbot_gripper_joint_goal = {-1.30} ;      
     }
     else if(agbot_goal_handle->get_goal()->arm_task_number == 5) //Arm Ready High Left
     {
       agbot_rail_joint_goal = {0.500, 1.130};
-      agbot_arm_joint_goal = {-1.128, 1.745, -2.078, 0.524};
+      agbot_arm_joint_goal = {-1.128, 1.745, -2.078, -0.524};
       agbot_gripper_joint_goal = {-0.1} ;      
     }
     else if(agbot_goal_handle->get_goal()->arm_task_number == 6) //Home position
     {
-      agbot_rail_joint_goal = {0.000, 0.000};
-      agbot_arm_joint_goal = {0.00, 0.00, 0.00, 0.00};
-      agbot_gripper_joint_goal = {-0.01};
+      agbot_rail_joint_goal = {0.001, 0.001};
+      agbot_arm_joint_goal = {0.00, 0.00, -0.00, -0.00};
+      agbot_gripper_joint_goal = {-0.001};
     }
     else
     {
@@ -142,19 +142,19 @@ private:
 
     if (!rails_within_bounds)
     {
-      RCLCPP_ERROR(get_logger(), "RAIL Target joint position outside of limits.");
+      RCLCPP_ERROR(get_logger(), "RAIL Target %d joint position outside of limits.", task_num_);
       return;
     }
     
     if (!arm_within_bounds)
     {
-      RCLCPP_ERROR(get_logger(), "ARM Target joint position outside of limits.");
+      RCLCPP_ERROR(get_logger(), "ARM Target %d joint position outside of limits.", task_num_);
       return;
     }
 
     if (!gripper_within_bounds)
     {
-      RCLCPP_ERROR(get_logger(), "GRIPPER Target joint position outside of limits.");
+      RCLCPP_ERROR(get_logger(), "GRIPPER Target %d joint position outside of limits.", task_num_);
       return;
     }     
 
@@ -166,48 +166,94 @@ private:
     bool agbot_arm_plan_success = (agbot_arm_move_group->plan(agbot_arm_plan) == moveit::core::MoveItErrorCode::SUCCESS);
     bool agbot_gripper_plan_success = (agbot_gripper_move_group->plan(agbot_gripper_plan) == moveit::core::MoveItErrorCode::SUCCESS);
 
-    if (task_num_ == 6)
+
+    if (agbot_rail_plan_success)
+    {
+        RCLCPP_INFO(get_logger(), "Rail Planner %d Succeeded in moving the rails.", task_num_);      
+    }
+    else
+    {
+      RCLCPP_ERROR(get_logger(), "Rail planner %d failed!", task_num_);
+      return;
+    } 
+    
+    if (agbot_arm_plan_success)
+    {
+        RCLCPP_INFO(get_logger(), "Arm Planner %d Succeeded in moving the arm.", task_num_);      
+    }
+    else
+    {
+      RCLCPP_ERROR(get_logger(), "Arm planner %d failed!", task_num_);
+      return;
+    }     
+
+    if (agbot_gripper_plan_success)
+    {
+        RCLCPP_INFO(get_logger(), "Gripper Planner %d Succeeded in moving the gripper.", task_num_);             
+    }    
+    else
+    {
+      RCLCPP_ERROR(get_logger(), "Gripper planner %d failed!", task_num_);
+      return;
+    }  
+
+    if (task_num_ == 0)
+    {
+        agbot_rails_move_group->move();
+        std::this_thread::sleep_for(1s);
+        agbot_gripper_move_group->move();
+        std::this_thread::sleep_for(1s);
+        agbot_arm_move_group->move();
+    }
+    else if (task_num_ == 1)
     {
         agbot_arm_move_group->move();
         std::this_thread::sleep_for(1s);
         agbot_gripper_move_group->move();
+        std::this_thread::sleep_for(1s);
         agbot_rails_move_group->move();
     }
-    else
+    else if (task_num_ == 2)
     {
-      if (agbot_rail_plan_success)
-      {
-          RCLCPP_INFO(get_logger(), "Rail Planner Succeeded in moving the rails.");
-          agbot_rails_move_group->move();       
-      }
-      else
-      {
-        RCLCPP_ERROR(get_logger(), "Arm planner failed!");
-        return;
-      } 
-      
-      if (agbot_arm_plan_success)
-      {
-          RCLCPP_INFO(get_logger(), "Arm Planner Succeeded in moving the arm.");
-          agbot_arm_move_group->move();       
-      }
-      else
-      {
-        RCLCPP_ERROR(get_logger(), "Arm planner failed!");
-        return;
-      }     
-
-      if (agbot_gripper_plan_success)
-      {
-          RCLCPP_INFO(get_logger(), "Gripper Planner Succeeded in moving the gripper.");        
-          agbot_gripper_move_group->move();       
-      }    
-      else
-      {
-        RCLCPP_ERROR(get_logger(), "Gripper planner failed!");
-        return;
-      }
-    }    
+        agbot_gripper_move_group->move();
+        std::this_thread::sleep_for(1s);
+        agbot_arm_move_group->move();
+        std::this_thread::sleep_for(1s);
+        agbot_rails_move_group->move();
+    }
+    else if (task_num_ == 3)
+    {
+        agbot_gripper_move_group->move();
+        std::this_thread::sleep_for(1s);
+        agbot_arm_move_group->move();
+        std::this_thread::sleep_for(1s);
+        agbot_rails_move_group->move();
+    }
+    else if (task_num_ == 4)
+    {
+        agbot_gripper_move_group->move();
+        std::this_thread::sleep_for(1s);
+        agbot_arm_move_group->move();
+        std::this_thread::sleep_for(1s);
+        agbot_rails_move_group->move();
+    }
+    else if (task_num_ == 5)
+    {
+        agbot_gripper_move_group->move();
+        std::this_thread::sleep_for(1s);
+        agbot_arm_move_group->move();
+        std::this_thread::sleep_for(1s);
+        agbot_rails_move_group->move();
+    }
+    else if (task_num_ == 6)
+    {
+        agbot_gripper_move_group->move();
+        std::this_thread::sleep_for(1s);
+        agbot_arm_move_group->move();
+        std::this_thread::sleep_for(1s);
+        agbot_rails_move_group->move();
+    } 
+   
 
     auto result = std::make_shared<AgbotRobotTask::Result>();
     result->arm_success = true;

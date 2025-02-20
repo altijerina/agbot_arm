@@ -28,7 +28,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speech_text = "Howdy.  How can I help?"
+        speech_text = "Howdy.  Going to the ready position."
 
         handler_input.response_builder.speak(speech_text).set_card(
             SimpleCard("Hello World", speech_text)).set_should_end_session(
@@ -157,7 +157,7 @@ class PositionSixHandler(AbstractRequestHandler):
         speech_text = "Ok, I'm going to sleep."
 
         handler_input.response_builder.speak(speech_text).set_card(
-            SimpleCard("PositionFive", speech_text)).set_should_end_session(
+            SimpleCard("PositionSix", speech_text)).set_should_end_session(
             False)
             
         agbot_goal = ArmTask.Goal()
